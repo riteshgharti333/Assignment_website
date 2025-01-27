@@ -52,25 +52,25 @@ export const weDo = [
     logo: emp,
     image: empowring,
     title: "Empowering Communities",
-    desc: "We focus on education and sustainable development to create self-reliant communities, ensuring growth and opportunity for future generations while fostering hope and resilience.",
+    desc: "We focus on education and sustainable development to create self-reliant communities, ensuring growth and opportunity for future generations.",
   },
   {
     logo: health,
     image: shelter,
     title: "Healthcare for All",
-    desc: "Our initiative provides critical healthcare services to underserved areas, promoting a healthier tomorrow through medical camps, resources, and community health awareness programs.",
+    desc: "Our initiative provides critical healthcare services to underserved areas, promoting a healthier tomorrow through medical camps.",
   },
   {
     logo: hunger,
     image: food,
     title: "Fighting Hunger",
-    desc: "We work tirelessly to combat hunger by delivering essential food supplies to families in need, ensuring no one goes to bed hungry or without hope.",
+    desc: "We work tirelessly to combat hunger by delivering essential food supplies to families in need, ensuring no one goes to bed hungry.",
   },
   {
     logo: home,
     image: shelterImg,
     title: "Providing Shelter",
-    desc: "Our mission includes building shelters, providing security, and offering essential services to homeless individuals, ensuring dignity and a safe space for all.",
+    desc: "Our mission includes building shelters, providing security, and offering essential services to homeless individuals.",
   },
 ];
 
