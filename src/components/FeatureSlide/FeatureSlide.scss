@@ -1,0 +1,39 @@
+// @import "../../style/responsive.scss";
+
+.FeatureSlide {
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 100%;
+    position: relative;
+  }
+
+  .carousel-initialized {
+    position: static;
+  }
+
+//   .carousel-prev {
+//     left: 0px;
+//     display: none;
+// }
+  // .Carousel-prev,
+  // .Carousel-next {
+  //   width: 50px;
+  //   height: 50px;
+  //   border-radius: 50%;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   margin: auto;
+  // }
+
+  // .Carousel-prev {
+  //   left: -10px;
+  //   color: red;
+  //   background-color: rgba(255, 0, 0, 0.5); // Add background color to make it more visible
+  // }
+
+  // .Carousel-next {
+  //   right: -40px;
+  // }
+}

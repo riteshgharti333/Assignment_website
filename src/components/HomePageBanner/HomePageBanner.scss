@@ -1,0 +1,56 @@
+@import "../../styles//responsive.scss";
+
+.banner {
+  .banner-images {
+    position: relative;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 70vh;
+      filter: brightness(0.3);
+      border-radius: 10px;
+
+      @include sm {
+        height: 50vh;
+      }
+    }
+
+    .img-info {
+      position: absolute;
+      font-family: "Gabarito", sans-serif;
+      top: 50%;
+      margin: 0px 40px;
+      font-weight: bold;
+      color: white;
+
+      @include sm {
+        top: 50%;
+        margin: 0px 10px;
+      }
+
+      @include EEsm {
+        top: 30%;
+      }
+      .banner-title {
+        font-size: 60px;
+
+        @include sm {
+          font-size: 40px;
+        }
+
+        @include EEsm {
+          font-size: 30px;
+        }
+      }
+
+      .banner-desc {
+        font-size: 25px;
+        color: purple;
+
+        @include sm {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

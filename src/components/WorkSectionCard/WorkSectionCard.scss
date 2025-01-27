@@ -1,0 +1,105 @@
+@import "../../styles/responsive.scss";
+
+.WorkSection-Card {
+  margin-top: 10px;
+  width: 600px;
+  height: 270px;
+
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.2s ease-in;
+  border-radius: 10px;
+  color: #ffffff;
+
+  @include xxxl {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include xxl {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include lg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include md {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include sm {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 10px 10px 10px #bebebe, -1px -1px 15px #ffffff;
+    transition: 0.2s ease-in-out;
+  }
+
+  .WorkSection-Card-img {
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px 10px 0px 0px;
+
+      @include xxxl {
+        width: 100%;
+        height: 200px;
+      }
+
+      @include xxl {
+        width: 100%;
+        height: 200px;
+      }
+
+      @include xl {
+        width: 100%;
+        height: 200px;
+      }
+
+      @include lg {
+        width: 100%;
+        height: 200px;
+      }
+
+      @include md {
+        width: 100%;
+        height: 200px;
+      }
+
+      @include sm {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  }
+
+  .WorkSection-Card-info {
+    padding: 10px;
+    .achievements {
+      margin: 10px 0px;
+      color: #000;
+      p {
+        font-weight: bold;
+      }
+
+      ul {
+        margin-left: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../styles//responsive.scss";
+
+.homePage{
+    margin: 0px 30px;
+
+  @include sm{
+    margin: 0;
+  }
+
+  @include md{
+    margin: 0px 5px;
+  }
+}

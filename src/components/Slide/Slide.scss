@@ -1,0 +1,12 @@
+.MainSlide {
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 100%;
+    position: relative;
+  }
+
+  .carousel-initialized {
+    position: static;
+  }
+}
