@@ -3,7 +3,6 @@
 .WorkSection-Card {
   // margin-top: 10px;
   margin: 0 auto;
-
   width: 300px;
   height: 270px;
   display: flex;
@@ -12,11 +11,19 @@
   background-color: #e5e6e4;
   transition: width 0.5s ease, height 0.5s ease;
 
+  @include sm{
+    display: block;
+  }
+
   .WorkSection-Card-img {
     img {
       width: 300px;
       height: 200px;
       object-fit: cover;
+
+      @include sm{
+        width: 300px;
+      }
     }
 
     .image-title {
@@ -59,6 +66,11 @@
     transition: width 0.5s ease, height 0.5s ease;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+
+    @include sm{
+      height: fit-content;
+      width: 300px;
+    }
 
     .WorkSection-Card-img {
       img {
