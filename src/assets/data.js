@@ -111,39 +111,39 @@ export const work = [
       "Reduced waterborne diseases, improved sanitation, and supported long-term health improvements in the community.",
     image: water,
   },
-  // {
-  //   title: "Emergency Relief Effort: Natural Disaster Response",
-  //   objective:
-  //     "Provide immediate relief to communities affected by natural disasters.",
-  //   achievements: [
-  //     "Distributed 2,000+ emergency kits with essential supplies (food, water, clothing)",
-  //   ],
-  //   impact:
-  //     "Delivered crucial aid to disaster-stricken families, helping them regain stability in the aftermath of natural calamities.",
-  //   image: fourth,
-  // },
-  // {
-  //   title: "Education and Skill Development: Empowering the Youth",
-  //   objective:
-  //     "Provide educational resources and training programs to underserved children and youth.",
-  //   achievements: [
-  //     "Distributed educational materials to 1,500+ students",
-  //   ],
-  //   impact:
-  //     "Increased literacy, improved skills for employability, and empowered young individuals to pursue their goals.",
-  //   image: school,
-  // },
-  // {
-  //   title: "Homelessness Rehabilitation: Providing Shelter and Hope",
-  //   objective:
-  //     "Build and maintain shelters for homeless families and individuals.",
-  //   achievements: [
-  //     "Built 50+ new homes in partnership with local construction teams",
-  //   ],
-  //   impact:
-  //     "Alleviated homelessness, offering stable housing options and support for long-term independence and rehabilitation.",
-  //   image: fifth,
-  // },
+  {
+    title: "Emergency Relief Effort: Natural Disaster Response",
+    objective:
+      "Provide immediate relief to communities affected by natural disasters.",
+    achievements: [
+      "Distributed 2,000+ emergency kits with essential supplies (food, water, clothing)",
+    ],
+    impact:
+      "Delivered crucial aid to disaster-stricken families, helping them regain stability in the aftermath of natural calamities.",
+    image: fourth,
+  },
+  {
+    title: "Education and Skill Development: Empowering the Youth",
+    objective:
+      "Provide educational resources and training programs to underserved children and youth.",
+    achievements: [
+      "Distributed educational materials to 1,500+ students",
+    ],
+    impact:
+      "Increased literacy, improved skills for employability, and empowered young individuals to pursue their goals.",
+    image: school,
+  },
+  {
+    title: "Homelessness Rehabilitation: Providing Shelter and Hope",
+    objective:
+      "Build and maintain shelters for homeless families and individuals.",
+    achievements: [
+      "Built 50+ new homes in partnership with local construction teams",
+    ],
+    impact:
+      "Alleviated homelessness, offering stable housing options and support for long-term independence and rehabilitation.",
+    image: fifth,
+  },
 ];
 
 export const gallery = [

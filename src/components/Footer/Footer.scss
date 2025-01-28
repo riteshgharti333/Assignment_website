@@ -1,17 +1,15 @@
 @import "../../styles//responsive.scss";
 
 .footer {
-  background-image: linear-gradient(
-    to top,
-    #fdcbf1 0%,
-    #fdcbf1 1%,
-    #e6dee9 100%
-  );
   display: flex;
   justify-content: space-between;
   padding: 20px;
   margin-top: 10px;
-
+  background-image: url("../../assets/images/footerbg.png");
+  background-repeat: no-repeat;
+  background-color: lightgrey;
+  background-position: 100px;
+  background-position-y: -10px;
   @include md {
     display: block;
   }
