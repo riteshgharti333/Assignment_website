@@ -3,6 +3,7 @@
 .weDoCard {
   display: flex;
   margin: 0 auto;
+  cursor: pointer;
   .weDo-container {
     position: relative;
     margin-top: 10px;
@@ -23,10 +24,7 @@
       object-fit: cover;
       border-radius: 10px;
 
-     
-
-      
-      @include md{
+      @include md {
         width: 100%;
       }
 
@@ -37,19 +35,11 @@
 
       @include Esm {
         width: 100%;
-
       }
 
-
-      
       @include EEsm {
         width: 100%;
       }
-
-    
-   
-
-     
     }
   }
 
@@ -79,7 +69,7 @@
     }
     h3 {
       text-align: center;
-      color: white;
+      color: orange;
       font-size: 30px;
 
       @include sm {

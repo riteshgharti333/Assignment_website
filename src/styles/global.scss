@@ -14,5 +14,14 @@ a {
 }
 
 .app{
-  
+  background: rgb(216,215,232);
+background: linear-gradient(310deg, rgba(216,215,232,1) 0%, rgba(222,232,236,1) 10%, rgba(55,167,191,1) 100%, rgba(49,165,189,1) 100%);
+position: relative;
+
+.navbar{
+  position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999; 
+}
 }

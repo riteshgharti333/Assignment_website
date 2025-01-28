@@ -6,6 +6,7 @@ const WorkSectionCard = ({ workCard }) => {
     <div className="WorkSection-Card">
       <div className="WorkSection-Card-img">
         <img src={image} alt="" />
+        <h3 className="image-title">{title}</h3>
       </div>
 
       <div className="WorkSection-Card-info">

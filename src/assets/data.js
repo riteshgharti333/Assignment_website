@@ -106,7 +106,6 @@ export const work = [
       "Ensure safe and sustainable access to drinking water for underserved rural areas.",
     achievements: [
       "Installed water filtration systems in 4 remote villages",
-      "Impacted over 1,000 individuals with clean water access",
     ],
     impact:
       "Reduced waterborne diseases, improved sanitation, and supported long-term health improvements in the community.",
@@ -118,7 +117,6 @@ export const work = [
       "Provide immediate relief to communities affected by natural disasters.",
     achievements: [
       "Distributed 2,000+ emergency kits with essential supplies (food, water, clothing)",
-      "Coordinated with national rescue teams for swift relief operations",
     ],
     impact:
       "Delivered crucial aid to disaster-stricken families, helping them regain stability in the aftermath of natural calamities.",
@@ -130,7 +128,6 @@ export const work = [
       "Provide educational resources and training programs to underserved children and youth.",
     achievements: [
       "Distributed educational materials to 1,500+ students",
-      "Hosted skill development workshops for 500+ young adults",
     ],
     impact:
       "Increased literacy, improved skills for employability, and empowered young individuals to pursue their goals.",
@@ -142,7 +139,6 @@ export const work = [
       "Build and maintain shelters for homeless families and individuals.",
     achievements: [
       "Built 50+ new homes in partnership with local construction teams",
-      "Developed sustainable housing with community input",
     ],
     impact:
       "Alleviated homelessness, offering stable housing options and support for long-term independence and rehabilitation.",

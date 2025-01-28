@@ -10,10 +10,13 @@ const HomePage = () => {
       <div id="homeSection">
         <HomePageBanner />
       </div>
+
       <div id="weDoSection">
         <WeDoSection />
       </div>
+
       <WorkSection />
+
       <Gallery />
     </div>
   );

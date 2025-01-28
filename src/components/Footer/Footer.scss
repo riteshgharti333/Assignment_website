@@ -72,6 +72,10 @@
       .contact-icons {
         font-size: 25px;
 
+        &:hover{
+          color: orangered;
+        }
+
         @include md{
           display: none;
         }

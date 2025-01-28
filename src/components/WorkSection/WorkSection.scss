@@ -1,7 +1,6 @@
-@import "../../styles/responsive.scss";
-
 .Work-section {
-  margin-top: 10px;
+  margin: 10px  5px 0px 5px;
+
   h1 {
     text-align: center;
   }
@@ -9,36 +8,9 @@
 
 .Work-section-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
-  gap: 5px;
-
-  @include xxxl {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
-    gap: 10px;
-  }
-
-  @include xxl {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
-    gap: 10px;
-  }
-
-  @include xl {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
-    gap: 10px;
-  }
-
-  @include lg {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
-    gap: 5px;
-  }
-
-  @include md {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 5px;
-  }
-
-  @include sm {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 5px;
-  }
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;  
+  overflow: hidden;
 }
+
