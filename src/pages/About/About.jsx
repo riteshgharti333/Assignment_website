@@ -17,18 +17,18 @@ const About = () => {
     <div className="about">
       <div className="about-banner">
         <div className="about-banner-info" data-aos="fade-left">
+          <div className="banner-img">
+            <img src={about_img} alt="" />
+          </div>
           <div className="img-info">
-            <h1>About Us</h1>
-            <h3>Introduction to BK Welfare Society</h3>
-            <p>
+            <h1 className="about-us">About Us</h1>
+            <h3 className="about-title">Introduction to BK Welfare Society</h3>
+            <p className="about-desc">
               Established in 2012 by Abdul Rahim Khatari, BK Welfare Society is
               dedicated to social welfare, with a strong emphasis on education,
               women's empowerment, and emergency aid for hospitalized
               individuals.
             </p>
-          </div>
-          <div className="about-img">
-            <img src={about_img} alt="" />
           </div>
         </div>
 
