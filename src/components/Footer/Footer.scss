@@ -9,7 +9,7 @@
   background-color: lightgrey;
   background-position: 100px;
   background-position-y: -10px;
-  z-index: 10;
+  z-index: 100;
   @include md {
     display: block;
   }

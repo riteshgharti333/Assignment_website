@@ -1,19 +1,8 @@
 @import "../../styles/responsive.scss";
 
 .about {
-  background-image: url("../../assets/images/about-banner.jpeg");
   width: 100%;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 92.3%;
-  //   background: rgba(0, 0, 0, 0.8);
-  //   z-index: 1;
-  // }
+  overflow: hidden;
   .about-banner {
     z-index: 10;
     width: 100%;
