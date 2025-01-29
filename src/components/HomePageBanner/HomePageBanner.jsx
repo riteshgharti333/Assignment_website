@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./HomePageBanner.scss";
 import { slider } from "../../assets/data";
 import Typewriter from "typewriter-effect";
-import Slide from "../Slide/Slide";
 
 const HomePageBanner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,16 +16,25 @@ const HomePageBanner = () => {
 
   return (
     <div className="banner">
-      <Slide slidesToShow={1} arrowsScroll={1}>
-        {slider.map((sliderImg) => (
-          <div className="banner-images" key={sliderImg.title}>
-            <img src={sliderImg.image} alt="" />
-            <div className="banner-info">
-              <h1 className="banner-title">{sliderImg.title}</h1>
-            </div>
-          </div>
-        ))}
-      </Slide>
+      <div className="banner-images">
+        <div
+          className="banner-bg"
+          style={{ backgroundImage: `url(${slider[currentIndex].image})` }}
+        ></div>
+        <div className="banner-info">
+          <h1 className="banner-title">
+            <Typewriter
+              options={{
+                strings: [slider[currentIndex].title], // Dynamic title
+                autoStart: true,
+                loop: true,
+                delay: 50,
+                deleteSpeed: 30,
+              }}
+            />
+          </h1>
+        </div>
+      </div>
     </div>
   );
 };
