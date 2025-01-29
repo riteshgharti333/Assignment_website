@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,  // Duration of animation
+      duration: 1000,  // Duration of animation
       easing: "ease-in-out", // Animation style
       once: false, // Repeat animation on scroll
     });
@@ -16,7 +16,7 @@ const About = () => {
   return (
     <div className="about">
       <div className="about-banner">
-        <div className="about-banner-info" data-aos="fade-left">
+        <div className="about-banner-info">
           <div className="banner-img">
             <img src={about_img} alt="" />
           </div>
@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="journey about-card" data-aos="fade-right">
+        <div className="journey about-card" data-aos="fade-up">
           <h1>Our Journey</h1>
           <h3>A Legacy of Growth & Impact</h3>
           <p>
@@ -43,7 +43,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="mission about-card" data-aos="fade-left">
+        <div className="mission about-card" data-aos="fade-up">
           <h1>Our Mission</h1>
           <ul>
             <li>Building a Better Tomorrow</li>
@@ -54,7 +54,7 @@ const About = () => {
           </ul>
         </div>
 
-        <div className="vision about-card" data-aos="fade-right">
+        <div className="vision about-card" data-aos="fade-up">
           <h1>Our Vision</h1>
           <ul>
             <li>A Future of Hope & Empowerment</li>
@@ -64,7 +64,7 @@ const About = () => {
           </ul>
         </div>
 
-        <div className="values about-card" data-aos="fade-left">
+        <div className="values about-card" data-aos="fade-up">
           <h1>Core Values</h1>
           <h3>Guiding Principles that Define Us</h3>
           <ul>
@@ -75,7 +75,7 @@ const About = () => {
           </ul>
         </div>
 
-        <div className="our about-card" data-aos="fade-right">
+        <div className="our about-card" data-aos="fade-up">
           <h1>Our Team</h1>
           <h3>Meet the Passionate Changemakers</h3>
           <p>
