@@ -9,7 +9,7 @@ const HomePageBanner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slider.length);
-    }, 7000); // Change image every 3 seconds
+    }, 7000); // Sync with animation duration (7s)
 
     return () => clearInterval(interval);
   }, []);
@@ -17,19 +17,22 @@ const HomePageBanner = () => {
   return (
     <div className="banner">
       <div className="banner-images">
-        <div
-          className="banner-bg"
-          style={{ backgroundImage: `url(${slider[currentIndex].image})` }}
-        ></div>
+        {slider.map((slide, index) => (
+          <div
+            key={index}
+            className={`banner-bg ${index === currentIndex ? "active" : ""}`}
+            style={{ backgroundImage: `url(${slide.image})` }}
+          ></div>
+        ))}
         <div className="banner-info">
           <h1 className="banner-title">
             <Typewriter
               options={{
                 strings: [slider[currentIndex].title], // Dynamic title
                 autoStart: true,
-                loop: true,
-                delay: 50,
-                deleteSpeed: 30,
+                loop: false, // Avoid repeating within 7s
+                delay: 10,
+                // deleteSpeed: 0,
               }}
             />
           </h1>

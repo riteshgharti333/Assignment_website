@@ -1,15 +1,15 @@
 .banner {
   position: relative;
   width: 100%;
-  height: 300px; // Adjust height according to your design
-  
+  height: 400px; // Adjust as needed
+
   .banner-images {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    animation: imageFade 7s infinite; // Match with useEffect interval timing
+    overflow: hidden;
 
     .banner-bg {
       position: absolute;
@@ -20,66 +20,44 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      animation: imageFade 7s infinite; // Match duration with useEffect's interval
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out; 
     }
 
-    .banner-info {
-      position: absolute;
-      top: 50%;
-      left: 20px;
-      transform: translateY(-50%);
-      animation: textFade 7s infinite; // Match timing with image fade
+    .banner-bg.active {
+      opacity: 1;
+    }
+  }
 
-      .banner-title {
-        font-size: 60px;
-        font-weight: bold;
-        color: orange;
-        opacity: 0.2;
-        animation: textFade 7s infinite; // Match duration with useEffect's interval
-      }
+  .banner-info {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 2; 
+
+    .banner-title {
+      font-size: 60px;
+      font-weight: bold;
+      color: orange;
+      // opacity: 0;
+      // animation: textFade 7s infinite; 
     }
   }
 }
 
-/* Keyframes for the smooth background image fade */
-@keyframes imageFade {
-  0% {
-    opacity: 1;  // Slightly visible
-  }
-  25% {
-    opacity: 1;    // Fully visible
-  }
-  50% {
-    opacity: 1;  // Slightly visible again
-  }
-  75% {
-    opacity: 1;    // Fully visible
-  }
-  100% {
-    opacity: 1;  // End with slight visibility
-  }
-}
-
-/* Keyframes for text fade effect */
-@keyframes textFade {
-  0% {
-    opacity: 1;  // Start with slight opacity
-  }
-  20% {
-    opacity: 1;    // Full opacity at 20%
-  }
-  40% {
-    opacity: 1;    // Keep fully visible for a period
-  }
-  60% {
-    opacity: 1;  // Fade out to slight opacity again
-  }
-  100% {
-    opacity: 1;  // End with slight opacity
-  }
-}
-
-
-.banner-bg{
-
-}
+// /* Smooth text fade effect */
+// @keyframes textFade {
+//   0% {
+//     opacity: 0;
+//   }
+//   20% {
+//     opacity: 1;
+//   }
+//   80% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }
