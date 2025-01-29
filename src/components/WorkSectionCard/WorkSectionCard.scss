@@ -1,14 +1,13 @@
 @import "../../styles/responsive.scss";
 
 .WorkSection-Card {
-  // margin-top: 10px;
   margin: 0 auto;
   width: 100%;
-  height: 280px;
+  height: 280px; // Initial height
   border-radius: 5px;
-  overflow: hidden;
+  overflow: hidden; // Prevents content overflow during the transition
   background-color: #e5e6e4;
-  transition: all ease-out 1s;
+  transition: all 0.5s ease-out; // Smooth transition for hover effects
 
   @include xl {
     display: block;
@@ -33,24 +32,10 @@
   .WorkSection-Card-img {
     img {
       width: 100%;
-      height: 200px;
-      object-fit: cover;
+      height: 200px; // Initial height
+      object-fit: cover; // Maintains aspect ratio
 
-      @include xl {
-        width: 100%;
-      }
-
-      @include lg {
-        width: 100%;
-      }
-
-      @include md {
-        width: 100%;
-      }
-
-      @include sm {
-        width: 100%;
-      }
+      transition: height 0.4s ease-in-out; // Ensures smooth transition on hover
     }
 
     .image-title {
@@ -69,8 +54,9 @@
   }
 
   .WorkSection-Card-info {
-    display: none;
-    transition: opacity 0.4s ease;
+    display: none; // Hidden initially
+    opacity: 0; // Makes the content fade in on hover
+    transition: opacity 0.4s ease; // Smooth fade transition
     padding: 10px;
 
     .WorkSection-title {
@@ -80,16 +66,12 @@
       @include md {
         font-size: 20px;
       }
-
-      @include sm {
-      }
     }
 
-    .objective {
-    }
+    .objective {}
 
     .achievements {
-      margin: 10px 0px;
+      margin: 10px 0;
 
       p {
         font-weight: bold;
@@ -103,14 +85,14 @@
   }
 
   &:hover {
-    width: 100%;
-    transition: all ease-out 0.4s;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    height: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); // Added shadow effect on hover
+    height: auto; // Allowing height to grow according to content
+    transform: scale(1.02); // Slight zoom effect
+    transition: all 0.5s ease-out; // Smooth transition for the entire card
 
     @include xl {
       width: 100%;
-      height: fit-content;
+      height: fit-content; // Adjust height based on content
     }
 
     @include lg {
@@ -129,39 +111,18 @@
     }
 
     .WorkSection-Card-info {
-      display: block;
+      display: block; // Show info content on hover
+      opacity: 1; // Fade in the content smoothly
     }
 
     .WorkSection-Card-img {
       img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-
-        @include xl {
-          width: 100%;
-        }
-
-        @include lg {
-          width: 100%;
-        }
-
-        @include md {
-          width: 100%;
-        }
-
-        @include sm {
-          width: 100%;
-        }
+        height: 300px; // Increase the image height smoothly when hovered
       }
 
       .image-title {
-        display: none;
+        display: none; // Hide image title on hover (optional)
       }
-    }
-
-    .WorkSection-Card-info {
-      display: block;
     }
   }
 }

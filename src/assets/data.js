@@ -1,3 +1,7 @@
+import banner_img_1 from "../assets/images/1.png";
+import banner_img_2 from "../assets/images/2.png";
+import banner_img_3 from "../assets/images/3.png";
+
 import first from "../assets/images/first.jpg";
 import second from "../assets/images/second.jpg";
 import third from "../assets/images/third.jpg";
@@ -21,29 +25,16 @@ import water from "../assets/images/water.jpg";
 
 export const slider = [
   {
-    image: first,
-    title: "Empower Change Through Giving",
-    desc: "Your small contributions can spark big changes in the lives of many.",
+    image: banner_img_1,
+    title: "To Feed Children For a Week",
   },
   {
-    image: second,
-    title: "Feeding the Future",
-    desc: "Nourishing young minds with hope, care, and essentials for a brighter future.",
+    image: banner_img_2,
+    title: "Hand to Make Better Life for",
   },
   {
-    image: third,
-    title: "Accessible Healthcare for All",
-    desc: "Committed to accessible healthcare for a healthier, happier society.",
-  },
-  {
-    image: fourth,
-    title: "Delivering Essential Medicines",
-    desc: "Delivering life-saving medicines and resources where they’re needed most.",
-  },
-  {
-    image: fifth,
-    title: "Providing Shelter and Safety",
-    desc: "Together, we can provide shelter, safety, and a sense of belonging to those without a home.",
+    image: banner_img_3,
+    title: "Humanity First – Empowering Lives, One Step at a Time",
   },
 ];
 
@@ -104,9 +95,7 @@ export const work = [
     title: "Clean Water for Rural Communities",
     objective:
       "Ensure safe and sustainable access to drinking water for underserved rural areas.",
-    achievements: [
-      "Installed water filtration systems in 4 remote villages",
-    ],
+    achievements: ["Installed water filtration systems in 4 remote villages"],
     impact:
       "Reduced waterborne diseases, improved sanitation, and supported long-term health improvements in the community.",
     image: water,
@@ -126,9 +115,7 @@ export const work = [
     title: "Education and Skill Development: Empowering the Youth",
     objective:
       "Provide educational resources and training programs to underserved children and youth.",
-    achievements: [
-      "Distributed educational materials to 1,500+ students",
-    ],
+    achievements: ["Distributed educational materials to 1,500+ students"],
     impact:
       "Increased literacy, improved skills for employability, and empowered young individuals to pursue their goals.",
     image: school,
