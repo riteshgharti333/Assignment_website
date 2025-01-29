@@ -14,8 +14,15 @@ a {
 }
 
 .app {
+
   background: rgb(216,215,232);
-background: linear-gradient(180deg, rgba(216,215,232,1) 0%, rgba(46,116,167,1) 0%, rgba(255,255,255,1) 63%, rgba(255,255,255,1) 100%);
+background: linear-gradient(180deg, rgba(216,215,232,1) 0%, rgba(163,206,238,1) 0%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 63%);
+
+//   background: rgb(216,215,232);
+// background: linear-gradient(180deg, rgba(216,215,232,1) 0%, rgba(163,206,238,1) 0%, rgba(255,255,255,1) 63%, rgba(255,255,255,1) 100%);
+
+//   background: rgb(216,215,232);
+// background: linear-gradient(180deg, rgba(216,215,232,1) 0%, rgba(46,116,167,1) 0%, rgba(255,255,255,1) 63%, rgba(255,255,255,1) 100%);
   position: relative;
 
   .navbar {
