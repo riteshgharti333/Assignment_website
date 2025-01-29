@@ -9,7 +9,7 @@ const WorkSection = () => {
 
       <div className="Work-section-cards">
         {work.map((workCard) => (
-          <WorkSectionCard workCard={workCard} />
+          <WorkSectionCard workCard={workCard} key={workCard.title}/>
         ))}
       </div>
     </div>

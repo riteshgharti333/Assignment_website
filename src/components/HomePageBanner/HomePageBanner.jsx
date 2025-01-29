@@ -19,7 +19,7 @@ const HomePageBanner = () => {
     <div className="banner">
       <Slide slidesToShow={1} arrowsScroll={1}>
         {slider.map((sliderImg) => (
-          <div className="banner-images">
+          <div className="banner-images" key={sliderImg.title}>
             <img src={sliderImg.image} alt="" />
             <div className="banner-info">
               <h1 className="banner-title">{sliderImg.title}</h1>
