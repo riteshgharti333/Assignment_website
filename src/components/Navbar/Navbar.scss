@@ -14,7 +14,6 @@
     background-color: #fff;
   }
 
-
   .nav-logo {
     .logo {
       img {
@@ -37,6 +36,7 @@
       cursor: pointer;
       font-family: "Gabarito", sans-serif;
       color: orange;
+      transition: color 0.3s ease, transform 0.2s ease, border 0.3s ease; // Smooth transitions for hover, click, and active state
 
       @include Esm {
         font-size: 16px;
@@ -46,8 +46,21 @@
         font-size: 14px;
       }
 
+      &.active {
+        color: orangered; // When active, the link will change color
+        font-weight: bold; // Bold text when active
+        transform: scale(1.05); // Slightly enlarge the font to indicate the active state
+        border-bottom: 2px solid orangered; // Underline effect for active link
+      }
+
       &:hover {
         color: orangered;
+        border-bottom: 2px solid orangered;
+      }
+
+      &:active {
+        transform: scale(0.95); // Slight scaling effect when clicked for feedback
+        color: darkorange; // Slightly darker orange when clicked
       }
     }
   }

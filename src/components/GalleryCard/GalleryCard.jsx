@@ -1,8 +1,8 @@
 import "./GalleryCard.scss";
 
-const GalleryCard = ({ g }) => {
+const GalleryCard = ({ g , ...props  }) => {
   return (
-    <div className="galleryCard">
+    <div className="galleryCard" {...props}>
       <img src={g.image} alt="" />
     </div>
   );

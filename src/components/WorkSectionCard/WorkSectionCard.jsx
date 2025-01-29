@@ -1,9 +1,9 @@
 import "./WorkSectionCard.scss";
 
-const WorkSectionCard = ({ workCard }) => {
+const WorkSectionCard = ({ workCard, ...props }) => {
   const { title, objective, achievements, impact, image } = workCard;
   return (
-    <div className="WorkSection-Card">
+    <div className="WorkSection-Card" {...props}>
       <div className="WorkSection-Card-img">
         <img src={image} alt="" />
         <h3 className="image-title">{title}</h3>

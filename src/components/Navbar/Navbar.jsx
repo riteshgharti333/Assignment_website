@@ -1,8 +1,11 @@
 import "./Navbar.scss";
 import logo from "../../assets/images/logo.png";
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation(); // Get current route
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -12,14 +15,9 @@ const Navbar = () => {
 
   const [scroll, setScroll] = useState(false);
 
-
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
+      setScroll(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -28,7 +26,7 @@ const Navbar = () => {
     };
   }, []);
 
-   const navbarClass = scroll ? "navbar scrolled" : "navbar"
+  const navbarClass = scroll ? "navbar scrolled" : "navbar";
 
   return (
     <div className={navbarClass}>
@@ -39,28 +37,25 @@ const Navbar = () => {
       </div>
 
       <div className="nav-lists">
-        <span
-          className="nav-list"
-          onClick={() => scrollToSection("homeSection")}
-        >
+
+        <Link to={"/"}>
+        <span className="nav-list" onClick={() => scrollToSection("homeSection")}>
           Home
         </span>
-        <span
-          className="nav-list"
-          onClick={() => scrollToSection("aboutSection")}
-        >
-          About
-        </span>
-        <span
-          className="nav-list"
-          onClick={() => scrollToSection("weDoSection")}
-        >
+        </Link>
+       
+
+        <Link to="/about">
+          <span className={`nav-list ${location.pathname === "/about" ? "active" : ""}`}>
+            About
+          </span>
+        </Link>
+
+        <span className="nav-list" onClick={() => scrollToSection("weDoSection")}>
           We Do
         </span>
-        <span
-          className="nav-list"
-          onClick={() => scrollToSection("contactSection")}
-        >
+
+        <span className="nav-list" onClick={() => scrollToSection("contactSection")}>
           Contact Us
         </span>
       </div>

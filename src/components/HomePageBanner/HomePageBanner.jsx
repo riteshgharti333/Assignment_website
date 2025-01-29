@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./HomePageBanner.scss";
 import { slider } from "../../assets/data";
 import Typewriter from "typewriter-effect";
-import Slide from "../Slide/Slide";
 
 const HomePageBanner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,23 +9,36 @@ const HomePageBanner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slider.length);
-    }, 7000); // Change image every 3 seconds
+    }, 7000); // Sync with animation duration (7s)
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="banner">
-      <Slide slidesToShow={1} arrowsScroll={1}>
-        {slider.map((sliderImg) => (
-          <div className="banner-images" key={sliderImg.title}>
-            <img src={sliderImg.image} alt="" />
-            <div className="banner-info">
-              <h1 className="banner-title">{sliderImg.title}</h1>
-            </div>
-          </div>
+      <div className="banner-images">
+        {slider.map((slide, index) => (
+          <div
+            key={index}
+            className={`banner-bg ${index === currentIndex ? "active" : ""}`}
+            style={{ backgroundImage: `url(${slide.image})` }}
+          ></div>
         ))}
-      </Slide>
+        <div className="banner-info">
+          <h1 className="banner-title">
+            <Typewriter
+              options={{
+                strings: [slider[currentIndex].title],
+                autoStart: true,
+                loop: false, 
+                delay: 40,
+                deleteSpeed: Infinity, 
+                cursor: "",
+              }}
+            />
+          </h1>
+        </div>
+      </div>
     </div>
   );
 };

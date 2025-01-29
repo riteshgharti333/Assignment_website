@@ -1,0 +1,246 @@
+@import "../../styles/responsive.scss";
+
+.about {
+  background-image: url("../../assets/images/about-banner.jpeg");
+  width: 100%;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 92.3%;
+  //   background: rgba(0, 0, 0, 0.8);
+  //   z-index: 1;
+  // }
+  .about-banner {
+    z-index: 10;
+    width: 100%;
+    height: 100%; // Ensuring it takes full height
+    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.7); // Box-shadow applied here for the background image
+    position: relative;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include xl{
+      padding: 70px 5px;
+    }
+
+
+    @include lg{
+      padding: 70px 5px;
+    }
+
+    @include md {
+      padding: 70px 5px;
+    }
+
+    @include sm {
+      padding: 50px 5px;
+    }
+
+    .about-banner-info {
+      display: flex;
+      background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+      height: 400px;
+      transition: transform 0.3s ease-in-out;
+      margin: 5px;
+
+      @include sm {
+        display: block;
+        height: 360px;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: rgba(255, 255, 255, 0.979) 0px 5px 15px;
+      }
+      .img-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+        @include sm {
+          padding: 5px;
+        }
+
+        @include sm {
+          flex: 0;
+          padding: 5px;
+        }
+      }
+      .about-img {
+        flex: 1;
+
+       
+        @include sm {
+          flex: 0;
+          height: 200px;
+          img {
+            height: 100%;
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      h1 {
+        font-size: 60px;
+        color: orange;
+
+        @include md{
+          font-size: 40px;
+        }
+
+
+        @include sm {
+          font-size: 35px;
+        }
+      }
+
+      h3 {
+        margin-bottom: 10px;
+        font-size: 25px;
+
+        
+        @include md{
+          font-size: 22px;
+        }
+        @include sm {
+          font-size: 20px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+
+        @include sm {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .about-card {
+      background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+      margin: 20px 0;
+      width: 50%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: transform 0.3s ease-in-out;
+
+      &:nth-child(odd) {
+        align-self: flex-end;
+      }
+
+      &:nth-child(even) {
+        align-self: flex-start;
+      }
+
+      @include xl{
+        width: 70%;
+      }
+      
+      @include lg{
+        width: 70%;
+      }
+
+      @include md {
+        width: 100%;
+        margin: 5px 10px;
+        justify-content: center;
+        
+        &:nth-child(odd), &:nth-child(even) {
+          align-self: initial; /* Use default alignment (centered) */
+        }
+      }
+
+      @include sm {
+        width: 100%;
+        margin: 5px 0px;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: rgba(255, 255, 255, 0.979) 0px 5px 15px;
+
+        @include md {
+          transform: scale(1);
+        }
+
+        @include sm {
+          transform: scale(1);
+        }
+      }
+
+      h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      ul {
+        margin-left: 20px;
+        padding: 0;
+
+        li {
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 10px;
+
+          &::marker {
+            color: orange;
+          }
+        }
+      }
+
+      h1 {
+        color: orange;
+        font-size: 35px;
+        border-bottom: 4px solid orange;
+        // display: inline;
+        border-radius: 2px;
+      }
+
+     
+    }
+
+    .journey {
+      margin-top: 30px;
+      .journey-img {
+        img {
+          width: 10px;
+        }
+      }
+
+      .journey-info {
+      }
+    }
+
+    .mission {
+    }
+
+    .values {
+    }
+
+    .our {
+      .our-info {
+        h3:nth-of-type(2) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
