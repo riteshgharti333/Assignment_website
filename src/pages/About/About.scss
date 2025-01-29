@@ -6,8 +6,8 @@
   .about-banner {
     z-index: 10;
     width: 100%;
-    height: 100%; // Ensuring it takes full height
-    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.7); // Box-shadow applied here for the background image
+    height: 100%;
+    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.7);
     position: relative;
     // padding: 0px 100px;
     display: flex;
@@ -52,6 +52,11 @@
         top: 10%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @include xl {
+          width: 90%;
+          top: 13%;
+        }
         @include lg {
           width: 90%;
           top: 15%;
@@ -126,17 +131,17 @@
   // }
 
   @include lg {
-    padding: 10px;
+    padding: 0px 50px;
     gap: 0;
   }
 
   @include md {
-    padding: 50px;
+    padding: 0px 50px;
     gap: 0;
   }
 
   @include sm {
-    padding: 10px;
+    padding: 0px 10px;
     gap: 0px;
   }
 
@@ -144,8 +149,8 @@
     color: orange;
     font-size: 35px;
     border-bottom: 4px solid orange;
-    display: inline-block; // Ensures the border follows text width
-    width: fit-content; // Restricts the width to only the text content
+    display: inline-block;
+    width: fit-content;
     border-radius: 2px;
     padding-bottom: 3px;
     margin-bottom: 10px;
@@ -193,15 +198,6 @@
       width: 10px;
     }
   }
-
-  .journey-info {
-  }
-}
-
-.mission {
-}
-
-.values {
 }
 
 .our {
