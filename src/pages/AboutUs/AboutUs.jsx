@@ -6,6 +6,8 @@ import { IoEarthOutline } from "react-icons/io5";
 import { TiLeaf } from "react-icons/ti";
 import { FaRegSmile } from "react-icons/fa";
 import about_bottom_img from "../../assets/images/about-banner.webp";
+import empowring from "../../assets/images/empowring.webp";
+import first from "../../assets/images/first.webp";
 
 const AboutUs = () => {
   return (
@@ -21,21 +23,113 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
       <div className="about-points">
         <div className="about-points-info">
           <h2 className="about-points-title">
-            What we think about our charity
+            Introduction to BK Welfare Society
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed la
-            temassa at dui aliquet scelerie. Fiusce ai neque arcu, temporc e
-            dolor. Phasellus diam enim, vulputate sed ornare eu, fringillav
-            sapen. Fusce metus ligula, adipis cing vitae egestas volutpatla et
-            eget augue.e ai neque arcu, te
+            Established in 2012 by Abdul Rahim Khatari, BK Welfare Society is
+            dedicated to social welfare, with a strong emphasis on education,
+            women's empowerment, and emergency aid for hospitalized individuals.
           </p>
         </div>
         <img className="about-points-img" src={about_point_img} alt="" />
+      </div>
+      <div className="about-points">
+        <img className="about-points-img" src={about_point_img} alt="" />
+        <div className="about-points-info">
+          <h2 className="about-points-title">Our Journey</h2>
+          <h5>A Legacy of Growth & Impact</h5>
+          <p>
+            From humble beginnings, we have achieved significant milestones,
+            positively impacting thousands of lives. Our initiatives have
+            fostered a better quality of life for children, women, and
+            vulnerable individuals.
+          </p>
+        </div>
+      </div>
+
+      <div className="about-bullets">
+        <div className="about-container">
+          <img className="bullets-img" src={empowring} alt="" />
+
+          <div className="about-bullets-info">
+            <h1 className="about-bullets-title">Our Mission</h1>
+
+            <ul className="bullets-sm-desc">
+              <li>Building a Better Tomorrow</li>
+              <li>Providing education to underprivileged children</li>
+              <li>Empowering women to lead independent lives</li>
+              <li>Assisting hospitalized individuals during emergencies</li>
+              <li>
+                Creating a society where everyone has the opportunity to thrive
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="about-container">
+          <img className="bullets-img" src={empowring} alt="" />
+
+          <div className="about-bullets-info">
+            <h1 className="about-bullets-title">Our Vision</h1>
+
+            <ul className="bullets-sm-desc">
+              <li>A Future of Hope & Empowerment</li>
+              <li>Every child has access to quality education</li>
+              <li>Women play a vital role in shaping society</li>
+              <li>
+                A compassionate community that supports its vulnerable members
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="values">
+        <img src={first} alt="" className="values-img" />
+
+        <div className="value-info">
+          <h2 className="vlues-title">Core Values</h2>
+          <h5 className="values-desc">Guiding Principles that Define Us</h5>
+          <ul className="values-points">
+            <li>
+              <span>Compassion – </span>Helping those in need
+            </li>
+
+            <li>
+              <span>Integrity – </span>Ensuring transparency in all actions
+            </li>
+
+            <li>
+              <span>Community Focus – </span>Prioritizing the needs of society
+            </li>
+
+            <li>
+              <span>Empowerment – </span>Enabling individuals to reach their full
+              potential
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="team">
+        <h2 className="team-title">Our Team</h2>
+
+        <div className="team-info">
+          <div className="team-container">
+          <h4 className="team-desc">Meet the Passionate Changemakers</h4>
+          <p className="team-sm-desc">Our team is driven by dedication and commitment to making a difference. Each member plays a crucial role in carrying out our mission and vision.</p>
+          </div>
+         
+          <div className="team-container">
+          <h4 className="team-desc">What Our Team Says</h4>
+          <p className="team-sm-desc">Being a part of BK Welfare Society has been a life-changing experience. Seeing lives transform through our efforts is truly rewarding.– ABDUL RAHMAN KHATRI 
+          </p>
+          </div>
+
+        </div>
       </div>
 
       <div className="about-slider">
@@ -58,7 +152,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
       <div className="about-cause">
         <h1 className="aboout-cause-title">
           Causes and positive change all over the world.
@@ -96,7 +189,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
       <div className="banner-bottom-img">
         <img src={about_bottom_img} alt="" />
       </div>

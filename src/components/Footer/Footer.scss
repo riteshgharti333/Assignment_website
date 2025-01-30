@@ -6,7 +6,7 @@
   padding: 20px;
   background-image: url("../../assets/images/footerbg.png");
   background-repeat: no-repeat;
-  background-color: lightgrey;
+  background: #6b195a;
   background-position: 100px;
   background-position-y: -10px;
   z-index: 100;
@@ -31,11 +31,20 @@
       .social-icons {
         font-size: 30px;
         margin-right: 10px;
+        color: #fff;
+
+        &:nth-child(1){
+          // color: blue;
+        }
       }
+
+      
+
     }
   }
 
   .footer-right {
+    color: #fff;
     h1 {
       @include md {
         text-align: center;
