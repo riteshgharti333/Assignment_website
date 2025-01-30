@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Gabarito&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "Gabarito", sans-serif;
+  font-family: "Quicksand", serif;
 }
 
 a {
@@ -23,13 +25,17 @@ background: linear-gradient(180deg, rgba(216,215,232,1) 0%, rgba(163,206,238,1) 
 
 //   background: rgb(216,215,232);
 // background: linear-gradient(180deg, rgba(216,215,232,1) 0%, rgba(46,116,167,1) 0%, rgba(255,255,255,1) 63%, rgba(255,255,255,1) 100%);
-  position: relative;
+  // position: relative;
 
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
+  // .navbar {
+  //   position: fixed;
+  //   top: 0;
+  //   width: 100%;
+  //   z-index: 999;
+  // }
+
+  .aboutUs{
+
   }
 
 }

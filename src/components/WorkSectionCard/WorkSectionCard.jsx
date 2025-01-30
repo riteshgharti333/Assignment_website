@@ -5,7 +5,7 @@ const WorkSectionCard = ({ workCard, ...props }) => {
   return (
     <div className="WorkSection-Card" {...props}>
       <div className="WorkSection-Card-img">
-        <img src={image} alt="" />
+        <img src={image} alt=""  loading="lazy"/>
         <h3 className="image-title">{title}</h3>
       </div>
 

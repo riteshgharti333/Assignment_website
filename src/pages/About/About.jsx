@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./About.scss";
-import about_img from "../../assets/images/about-banner.jpeg";
+import about_img from "../../assets/images/about-banner.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

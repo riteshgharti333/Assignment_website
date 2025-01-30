@@ -9,10 +9,8 @@
   z-index: 99;
   padding: 0px 20px;
   transition: all 0.5s;
-
-  &.scrolled {
-    background-color: #fff;
-  }
+  background: #6b195a;
+  padding: 0px 90px;
 
   .nav-logo {
     .logo {
@@ -31,12 +29,12 @@
   .nav-lists {
     .nav-list {
       margin-left: 20px;
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 500;
       cursor: pointer;
       font-family: "Gabarito", sans-serif;
-      color: orange;
-      transition: color 0.3s ease, transform 0.2s ease, border 0.3s ease; // Smooth transitions for hover, click, and active state
+      color: #fff;
+      transition: color 0.3s ease, transform 0.2s ease, border 0.3s ease; 
 
       @include Esm {
         font-size: 16px;
@@ -47,20 +45,18 @@
       }
 
       &.active {
-        color: orangered; // When active, the link will change color
-        font-weight: bold; // Bold text when active
-        transform: scale(1.05); // Slightly enlarge the font to indicate the active state
-        border-bottom: 2px solid orangered; // Underline effect for active link
+        color: orangered; 
+        font-weight: bold; 
+        transform: scale(1.05);
       }
 
       &:hover {
         color: orangered;
-        border-bottom: 2px solid orangered;
       }
 
       &:active {
-        transform: scale(0.95); // Slight scaling effect when clicked for feedback
-        color: darkorange; // Slightly darker orange when clicked
+        transform: scale(0.95); 
+        color: darkorange;
       }
     }
   }

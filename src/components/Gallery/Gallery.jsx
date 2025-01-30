@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import "./Gallery.scss";
 import { useMediaQuery } from "@mui/material";
 import { gallery } from "../../assets/data";
@@ -13,23 +13,19 @@ const Gallery = () => {
   const isMedium = useMediaQuery("(max-width:1024px)");
   const isLarge = useMediaQuery("(max-width:1200px)");
 
-  const slidesToShow = isExtraSmall
-    ? 1
-    : isSmall
-    ? 2
-    : isMedium
-    ? 3
-    : isLarge
-    ? 3
-    : 3;
+  const slidesToShow = useMemo(() => {
+    if (isExtraSmall) return 1;
+    if (isSmall) return 2;
+    if (isMedium) return 3;
+    return 3;
+  }, [isExtraSmall, isSmall, isMedium]);
 
   useEffect(() => {
     // Initialize AOS library with custom settings
     AOS.init({
       duration: 500,   // Duration of animation
       easing: "ease-in-out", // Easing function
-      once: false,      // Trigger animation every time an element comes into view
-      mirror: true,     // Enable animation to trigger on scroll up as well
+      once: true, 
     });
 
     // Refresh AOS on scroll

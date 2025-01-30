@@ -8,7 +8,7 @@ const WeDoCard = ({ wedoCard }) => {
       <div className="weDo-container">
         <img className="bg-img" src={image} alt="" />
         <div className="weDo-info">
-          <img src={logo} alt="" />
+          <img src={logo} alt="" loading="lazy" />
           <h3>{title}</h3>
           <p>{desc}</p>
         </div>

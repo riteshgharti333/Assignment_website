@@ -1,5 +1,5 @@
 import "./Navbar.scss";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo.webp";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 

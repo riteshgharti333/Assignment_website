@@ -1,27 +1,26 @@
-import banner_img_1 from "../assets/images/1.png";
-import banner_img_2 from "../assets/images/2.png";
-import banner_img_3 from "../assets/images/3.png";
+import banner_img_1 from "../assets/images/1.webp";
+import banner_img_2 from "../assets/images/2.webp";
+import banner_img_3 from "../assets/images/3.webp";
 
-import first from "../assets/images/first.jpg";
-import second from "../assets/images/second.jpg";
-import third from "../assets/images/third.jpg";
-import fourth from "../assets/images/fourth.jpg";
-import fifth from "../assets/images/fifth.jpg";
+import first from "../assets/images/first.webp";
+import second from "../assets/images/second.webp";
+import third from "../assets/images/third.webp";
+import fourth from "../assets/images/fourth.webp";
+import fifth from "../assets/images/fifth.webp";
 
-// We Do
+import emp from "../assets/images/emp.webp";
+import health from "../assets/images/health.webp";
+import hunger from "../assets/images/hunter.webp";
+import home from "../assets/images/home.webp";
 
-import emp from "../assets/images/emp.png";
-import health from "../assets/images/health.png";
-import hunger from "../assets/images/hunter.png";
-import home from "../assets/images/home.jpg";
+import empowring from "../assets/images/empowring.webp";
+import shelter from "../assets/images/shelter.webp";
+import food from "../assets/images/food.webp";
+import shelterImg from "../assets/images/shelterImg.webp";
 
-import empowring from "../assets/images/empowring.jpg";
-import shelter from "../assets/images/shelter.jpg";
-import food from "../assets/images/food.jpg";
-import shelterImg from "../assets/images/shelterImg.jpg";
+import school from "../assets/images/school.webp";
+import water from "../assets/images/water.webp";
 
-import school from "../assets/images/school.jpg";
-import water from "../assets/images/water.jpg";
 
 export const slider = [
   {

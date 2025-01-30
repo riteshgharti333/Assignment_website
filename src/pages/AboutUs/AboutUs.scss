@@ -1,0 +1,266 @@
+.aboutUs {
+  .about-banner {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 70vh;
+    }
+
+    .about-banner-info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      h1 {
+        font-size: 70px;
+        color: #333;
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+
+      .about-sm-info {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+
+        .home-link {
+          color: #333;
+          cursor: pointer;
+          transition: color 0.3s ease, transform 0.2s ease, border 0.3s ease;
+
+          &.active {
+            color: orangered; // When active, the link will change color
+            font-weight: bold; // Bold text when active
+            transform: scale(1.05);
+          }
+
+          &:hover {
+            color: orangered;
+          }
+
+          &:active {
+            transform: scale(
+              0.95
+            ); // Slight scaling effect when clicked for feedback
+            color: darkorange; // Slightly darker orange when clicked
+          }
+        }
+
+        .line {
+          margin: 0px 20px;
+        }
+
+        .about-link {
+          color: orange;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .about-points {
+    padding: 95px;
+    display: flex;
+    .about-points-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 100px;
+      .about-points-title {
+        color: #333333;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 55px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #666666;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+      }
+    }
+
+    .about-points-img {
+      height: auto;
+      max-width: 100%;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+
+  .about-slider {
+    background: #6b195a;
+    padding: 70px 120px;
+    .about-slider-info {
+      border: 1px solid black;
+      transition: all 0.5s ease-in-out;
+
+      .slider-sm-info {
+        display: flex;
+        align-items: end;
+        position: relative;
+
+        .img-bg-div {
+          background-color: #f56a01;
+          display: none;
+          width: 327px;
+          height: 327px;
+          position: absolute;
+          top: 75px;
+          left: 2%;
+          transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+          transition: all 0.4s ease-in-out;
+          z-index: 0;
+        }
+        .slider-img {
+          object-fit: contain;
+          margin-left: 40px;
+          z-index: 1;
+        }
+
+        .slider-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 100px;
+
+          h3 {
+            color: #fff;
+            font-size: 22px;
+            line-height: 37px;
+            margin-bottom: 22px;
+            
+          }
+
+          .slider-name {
+            color: #fff;
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 3px;
+            font-weight: 500;
+          }
+
+          .slider-add {
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+          }
+        }
+      }
+
+      &:hover {
+        .img-bg-div {
+          top: 98px;
+          left: 40px;
+          // width: 280px;
+          // height: 280px;
+        }
+      }
+    }
+  }
+
+  .about-cause {
+    padding: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .aboout-cause-title {
+      font-size: 50px;
+      line-height: 70px;
+      margin: 0px 0px 28px 0px;
+      padding: 0% 13% 0% 13%;
+      text-align: center;
+    }
+
+    .about-cause-info {
+      display: flex;
+      margin-top: 40px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .about-cause-icons {
+        .about-cause-img {
+          font-size: 120px;
+          border-radius: 50%;
+          color: #fff;
+          padding: 20px;
+        }
+
+        .about-icons-title {
+          font-size: 34px;
+          font-weight: 600;
+        }
+
+        .about-icons-desc {
+          color: #666666;
+          font-size: 16px;
+          font-weight: 100;
+          line-height: 26px;
+          padding: 0px 60px;
+        }
+      }
+
+      .about-cause-icons:nth-child(1) {
+        .about-cause-img {
+          border: 6px solid #f9aa6f;
+          background-color: #f56a01;
+        }
+
+        .about-icons-title {
+          color: #f56a01;
+        }
+
+        .about-icons-desc {
+        }
+      }
+
+      .about-cause-icons:nth-child(2) {
+        .about-cause-img {
+          border: 6px solid #6fc7f9;
+          background-color: #019cf5;
+        }
+
+        .about-icons-title {
+          color: #019cf5;
+        }
+
+        .about-icons-desc {
+        }
+      }
+
+      .about-cause-icons:nth-child(3) {
+        color: red;
+        .about-cause-img {
+          background-color: #a93ea8;
+          border: 6px solid #ce91ce;
+        }
+
+        .about-icons-title {
+          color: #a93ea8;
+        }
+
+        .about-icons-desc {
+        }
+      }
+
+      .about-cause-icons {
+        .about-cause-img {
+        }
+
+        .about-icons-title {
+        }
+
+        .about-icons-desc {
+        }
+      }
+    }
+  }
+}

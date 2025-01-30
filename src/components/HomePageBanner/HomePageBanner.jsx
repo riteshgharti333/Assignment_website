@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "./HomePageBanner.scss";
 import { slider } from "../../assets/data";
 import Typewriter from "typewriter-effect";
@@ -9,10 +9,13 @@ const HomePageBanner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slider.length);
-    }, 7000); // Sync with animation duration (7s)
+    }, 7000);
 
     return () => clearInterval(interval);
   }, []);
+
+
+  const currentTitle = useMemo(() => slider[currentIndex].title, [currentIndex])
 
   return (
     <div className="banner">
@@ -28,7 +31,7 @@ const HomePageBanner = () => {
           <h1 className="banner-title">
             <Typewriter
               options={{
-                strings: [slider[currentIndex].title],
+                strings: [currentTitle],
                 autoStart: true,
                 loop: false, 
                 delay: 40,

@@ -2,16 +2,15 @@ import React, { useEffect } from "react";
 import WorkSectionCard from "../WorkSectionCard/WorkSectionCard";
 import "./WorkSection.scss";
 import { work } from "../../assets/data";
-import AOS from "aos";  // Import AOS library
-import "aos/dist/aos.css"; // Import the AOS CSS file for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const WorkSection = () => {
   useEffect(() => {
-    // Initialize AOS library
     AOS.init({
-      duration: 500,  // Duration of animation in ms
-      easing: "ease-in-out", // Animation easing (optional)
-      once: false, // Whether animations should only trigger once or repeat (optional)
+      duration: 500,  
+      easing: "ease-in-out", 
+      once: true, 
     });
   }, []);
 
@@ -24,8 +23,8 @@ const WorkSection = () => {
           <WorkSectionCard
             workCard={workCard}
             key={workCard.title}
-            data-aos="fade-up" // Apply AOS animation
-            data-aos-delay={index * 100} // Stagger the animations for a smooth effect
+            data-aos="fade-up" 
+            data-aos-delay={index * 100} 
           />
         ))}
       </div>
