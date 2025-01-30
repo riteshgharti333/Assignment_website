@@ -6,8 +6,6 @@ import { IoEarthOutline } from "react-icons/io5";
 import { TiLeaf } from "react-icons/ti";
 import { FaRegSmile } from "react-icons/fa";
 import about_bottom_img from "../../assets/images/about-banner.webp";
-import empowring from "../../assets/images/empowring.webp";
-import first from "../../assets/images/first.webp";
 
 const AboutUs = () => {
   return (

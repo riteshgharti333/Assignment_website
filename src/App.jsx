@@ -7,6 +7,7 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import ServiceOne from "./pages/Services/ServiceOne/ServiceOne";
 import ServiceTwo from "./pages/Services/ServiceTwo/ServiceTwo";
 import ServiceThree from "./pages/Services/ServiceThree/ServiceThree";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
           />
 
           <Route path="/youth-development" element={<ServiceThree />} />
+          <Route path="/contact-us" element={<Contact />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

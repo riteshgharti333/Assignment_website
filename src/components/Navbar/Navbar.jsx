@@ -105,12 +105,15 @@ const Navbar = () => {
           We Do
         </span>
 
-        <span
-          className="nav-list"
-          onClick={() => scrollToSection("contactSection")}
-        >
-          Contact Us
-        </span>
+        <Link to="/contact-us">
+          <span
+            className={`nav-list ${
+              location.pathname === "/contact-us" ? "active" : ""
+            }`}
+          >
+            Contact Us
+          </span>
+        </Link>
       </div>
     </div>
   );
