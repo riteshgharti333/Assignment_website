@@ -48,8 +48,8 @@ const Gallery = () => {
             <GalleryCard 
               g={g} 
               key={g.id} 
-              data-aos="fade-up" // Apply AOS fade-up animation
-              data-aos-delay={index * 100} // Add slight delay for staggered effect
+              // data-aos="fade-up" 
+              // data-aos-delay={index * 100} 
             />
           ))}
         </FeatureSlide>
