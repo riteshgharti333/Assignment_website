@@ -106,85 +106,7 @@
     }
   }
 
-  .about-bullets {
-    display: flex;
-    margin: 0px 95px 95px 95px;
-    justify-content: space-between;
-    gap: 30px;
-    .about-container {
-      display: flex;
-      img {
-        width: 200px;
-      }
 
-      .about-bullets-info {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        margin-top: 30px;
-
-        .about-bullets-title {
-          color: #333;
-          font-size: 40px;
-        }
-
-        .bullets-sm-desc {
-          margin: 10px 0px 0px 30px;
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
-          font-weight: 600;
-
-          li::marker {
-            color: #6b195a;
-          }
-        }
-      }
-    }
-  }
-
-  .values {
-    margin: 0px 95px 95px 95px;
-    display: flex;
-    height: 400px;
-    justify-content: space-around;
-    .values-img {
-      width: 400px;
-      object-fit: cover;
-    }
-
-    .value-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 20px;
-
-      .vlues-title {
-        color: #333;
-        font-size: 50px;
-      }
-
-      .values-desc {
-        font-size: 25px;
-        margin-bottom: 10px;
-      }
-      .values-points {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        li {
-          font-size: 20px;
-          font-weight: 500;
-
-          span {
-            color: #6b195a;
-            font-weight: 600;
-          }
-        }
-      }
-    }
-  }
 
   .team {
     margin: 0px 95px 95px 95px;
@@ -284,7 +206,7 @@
   }
 
   .about-cause {
-    padding: 95px;
+    padding: 95px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,9 +223,9 @@
     .about-cause-info {
       display: flex;
       margin-top: 40px;
-      align-items: center;
       justify-content: center;
       text-align: center;
+      gap: 30px;
 
       .about-cause-icons {
         .about-cause-img {
@@ -320,10 +242,13 @@
 
         .about-icons-desc {
           color: #666666;
-          font-size: 16px;
-          font-weight: 100;
-          line-height: 26px;
-          padding: 0px 60px;
+          list-style: none;
+
+          li{
+            margin-top: 5px;
+            font-weight: 500;
+            
+          }
         }
       }
 

@@ -37,25 +37,78 @@ const Navbar = () => {
       </div>
 
       <div className="nav-lists">
-
         <Link to={"/"}>
-        <span className="nav-list" onClick={() => scrollToSection("homeSection")}>
-          Home
-        </span>
+          <span
+            className="nav-list"
+            onClick={() => scrollToSection("homeSection")}
+          >
+            Home
+          </span>
         </Link>
-       
+
+        <span className="nav-list nav-options">
+          Program & Partners
+          <div className="services">
+            <Link to="/socio-economic-development" className="nav-option">
+              <span
+                className={` ${
+                  location.pathname === "/socio-economic-development"
+                    ? "active"
+                    : ""
+                }`}
+              >Socio-economic development
+              </span>
+            </Link>
+
+            <Link
+              to="/bridging-the-gap-between-the-government-and-the-common-masses"
+              className="nav-option"
+            >
+              <span
+                className={` ${
+                  location.pathname ===
+                  "/bridging-the-gap-between-the-government-and-the-common-masses"
+                    ? "active"
+                    : ""
+                }`}
+              >
+                Bridging the gap between the government and the common masses
+              </span>
+            </Link>
+
+            <Link to="/youth-development" className="nav-option">
+              <span
+                className={` ${
+                  location.pathname === "/youth-development" ? "active" : ""
+                }`}
+              >
+              Youth Empowerment
+              </span>
+            </Link>
+          </div>
+        </span>
 
         <Link to="/about">
-          <span className={`nav-list ${location.pathname === "/about" ? "active" : ""}`}>
+          <span
+            className={`nav-list ${
+              location.pathname === "/about" ? "active" : ""
+            }`}
+          >
             About
           </span>
         </Link>
 
-        <span className="nav-list" onClick={() => scrollToSection("weDoSection")}>
+        <span
+          className="nav-list"
+          onClick={() => scrollToSection("weDoSection")}
+        >
           We Do
         </span>
 
-        <span className="nav-list" onClick={() => scrollToSection("contactSection")}>
+        <span
+          className="nav-list"
+          onClick={() => scrollToSection("contactSection")}
+        >
           Contact Us
         </span>
       </div>

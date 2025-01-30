@@ -50,69 +50,8 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="about-bullets">
-        <div className="about-container">
-          <img className="bullets-img" src={empowring} alt="" />
+    
 
-          <div className="about-bullets-info">
-            <h1 className="about-bullets-title">Our Mission</h1>
-
-            <ul className="bullets-sm-desc">
-              <li>Building a Better Tomorrow</li>
-              <li>Providing education to underprivileged children</li>
-              <li>Empowering women to lead independent lives</li>
-              <li>Assisting hospitalized individuals during emergencies</li>
-              <li>
-                Creating a society where everyone has the opportunity to thrive
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="about-container">
-          <img className="bullets-img" src={empowring} alt="" />
-
-          <div className="about-bullets-info">
-            <h1 className="about-bullets-title">Our Vision</h1>
-
-            <ul className="bullets-sm-desc">
-              <li>A Future of Hope & Empowerment</li>
-              <li>Every child has access to quality education</li>
-              <li>Women play a vital role in shaping society</li>
-              <li>
-                A compassionate community that supports its vulnerable members
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="values">
-        <img src={first} alt="" className="values-img" />
-
-        <div className="value-info">
-          <h2 className="vlues-title">Core Values</h2>
-          <h5 className="values-desc">Guiding Principles that Define Us</h5>
-          <ul className="values-points">
-            <li>
-              <span>Compassion – </span>Helping those in need
-            </li>
-
-            <li>
-              <span>Integrity – </span>Ensuring transparency in all actions
-            </li>
-
-            <li>
-              <span>Community Focus – </span>Prioritizing the needs of society
-            </li>
-
-            <li>
-              <span>Empowerment – </span>Enabling individuals to reach their full
-              potential
-            </li>
-          </ul>
-        </div>
-      </div>
 
       <div className="team">
         <h2 className="team-title">Our Team</h2>
@@ -152,6 +91,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+
+
       <div className="about-cause">
         <h1 className="aboout-cause-title">
           Causes and positive change all over the world.
@@ -162,30 +103,39 @@ const AboutUs = () => {
             <IoEarthOutline className="about-cause-img" />
 
             <h5 className="about-icons-title">Our Mission</h5>
-            <p className="about-icons-desc">
-              Learn how access to clean water can improve health, boost local
-              economies.
-            </p>
+            <ul className="about-icons-desc">
+              <li>Building a Better Tomorrow</li>
+              <li>Providing education to underprivileged children</li>
+              <li>Empowering women to lead independent lives</li>
+              <li>Assisting hospitalized individuals during emergencies</li>
+              <li>Creating a society where everyone has the opportunity to thrive</li>
+            </ul>
           </div>
 
           <div className="about-cause-icons">
             <TiLeaf className="about-cause-img" />
 
-            <h5 className="about-icons-title">Our Vission</h5>
-            <p className="about-icons-desc">
-              Learn how access to clean water can improve health, boost local
-              economies.
-            </p>
+            <h5 className="about-icons-title">Our Vision</h5>
+            <ul className="about-icons-desc">
+              <li>A Future of Hope & Empowerment</li>
+              <li>Every child has access to quality education</li>
+              <li>Women play a vital role in shaping society
+              </li>
+              <li>A compassionate community that supports its vulnerable members</li>
+            </ul>
           </div>
 
           <div className="about-cause-icons">
             <FaRegSmile className="about-cause-img" />
 
             <h5 className="about-icons-title">Our Values</h5>
-            <p className="about-icons-desc">
-              Learn how access to clean water can improve health, boost local
-              economies.
-            </p>
+            <ul className="about-icons-desc">
+              <li>Compassion – Helping those in need</li>
+              <li>Integrity – Ensuring transparency in all actions</li>
+              <li>Community Focus – Prioritizing the needs of society</li>
+              <li>Empowerment – Enabling individuals to reach their full potential
+              </li>
+            </ul>
           </div>
         </div>
       </div>
