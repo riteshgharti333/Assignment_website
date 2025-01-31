@@ -1,7 +1,12 @@
+@import "../../../styles/responsive.scss";
+
 .serviceOne {
+  overflow: hidden;
   .serviceOne-banner {
     position: relative;
-    .serviceOne-banner-img {
+    width: 100%;
+    overflow: hidden;
+    img {
       height: 400px;
       width: 100%;
       object-fit: cover;
@@ -18,13 +23,40 @@
       flex-direction: column;
       justify-items: center;
       align-items: center;
+      max-width: 1040px;
+      text-align: center;
+      padding: 0px 5px;
 
-      .serviceOne-title {
-        font-size: 45px;
+
+      @include md{
+        top: 50%;
+        padding: 20px;
+        align-items: normal;
       }
-      .serviceOne-desc {
+
+      @include sm {
+        top: 50%;
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 45px;
+
+        @include md {
+          font-size: 40px;
+        }
+
+        @include sm {
+          font-size: 35px;
+        }
+      }
+      p {
         font-size: 25px;
         font-weight: 500;
+
+        @include sm {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -34,27 +66,58 @@
     padding: 90px;
     flex-direction: column;
     align-items: center;
-    .serviceOne-content {
+
+    @include lg{
+      padding: 70px;
+    }
+
+    @include md{
+      padding: 50px;
+    }
+    @include sm {
+      padding: 20px;
+    }
+
+    .content-card {
+      overflow: hidden;
+      padding: 90px 0px 0px 0px;
       max-width: 1040px;
+    }
+
+    .serviceOne-content {
       display: flex;
+      padding: 0px;
+      overflow: hidden;
+
+      @include lg{
+        align-items: center;
+      }
+      @include md {
+        display: block;
+      }
       .serviceOne-content-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 30px;
-        .serviceOne-content-title {
+
+        @include lg{
+          margin-right: 30px;
+        }
+
+        h1 {
           font-size: 40px;
           color: #333;
         }
 
-        .serviceOne-content-desc {
+        p {
           font-size: 18px;
           font-weight: 500;
         }
 
         .serviceOne-content-list {
           color: #666;
-          .serviceOne-content-list-title {
+          .p {
             font-size: 25px;
             font-weight: 500;
           }
@@ -70,20 +133,48 @@
 
       .serviceOne-content-img {
         width: 400px;
+        object-fit: cover;
+
+        @include lg{
+          width: 300px;
+          height: 300px;
+        }
+
+        @include md{
+          width: 100%;
+          margin-top: 30px;
+        }
       }
     }
 
     .serviceOne-second-content {
-      padding: 90px 0px 0px 0px;
-      max-width: 1040px;
       display: flex;
+
+      @include md {
+        display: block;
+      }
       .second-content-img {
         display: flex;
         height: auto;
+        width: 100%;
+
+
+        @include md {
+          display: block;
+        }
 
         img {
           width: 200px;
           object-fit: contain;
+
+
+          @include lg{
+            width: 150px;
+          }
+
+          @include md {
+            width: 100%;
+          }
 
           &:last-child {
             margin-top: 30px;
@@ -98,37 +189,54 @@
         justify-content: center;
         margin-left: 40px;
         gap: 30px;
-        .second-content-title {
+
+        @include md {
+          margin-left: 0;
+          margin-top: 30px;
+        }
+        h1 {
           font-size: 40px;
           color: #333;
         }
-        .second-content-desc {
-          font-size: 18px;
+        p {
+          font-size: 20px;
           font-weight: 500;
         }
-
-        .second-content-sm-dsc {
-          color: #666;
+    
+        ul{
+          margin-top: -14px;
+    margin-left: 40px;
+    color: #666;
+          li{
+            font-size: 18px;
+            font-weight: 500;
+          }
         }
+          
       }
     }
 
     .serviceOne-third-content {
-      padding: 90px 0px 0px 0px;
-      max-width: 1040px;
       display: flex;
+      @include md {
+        display: block;
+      }
       .third-content-left {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 30px;
         margin-right: 40px;
-        .third-content-left-title {
+
+        @include md {
+          margin-right: 0px;
+        }
+        h1 {
           font-size: 40px;
           color: #333;
         }
 
-        .third-content-left-desc {
+        p {
           font-size: 20px;
           font-weight: 500;
         }
@@ -141,6 +249,10 @@
             font-size: 40px;
             margin-right: 20px;
             color: #6b195a;
+
+            @include md{
+             font-size: 40px;
+            }
           }
           .third-content-icon-desc {
             color: #666;
@@ -152,8 +264,21 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+
+        @include md {
+          margin-top: 30px;
+        }
         .third-content-right-img {
           width: 400px;
+          object-fit: cover;
+
+          @include lg {
+            width: 100%;
+          }
+
+          @include md {
+            width: 100%;
+          }
         }
 
         .third-content-right-desc {
@@ -161,9 +286,16 @@
           font-weight: bold;
         }
 
-        .third-content-sm-desc {
-          color: #666;
+           ul{
+          margin-top: -14px;
+    margin-left: 40px;
+    color: #666;
+          li{
+            font-size: 18px;
+            font-weight: 500;
+          }
         }
+
       }
     }
 
@@ -173,6 +305,10 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+
+      @include md{
+      gap: 15px;
+      }
 
       p {
         font-size: 18px;
@@ -184,20 +320,28 @@
       padding: 90px 0px 0px 0px;
       max-width: 1040px;
       display: flex;
+
+      @include md {
+        display: block;
+      }
       .fourth-content-left {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 30px;
         margin-right: 40px;
-        .fourth-content-left-title {
+        h1 {
           font-size: 40px;
           color: #333;
         }
 
-        .fourth-content-left-desc {
+        p {
           font-size: 20px;
           font-weight: 500;
+
+          @include lg{
+            font-size: 18px;
+          }
         }
       }
 
@@ -205,18 +349,27 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        .fourth-content-right-img {
+
+        @include md{
+          margin-top: 30px;
+        }
+        img {
           width: 400px;
+
+
+          @include md {
+            width: 100%
+          }
         }
 
-        .fourth-content-right-desc {
+        p {
           color: #666;
         }
       }
     }
 
     .serviceOne-sm-desc {
-      padding: 90px 0px 0px 0px;
+      padding: 90px 0px 90px 0px;
       max-width: 1040px;
       text-align: center;
       h1 {
@@ -229,15 +382,39 @@
         font-size: 20px;
         font-weight: 500;
       }
+
+      .pin{
+        margin-top: 20px;
+
+        span{
+         font-size: 16px;
+         color: #6b195a;;
+        }
+
+        .pin-line{
+          margin: 0px 10px;
+          color: #000;
+        }
+      }
     }
   }
 
   .serviceOne-bottom-banner {
     position: relative;
+    width: 100%;
+    overflow: hidden;
     .serviceOne-bottom-img {
       height: 400px;
       width: 100%;
       object-fit: cover;
+
+      @include lg{
+        height: 500px;
+      }
+
+      @include md{
+        height: 600px;
+      }
     }
 
     .serviceOne-bottom-info {
@@ -252,15 +429,27 @@
       justify-items: center;
       align-items: center;
       gap: 30px;
+      text-align: center;
 
-      .serviceOne-bottom-title {
+      h2 {
         font-size: 45px;
+        margin: 0px 40px;
+
+        @include sm {
+          font-size: 35px;
+         
+        }
       }
-      .serviceOne-bottom-desc {
+
+      p {
         font-size: 25px;
         font-weight: 500;
-        text-align: center;
         margin: 0px 40px;
+
+        
+        @include sm {
+          font-size: 20px;
+        }
       }
 
       button {

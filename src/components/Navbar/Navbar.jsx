@@ -2,18 +2,13 @@ import "./Navbar.scss";
 import logo from "../../assets/images/logo.webp";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 
 const Navbar = () => {
-  const location = useLocation(); // Get current route
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
+  const location = useLocation();
   const [scroll, setScroll] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,91 +16,106 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navbarClass = scroll ? "navbar scrolled" : "navbar";
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (menuOpen && !e.target.closest(".navbar")) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+    return () => document.removeEventListener("click", handleOutsideClick);
+  }, [menuOpen]);
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
+  const MobileProgramLists = () => {
+    return (
+      <>
+        <ul>
+          <li>Socio-economic development</li>
+          <li>
+            Bridging the gap between the government and the common masses
+          </li>
+          <li> Youth Empowerment</li>
+        </ul>
+      </>
+    );
+  };
 
   return (
-    <div className={navbarClass}>
+    <div className={`navbar ${scroll ? "scrolled" : ""}`}>
       <div className="nav-logo">
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
       </div>
 
-      <div className="nav-lists">
-        <Link to={"/"}>
+      {/* Burger Menu */}
+      <div
+        className={`burger-menu ${menuOpen ? "open" : ""}`}
+        onClick={toggleMenu}
+      >
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+
+
+   
+    {/* Nav Options */}
+
+      <div className={`nav-lists ${menuOpen ? "active" : ""}`}>
+        <Link to="/" onClick={() => setMenuOpen(false)}>
           <span
-            className="nav-list"
-            onClick={() => scrollToSection("homeSection")}
+            className={`nav-list ${location.pathname === "/" ? "active" : ""}`}
           >
             Home
           </span>
         </Link>
 
         <span className="nav-list nav-options">
-          Program & Partners
+          <p className="pp">  Programs & Partners</p>
+        
           <div className="services">
-            <Link to="/socio-economic-development" className="nav-option">
+            <Link to="/socio-economic-development" onClick={() => setMenuOpen(false)}>
               <span
-                className={` ${
-                  location.pathname === "/socio-economic-development"
-                    ? "active"
-                    : ""
-                }`}
-              >Socio-economic development
+              >
+
+                Socio-economic development
               </span>
             </Link>
-
-            <Link
-              to="/bridging-the-gap-between-the-government-and-the-common-masses"
-              className="nav-option"
-            >
+            <Link to="/bridging-the-gap-between-the-government-and-the-common-masses" onClick={() => setMenuOpen(false)}>
               <span
-                className={` ${
-                  location.pathname ===
-                  "/bridging-the-gap-between-the-government-and-the-common-masses"
-                    ? "active"
-                    : ""
-                }`}
               >
                 Bridging the gap between the government and the common masses
               </span>
             </Link>
-
-            <Link to="/youth-development" className="nav-option">
+            <Link to="/youth-development" onClick={() => setMenuOpen(false)}>
               <span
-                className={` ${
-                  location.pathname === "/youth-development" ? "active" : ""
-                }`}
               >
-              Youth Empowerment
+                Youth Empowerment
               </span>
             </Link>
           </div>
         </span>
 
-        <Link to="/about">
+        <Link to="/about" onClick={() => setMenuOpen(false)}>
           <span
             className={`nav-list ${
               location.pathname === "/about" ? "active" : ""
             }`}
           >
-            About
+            About Us
           </span>
         </Link>
 
-        <span
-          className="nav-list"
-          onClick={() => scrollToSection("weDoSection")}
-        >
-          We Do
-        </span>
-
-        <Link to="/contact-us">
+        <Link to="/contact-us" onClick={() => setMenuOpen(false)}>
           <span
             className={`nav-list ${
               location.pathname === "/contact-us" ? "active" : ""

@@ -9,87 +9,102 @@ const ServiceOne = () => {
   return (
     <div className="serviceOne">
       <div className="serviceOne-banner">
-        <img
-          src={sirviceOne_banner_img}
-          alt=""
-          className="serviceOne-banner-img"
-        />
+        <img src={sirviceOne_banner_img} alt="" />
 
         <div className="serviceOne-info">
-          <h2 className="serviceOne-title">
-            EMPLOYMENT GENERATION/ GOVERNMENT SCHEME
-          </h2>
-          <p className="serviceOne-desc">
-            Know Everything about Socio-economic Development
-          </p>
+          <h2>EMPLOYMENT GENERATION/ GOVERNMENT SCHEME</h2>
+          <p>Know Everything about Socio-economic Development</p>
         </div>
       </div>
 
       <div className="main-section">
-        <div className="serviceOne-content">
+        <div className="serviceOne-content content-card">
           <div className="serviceOne-content-info">
-            <h1 className="serviceOne-content-title">EMPLOYMENT GENERATION</h1>
+            <h1>Empowering Women in Sikar Through Sustainable Livelihoods</h1>
 
-            <p className="serviceOne-content-desc">
-              The Employment Generation Program begins with goals, that may and
-              should help with the welfare of the women in rural and slum areas.
+            <p>
+              Founded in 2012 by Abdul Rahim Khatari, BK Welfare Society, Sikar,
+              is dedicated to uplifting underprivileged women by providing
+              skill-based training and employment opportunities.
             </p>
 
-            <div className="serviceOne-content-list">
-              <p className="serviceOne-content-list-title">
-                The goals are as follows: –
-              </p>
+            <p>
+              In October 2019, we conducted a survey in Sikar to assess the
+              economic conditions of women and identify ways to support their
+              financial independence.
+            </p>
+
+            {/* <div className="serviceOne-content-list">
+              <p>The goals are as follows: –</p>
               <ul>
                 <li>Women’s Empowerment through employment</li>
                 <li>Development of women in rural and slum areas</li>
                 <li>Government Schemes</li>
               </ul>
-            </div>
+            </div> */}
           </div>
 
           <img className="serviceOne-content-img" src={food}></img>
         </div>
 
-        <div className="serviceOne-second-content">
+        <div className="serviceOne-second-content content-card">
           <div className="second-content-img">
             <img src={empowring} alt="" />
             <img src={empowring} alt="" />
           </div>
 
           <div className="second-content-info">
-            <h1 className="second-content-title">THE ROLE OF NGO</h1>
+            <h1>Building Skills, Creating Opportunities</h1>
 
             <p className="second-content-desc">
-              NGO’s are considered to be Non – Profit Governmental bodies
+              Following the survey, we selected a group of women from Sikar and
+              provided them with training in essential work skills, including:
             </p>
 
+            <ul>
+              <li>Taping</li>
+              <li>Stamping</li>
+              <li> Stitching clothes & paper bags</li>
+            </ul>
+
+            <p>
+              We then connected them with local startups and small businesses in
+              Sikar, enabling them to secure stable income. While some women
+              worked from home, others commuted to their workplaces using
+              transportation arranged by us. Their economic stability and
+              confidence improved, positively impacting their families.
+            </p>
+
+            {/* 
             <p className="second-content-sm-dsc">
               which work for the welfare of society. They act as a mediator
               between society and government. It plays a vital role to improve
               communities and promoting citizens’ participation while mentoring
               them socially and economically.
-            </p>
+            </p> */}
           </div>
         </div>
 
-        <div className="serviceOne-third-content">
+        <div className="serviceOne-third-content content-card">
           <div className="third-content-left">
-            <h1 className="third-content-left-title">
-              WOMEN EMPOWERMENT THROUGH EMPLOYMENT
-            </h1>
-            <p className="third-content-left-desc">
-              Through this project, the women are empowered, and also they can
-              amplify their voices.
+            <h1>Overcoming Challenges During COVID-19</h1>
+            <p>
+              Like many initiatives, our project faced setbacks during the
+              COVID-19 pandemic, including transportation issues and job losses.
             </p>
 
+            <p>
+              However, in September 2020, with the support of PEACE FIRST, we
+              revived and expanded the program, selecting more women from Sikar
+              and connecting them with local work opportunities.
+            </p>
+
+            <p>Sustaining Growth: Our Continued Impact in Sikar</p>
             <div className="third-content-left-info">
               <FaRegCircle className="third-content-icon" />
               <p className="third-content-icon-desc">
-                Their ideas and ability to participate in the decision-making
-                process in social and especially in economic life within and
-                outside their home gives them more opportunities with less skill
-                and, to some extent, removes gender bias in society, especially
-                in rural and slum areas.
+                We remain committed to helping women in Sikar achieve financial
+                independence, stability, and a better future.
               </p>
             </div>
           </div>
@@ -98,17 +113,18 @@ const ServiceOne = () => {
             <img src={food} alt="" className="third-content-right-img" />
 
             <p className="third-content-right-desc">
-              DEVELOPMENT OF WOMEN IN RURAL AND SLUM AREA :-
+              Today, our initiative continues to grow, ensuring that more women
+              in Sikar have access to:
             </p>
-            <p className="third-content-sm-desc">
-              Our NGO – ‘A.I.W.S,’ formed this project with the view of helping
-              and developing women economically – to make this project reality,
-              we selected five villages from the State of Rajasthan.
-            </p>
+            <ul>
+              <li>Ongoing mentorship and training</li>
+              <li>Employment assistance in local businesses</li>
+              <li>Support for small-scale entrepreneurship</li>
+            </ul>
           </div>
         </div>
 
-        <div className="serviveOne-big-dsc">
+        {/* <div className="serviveOne-big-dsc">
           <p>
             They are Rajawas, Udaipuriya , Deepura , RampuraDabri . We took a
             survey and tried to understand the economic status of the village
@@ -148,12 +164,12 @@ const ServiceOne = () => {
             working with women in a slum area, i.e., Vidyut Nagar, Jaipur City,
             Rajasthan.
           </p>
-        </div>
+        </div> */}
 
-        <div className="serviceOne-fourth-content">
+        {/* <div className="serviceOne-fourth-content content-card">
           <div className="fourth-content-left">
-            <h1 className="fourth-content-left-title">GOVERNMENT SCHEMES</h1>
-            <p className="fourth-content-left-desc">
+            <h1>GOVERNMENT SCHEMES</h1>
+            <p>
               Well talking about the Government Schemes/ Yojna which has been
               launched for the social and economic welfare of the citizens
               especially for women. These policies or schemes gives many
@@ -165,28 +181,32 @@ const ServiceOne = () => {
           </div>
 
           <div className="fourth-content-right">
-            <img src={food} alt="" className="fourth-content-right-img" />
+            <img src={food} alt="" />
 
-            <p className="fourth-content-right-desc">
+            <p>
               Some of the major schemes which we used in our project for the
               registration of women are “Berojgari Bhatta”,” Kishori Yojna “, ”
               Palanhar Yojna” which provided them with enough income and
               benefits for their all round growth .
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div className="serviceOne-sm-desc">
-          <h1>AIWS</h1>
+          <h1>Join Us in Transforming Lives in Sikar</h1>
 
           <p>
-            Through this project we “believe and hope” this project will bring a
-            great, positive, impact and results in the development of women in
-            rural and slum areas not only this it will help them economically
-            and socially so that with their willing contribution, they could
-            benefit the overall growth of women individually as well as family,
-            state and country
+            At BK Welfare Society, Sikar, we believe that women’s empowerment
+            strengthens families and the entire community.
           </p>
+
+          <div className="pin">
+            <span>Get Involved</span>
+            <span className="pin-line">|</span>
+            <span>Support Women’s Empowerment</span>
+            <span  className="pin-line">|</span>
+            <span>Transform Sikar Together</span>
+          </div>
         </div>
       </div>
 
@@ -198,12 +218,12 @@ const ServiceOne = () => {
         />
 
         <div className="serviceOne-bottom-info">
-          <h2 className="serviceOne-bottom-title">
-          Help others so other can adore your help
-          </h2>
-          <p className="serviceOne-bottom-desc">
-          Here at All India Welfare Society, we see the value in everyone. We want to be a catalyst for positive change, and since our beginnings in 2008, we’ve been driven by the same ideas we initially founded our Non-Profit Organization upon support, empowerment, and progress.
-
+          <h2>Help others so other can adore your help</h2>
+          <p>
+            Here at All India Welfare Society, we see the value in everyone. We
+            want to be a catalyst for positive change, and since our beginnings
+            in 2008, we’ve been driven by the same ideas we initially founded
+            our Non-Profit Organization upon support, empowerment, and progress.
           </p>
           <button>Donate Now</button>
         </div>

@@ -21,9 +21,9 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="about-points">
-        <div className="about-points-info">
-          <h2 className="about-points-title">
+      <div className="about-points card-1">
+        <div className="about-points-info ">
+          <h2>
             Introduction to BK Welfare Society
           </h2>
           <p>
@@ -32,12 +32,12 @@ const AboutUs = () => {
             women's empowerment, and emergency aid for hospitalized individuals.
           </p>
         </div>
-        <img className="about-points-img" src={about_point_img} alt="" />
+        <img src={about_point_img} alt="" />
       </div>
-      <div className="about-points">
-        <img className="about-points-img" src={about_point_img} alt="" />
+      <div className="about-points card-2">
+        <img src={about_point_img} alt="" />
         <div className="about-points-info">
-          <h2 className="about-points-title">Our Journey</h2>
+          <h2>Our Journey</h2>
           <h5>A Legacy of Growth & Impact</h5>
           <p>
             From humble beginnings, we have achieved significant milestones,
@@ -52,7 +52,7 @@ const AboutUs = () => {
 
 
       <div className="team">
-        <h2 className="team-title">Our Team</h2>
+        <h2>Our Team</h2>
 
         <div className="team-info">
           <div className="team-container">

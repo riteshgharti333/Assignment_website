@@ -1,236 +1,356 @@
+@import "../../../styles/responsive.scss";
+
 .serviceTwo {
-    .serviceTwo-banner {
-      position: relative;
-      .serviceTwo-banner-img {
-        height: 400px;
-        width: 100%;
-        object-fit: cover;
+  .serviceTwo-banner {
+    position: relative;
+    img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .serviceTwo-info {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      padding: 0px 5px;
+      text-align: center;
+
+      @include md {
+        top: 50%;
+        padding: 20px;
+        align-items: normal;
       }
-  
-      .serviceTwo-info {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        width: 100%;
+
+      @include sm {
+        top: 50%;
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 45px;
+        text-align: center;
+
+        @include md {
+          font-size: 40px;
+        }
+
+        @include sm {
+          font-size: 35px;
+        }
+      }
+      p {
+        font-size: 25px;
+        font-weight: 500;
+
+        @include sm {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .serviceTwo-main-section {
+    display: flex;
+    padding: 90px;
+    flex-direction: column;
+    align-items: center;
+
+    @include lg {
+      padding: 70px;
+    }
+
+    @include md {
+      padding: 50px;
+    }
+    @include sm {
+      padding: 20px;
+    }
+
+    .content-card {
+      overflow: hidden;
+      padding: 90px 0px 0px 0px;
+      max-width: 1040px;
+    }
+
+    .serviceTwo-content {
+      display: flex;
+      padding: 0px;
+
+      @include lg {
+        align-items: center;
+      }
+      @include md {
+        display: block;
+      }
+
+      .serviceTwo-content-info {
         display: flex;
         flex-direction: column;
-        justify-items: center;
-        align-items: center;
-  
-        .serviceTwo-title {
-          font-size: 45px;
-          text-align: center;
+        justify-content: center;
+        gap: 30px;
+        margin-right: 60px;
+
+        @include lg {
+          margin-right: 30px;
         }
-        .serviceTwo-desc {
-          font-size: 25px;
+
+        @include md {
+          margin-right: 0;
+        }
+
+        @include sm {
+          gap: 10px;
+        }
+
+        h1 {
+          font-size: 40px;
+          color: #333;
+
+          @include sm {
+            padding: 0px 5px;
+          }
+        }
+
+        p {
+          font-size: 18px;
           font-weight: 500;
+        }
+
+        .serviceTwo-content-sm-desc {
+          color: #666;
+        }
+      }
+
+      img {
+        width: 400px;
+        object-fit: cover;
+
+        @include lg {
+          width: 300px;
+          height: 300px;
+        }
+
+        @include md {
+          width: 100%;
+          margin-top: 30px;
         }
       }
     }
 
+    .serviceTwo-second-content {
+      display: flex;
 
+      @include md {
+        display: block;
+      }
+      img {
+        width: 300px;
+        object-fit: contain;
 
-    .serviceTwo-main-section {
+        @include lg {
+          width: 200px;
+        }
+
+        @include md {
+          width: 100%;
+        }
+      }
+
+      .second-content-info {
         display: flex;
-        padding: 90px;
         flex-direction: column;
-        align-items: center;
-        .serviceTwo-content {
-          max-width: 1040px;
-          display: flex;
-          .serviceTwo-content-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 30px;
-            margin-right: 60px;
-            .serviceTwo-content-title {
-              font-size: 40px;
-              color: #333;
-            }
-    
-            .serviceTwo-content-desc {
-              font-size: 18px;
-              font-weight: 500;
-            }
-    
-            .serviceTwo-content-sm-desc{
-color: #666;
-            }
-            
-          }
-    
-          .serviceTwo-content-img {
-            width: 400px;
-            object-fit: cover;
-          }
+        justify-content: center;
+        margin-left: 40px;
+        gap: 30px;
+
+        @include md {
+          margin-left: 0;
+          margin-top: 30px;
         }
 
-        .serviceTwo-second-content {
-            padding: 90px 0px 0px 0px;
-            max-width: 1040px;
-            display: flex;
-              .second-content-img {
-                width: 300px;
-                object-fit: contain;
-      
-               
-              }
-            
-      
-            .second-content-info {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              margin-left: 40px;
-              gap: 30px;
-              .second-content-title {
-                font-size: 40px;
-                color: #333;
-              }
-              .second-content-desc {
-                font-weight: 500;
-                font-size: 20px;
-              }
-      
-              .second-content-sm-dsc {
-                color: #666;
-              }
-            }
-          }
-
-
-          .serviceTwo-third-content {
-            padding: 90px 0px 0px 0px;
-            max-width: 1040px;
-            display: flex;
-            .third-content-left {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              gap: 30px;
-              margin-right: 40px;
-              .third-content-left-title {
-                font-size: 40px;
-                color: #333;
-              }
-      
-              .third-content-left-desc {
-                font-size: 20px;
-                font-weight: 500;
-              }
-      
-      
-        
-                .third-content-sm-desc{
-                  color: #666;
-                }
-             
-            }
-      
-            .third-content-right {
-              display: flex;
-              flex-direction: column;
-              gap: 20px;
-              .third-content-right-img {
-                width: 400px;
-              }
-      
-              .third-content-right-desc {
-                font-size: 23px;
-                font-weight: bold;
-              }
-      
-              .third-content-1-desc{
-                font-size: 18px;
-              }
-
-              .third-content-2-desc{
-                color: #666;
-              }
-            }
-          }
-    }    
-
-
-    .serviceTwo-bottom-banner {
-        position: relative;
-        .serviceTwo-bottom-img {
-          height: 400px;
-          width: 100%;
-          object-fit: cover;
+        h1 {
+          font-size: 40px;
+          color: #333;
         }
-    
-        .serviceTwo-bottom-info {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: #fff;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-items: center;
-          align-items: center;
-          gap: 20px;
-    
-          .serviceTwo-bottom-title {
-            font-size: 45px;
-          }
-          .serviceTwo-bottom-desc {
-            font-size: 25px;
-            font-weight: 500;
-            text-align: center;
-            margin: 0px 40px;
-          }
-    
-          button {
-            padding: 15px 17px;
-            font-size: 20px;
-            border-radius: 30px;
-            border: none;
-            background-color: #f56a01;
-            font-weight: 600;
-            color: #fff;
-            cursor: pointer;
-            border: 2px solid #f56a01;
-            transition: all 0.3s ease-in-out;
-    
-            &:hover {
-              background-color: transparent;
-              border: 2px solid #f56a01;
-            }
-          }
+        p {
+          font-weight: 500;
+          font-size: 20px;
+        }
 
-          .serviceTwo-user{
-            display: flex;
-            gap: 20px;
-            img{
-                height: 60px;
-                width: 60px;
-                object-fit: cover;
-                border-radius: 50%;
-            }
+        .second-content-sm-dsc {
+          color: #666;
+        }
+      }
+    }
 
-            .serviceTwo-user-name{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+    .serviceTwo-third-content {
+      display: flex;
 
+      @include md {
+        display: block;
+      }
 
-               p:first-child{
-                font-weight: 600;
-                font-size: 20px;
-               }
+      .third-content-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        margin-right: 40px;
 
-               p:last-child{
-                font-size: 14px;
-               }
-            }
+        @include md {
+          margin-right: 0px;
+        }
+        h1 {
+          font-size: 40px;
+          color: #333;
+        }
+
+        p {
+          font-size: 20px;
+          font-weight: 500;
+
+        }
+
+        .third-content-sm-desc {
+          color: #666;
+
+          @include lg{
+            font-size: 18px;
           }
         }
       }
 
+      .third-content-right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include md {
+          margin-top: 20px;
+        }
+        img {
+          width: 400px;
+
+          @include md {
+            width: 100%;
+          }
+        }
+
+        h4 {
+          font-size: 23px;
+          font-weight: bold;
+        }
+
+        .third-content-1-desc {
+          font-size: 18px;
+        }
+
+        .third-content-2-desc {
+          color: #666;
+        }
+      }
+    }
+  }
+
+  .serviceTwo-bottom-banner {
+    position: relative;
+    overflow: hidden;
+    img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+
+      @include lg {
+        height: 500px;
+      }
+
+      @include md {
+        height: 600px;
+      }
+    }
+
+    .serviceTwo-bottom-info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+
+      h2 {
+        font-size: 45px;
+
+        @include sm {
+          font-size: 35px;
+        }
+      }
+      p {
+        font-size: 25px;
+        font-weight: 500;
+        margin: 0px 40px;
+
+        @include sm {
+          font-size: 20px;
+        }
+      }
+
+      button {
+        padding: 15px 17px;
+        font-size: 20px;
+        border-radius: 30px;
+        border: none;
+        background-color: #f56a01;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        border: 2px solid #f56a01;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: transparent;
+          border: 2px solid #f56a01;
+        }
+      }
+
+      .serviceTwo-user {
+        display: flex;
+        gap: 20px;
+        img {
+          height: 60px;
+          width: 60px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        .serviceTwo-user-name {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          p:first-child {
+            font-weight: 600;
+            font-size: 20px;
+          }
+
+          p:last-child {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
 }

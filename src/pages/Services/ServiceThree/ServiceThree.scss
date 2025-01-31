@@ -1,7 +1,9 @@
+@import "../../../styles/responsive.scss";
+
 .serviceThree {
   .serviceThree-banner {
     position: relative;
-    .serviceThree-banner-img {
+    img {
       height: 400px;
       width: 100%;
       object-fit: cover;
@@ -18,13 +20,39 @@
       flex-direction: column;
       justify-items: center;
       align-items: center;
+      max-width: 1040px;
+      text-align: center;
+      padding: 0px 5px;
 
-      .serviceThree-title {
-        font-size: 45px;
+      @include md {
+        top: 50%;
+        padding: 20px;
+        align-items: normal;
       }
-      .serviceThree-desc {
-        font-size: 25px;
-        font-weight: 500;
+
+      @include sm {
+        top: 60%;
+        // padding: 20px;
+      }
+
+      h2 {
+        font-size: 45px;
+
+        // @include md {
+        //   font-size: 40px;
+        // }
+
+        // @include sm {
+        //   font-size: 35px;
+        // }
+      }
+    }
+    p {
+      font-size: 25px;
+      font-weight: 500;
+
+      @include sm {
+        font-size: 20px;
       }
     }
   }
@@ -34,21 +62,46 @@
     padding: 90px;
     flex-direction: column;
     align-items: center;
+
+    @include lg {
+      padding: 70px;
+    }
+
+    @include md {
+      padding: 50px;
+    }
+    @include sm {
+      padding: 20px;
+    }
+
     .serviceThree-content {
       max-width: 1040px;
       display: flex;
+
+      @include lg {
+        align-items: center;
+      }
+      @include md {
+        display: block;
+      }
+
       .serviceThree-content-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 30px;
         margin-right: 60px;
-        .serviceThree-content-title {
+
+        @include lg {
+          margin-right: 30px;
+        }
+
+        h1 {
           font-size: 40px;
           color: #333;
         }
 
-        .serviceThree-content-desc {
+        p {
           font-size: 18px;
           font-weight: 500;
         }
@@ -58,16 +111,27 @@
         }
       }
 
-      .serviceThree-content-img {
+      img {
         width: 400px;
         object-fit: cover;
+
+        @include lg {
+          width: 300px;
+          height: 300px;
+        }
+
+        @include md {
+          width: 100%;
+          margin-top: 30px;
+        }
       }
     }
   }
 
   .serviceThree-center-banner {
     position: relative;
-    .serviceThree-center-banner-img {
+    margin-top: 10px;
+    img {
       height: 400px;
       width: 100%;
       object-fit: cover;
@@ -85,12 +149,39 @@
       justify-items: center;
       align-items: center;
 
-      .serviceThree-center-title {
-        font-size: 45px;
+      max-width: 1040px;
+      text-align: center;
+      padding: 0px 5px;
+
+      @include md {
+        top: 50%;
+        padding: 20px;
+        align-items: normal;
       }
-      .serviceThree-center-desc {
+
+      @include sm {
+        top: 50%;
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 45px;
+
+        // @include md {
+        //   font-size: 40px;
+        // }
+
+        // @include sm {
+        //   font-size: 35px;
+        // }
+      }
+      p {
         font-size: 25px;
         font-weight: 500;
+
+        // @include sm {
+        //   font-size: 20px;
+        // }
       }
     }
   }
@@ -102,6 +193,22 @@
     align-items: center;
     max-width: 1040px;
     margin: 0 auto;
+
+
+    @include lg {
+      padding: 70px;
+    }
+
+    @include md {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 50px;
+    
+      
+    }
+
+    @include sm {
+      padding: 20px;
+    }
 
     .project-container {
       display: flex;
@@ -116,14 +223,18 @@
       &:nth-child(odd) {
         border-right: 1px solid #666;
         border-width: 1px;
+
+        @include md{
+          border-right: none;
+        }
       }
 
-      .project-title {
+      h1 {
         font-size: 40px;
         color: #333;
       }
 
-      .project-desc {
+      p {
         font-size: 20px;
         font-style: italic;
         color: #666;
@@ -163,6 +274,15 @@
     flex-direction: column;
     align-items: center;
     gap: 60px;
+
+    @include md{
+        padding: 50px;
+        gap: 40px;
+    }
+
+    @include sm{
+      padding: 30px;
+    }
     .sm-project {
       max-width: 1040px;
       display: flex;
@@ -170,12 +290,12 @@
       align-items: center;
       text-align: center;
       gap: 20px;
-      .sm-project-name {
+      h1 {
         font-size: 40px;
         color: #333;
       }
 
-      .sm-project-desc {
+      p {
         font-size: 20px;
         font-weight: 500;
         color: #666;
@@ -215,6 +335,19 @@
     background-color: #323c77;
     color: #fff;
     position: relative;
+    margin-top: 30px;
+
+    @include lg {
+      height: 500px;
+    }
+
+    @include md {
+      height: 600px;
+    }
+
+    @include sm {
+      height: 700px;
+    }
 
     .serviceThree-bottom-banner-info {
       position: relative;
@@ -228,11 +361,11 @@
       gap: 20px;
       padding: 0px 50px;
 
-      .serviceThree-bottom-title {
+      h2 {
         font-size: 45px;
       }
 
-      .serviceThree-bottom-desc {
+      p {
         font-size: 25px;
         font-weight: 500;
       }
@@ -241,7 +374,10 @@
         display: flex;
         gap: 10px;
 
-        
+        @include sm{
+display: block;
+        }
+
         button {
           padding: 15px 17px;
           font-size: 20px;
@@ -254,17 +390,20 @@
           border: 2px solid #f56a01;
           transition: all 0.3s ease-in-out;
 
-          &:last-child{
-           background: #fff;
-           color: #000;
-        }
+          &:last-child {
+            background: #fff;
+            color: #000;
+
+            @include sm {
+              margin-top: 10px;
+            }
+        
+          }
 
           &:hover {
             background-color: transparent;
             border: 2px solid #f56a01;
           }
-
-          
         }
       }
     }

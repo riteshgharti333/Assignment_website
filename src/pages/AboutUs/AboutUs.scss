@@ -1,10 +1,35 @@
+@import "../../styles/responsive.scss";
+
 .aboutUs {
+  overflow: hidden;
   .about-banner {
     position: relative;
 
     img {
       width: 100%;
       height: 70vh;
+
+      @include xl {
+        height: 400px;
+        height: 60vh;
+        object-fit: cover;
+      }
+
+      @include lg {
+        height: 400px;
+        height: 50vh;
+        object-fit: cover;
+      }
+
+      @include md {
+        height: 400px;
+        object-fit: cover;
+      }
+
+      @include sm {
+        height: 300px;
+        object-fit: cover;
+      }
     }
 
     .about-banner-info {
@@ -16,9 +41,17 @@
       h1 {
         font-size: 70px;
         color: #333;
-        font-weight: 700;
         margin-bottom: 15px;
         font-weight: 700;
+        text-align: center;
+
+        @include md {
+          font-size: 50px;
+        }
+
+        @include sm {
+          font-size: 40px;
+        }
       }
 
       .about-sm-info {
@@ -63,18 +96,47 @@
 
   ////////////////////////////////////////////
 
+  .card-2 {
+    .about-points-info {
+      margin-left: 100px;
+
+      @include lg {
+        margin-left: 0;
+      }
+
+      @include md {
+        margin-left: 0;
+      }
+    }
+
+    img {
+      @include lg {
+        margin-bottom: 30px;
+      }
+      @include md {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
   .about-points {
     padding: 95px;
     display: flex;
+    max-width: 1600px;
+    margin:  0 auto;
 
-    &:nth-of-type(3) {
-      .about-points-info {
-        margin-left: 100px;
-        h5 {
-          font-size: 25px;
-          margin-bottom: 10px;
-        }
-      }
+    @include xl {
+      padding: 70px;
+    }
+
+    @include lg {
+      display: block;
+      padding: 60px;
+    }
+
+    @include md {
+      padding: 30px;
+      display: block;
     }
 
     .about-points-info {
@@ -82,12 +144,41 @@
       flex-direction: column;
       justify-content: center;
       margin-right: 100px;
-      .about-points-title {
+      gap: 10px;
+
+      @include lg {
+        margin-right: 0;
+      }
+
+      @include md {
+        margin-right: 0;
+      }
+      @include sm {
+        margin-right: 0;
+      }
+      h2 {
         color: #333333;
         font-size: 50px;
         font-weight: 700;
         line-height: 55px;
         margin-bottom: 20px;
+
+        @include md {
+          font-size: 50px;
+          line-height: normal;
+        }
+        @include sm {
+          font-size: 30px;
+          line-height: normal;
+        }
+      }
+
+      h5 {
+        font-size: 20px;
+
+        @include lg {
+          font-size: 25px;
+        }
       }
       p {
         color: #666666;
@@ -97,23 +188,49 @@
       }
     }
 
-    .about-points-img {
+    img {
       height: auto;
       max-width: 100%;
       border: none;
       border-radius: 0;
       box-shadow: none;
+
+      @include xl {
+        width: 400px;
+      }
+
+      @include lg {
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      @include md {
+        width: 100%;
+        margin-top: 20px;
+      }
     }
   }
 
-
-
   .team {
     margin: 0px 95px 95px 95px;
-    .team-title {
+    // max-width: 1400px;
+    // // margin: auto;
+
+    @include lg {
+      margin: 0px 60px 60px 60px;
+    }
+
+    @include md {
+      margin: 0px 50px 50px 50px;
+    }
+
+    @include sm {
+      margin: 0px 30px 30px 30px;
+    }
+    h2 {
       color: #333333;
-        font-size: 50px;
-        text-align: center;
+      font-size: 50px;
+      text-align: center;
     }
 
     .team-info {
@@ -122,6 +239,19 @@
       justify-content: center;
       text-align: center;
       margin-top: 30px;
+
+      @include xl {
+        align-items: flex-start;
+      }
+
+
+      @include lg {
+        align-items: flex-start;
+      }
+
+      @include md {
+        display: block;
+      }
       .team-container {
         .team-desc {
           font-size: 25px;
@@ -130,6 +260,10 @@
         .team-sm-desc {
           margin-top: 10px;
           padding: 20px;
+
+          @include md {
+            margin-top: 0px;
+          }
         }
       }
     }
@@ -138,14 +272,55 @@
   .about-slider {
     background: #6b195a;
     padding: 70px 120px;
+
+    @include xl{
+      padding: 60px;
+    }
+
+    @include lg {
+      padding: 50px;
+    }
+    @include md {
+      padding: 30px;
+    }
     .about-slider-info {
       border: 1px solid black;
       transition: all 0.5s ease-in-out;
+
+      
+      @include xl {
+        border: none;
+      }
+
+      @include lg {
+        border: none;
+      }
+
+      @include md {
+        border: none;
+      }
 
       .slider-sm-info {
         display: flex;
         align-items: end;
         position: relative;
+
+        @include xl{
+          align-items: center;
+        }
+
+        @include lg {
+          display: block;
+        }
+
+        @include md {
+          display: block;
+        }
+
+        @include sm {
+          flex-direction: column;
+          align-items: center;
+        }
 
         .img-bg-div {
           background-color: #f56a01;
@@ -163,6 +338,19 @@
           object-fit: contain;
           margin-left: 40px;
           z-index: 1;
+
+          @include lg {
+            margin-left: 0;
+          }
+
+          @include md {
+            margin-left: 0;
+          }
+
+          @include sm {
+            margin-left: 0;
+            width: 100%;
+          }
         }
 
         .slider-details {
@@ -171,11 +359,31 @@
           justify-content: center;
           padding: 100px;
 
+          @include xl{
+            padding: 20px;
+          }
+
+          @include lg {
+            padding: 0px;
+          }
+
+          @include md {
+            padding: 0px;
+          }
+
           h3 {
             color: #fff;
             font-size: 22px;
             line-height: 37px;
             margin-bottom: 22px;
+
+            @include lg {
+              margin-top: 22px;
+            }
+
+            @include md {
+              margin-top: 22px;
+            }
           }
 
           .slider-name {
@@ -212,12 +420,45 @@
     justify-content: center;
     align-items: center;
 
+    @include lg {
+      padding: 60px;
+    }
+
+    @include md {
+      padding: 50px;
+    }
+
+    @include sm {
+      padding: 30px;
+    }
+
     .aboout-cause-title {
       font-size: 50px;
       line-height: 70px;
       margin: 0px 0px 28px 0px;
       padding: 0% 13% 0% 13%;
       text-align: center;
+
+      @include lg {
+        font-size: 40px;
+        margin: 0;
+        line-height: normal;
+        padding: 0;
+      }
+
+      @include md {
+        font-size: 30px;
+        margin: 0;
+        line-height: normal;
+        padding: 0;
+      }
+
+      @include sm {
+        font-size: 30px;
+        margin: 0;
+        line-height: normal;
+        padding: 0;
+      }
     }
 
     .about-cause-info {
@@ -226,6 +467,14 @@
       justify-content: center;
       text-align: center;
       gap: 30px;
+
+      @include md {
+        flex-wrap: wrap;
+      }
+
+      @include sm {
+        flex-wrap: wrap;
+      }
 
       .about-cause-icons {
         .about-cause-img {
@@ -244,10 +493,9 @@
           color: #666666;
           list-style: none;
 
-          li{
+          li {
             margin-top: 5px;
             font-weight: 500;
-            
           }
         }
       }
@@ -310,10 +558,27 @@
 
   .banner-bottom-img {
     padding: 0px 90px 90px 90px;
+
+    @include lg {
+      padding: 60px;
+    }
+
+    @include md {
+      padding: 50px;
+    }
+
+    @include sm {
+      padding: 30px;
+    }
+
     img {
       width: 100%;
       height: 600px;
       object-fit: cover;
+
+      @include sm {
+        height: 400px;
+      }
     }
   }
 }

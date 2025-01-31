@@ -10,25 +10,24 @@ const ServiceTwo = () => {
         <img
           src={sirviceOne_banner_img}
           alt=""
-          className="serviceTwo-banner-img"
         />
 
         <div className="serviceTwo-info">
-          <h2 className="serviceTwo-title">
+          <h2>
             BRIDGING THE GAP BETWEEN THE GOVERNMENT AND THE COMMON MASSES
           </h2>
-          <p className="serviceTwo-desc">
+          <p>
             Know Everything about GOVERNMENT and COMMON MASSES
           </p>
         </div>
       </div>
 
       <div className="serviceTwo-main-section">
-        <div className="serviceTwo-content">
+        <div className="serviceTwo-content  content-card">
           <div className="serviceTwo-content-info">
-            <h1 className="serviceTwo-content-title">EMPLOYMENT GENERATION</h1>
+            <h1>EMPLOYMENT GENERATION</h1>
 
-            <p className="serviceTwo-content-desc">
+            <p>
               In India, we often need to remember rural India, even though
               68.84% of India comprises villages. The challenges faced by people
               in rural and underprivileged areas in India are very different
@@ -45,16 +44,16 @@ const ServiceTwo = () => {
             </p>
           </div>
 
-          <img className="serviceTwo-content-img" src={food}></img>
+          <img src={food}></img>
         </div>
 
-        <div className="serviceTwo-second-content">
-          <img className="second-content-img" src={empowring} alt="" />
+        <div className="serviceTwo-second-content content-card">
+          <img src={empowring} alt="" />
 
           <div className="second-content-info">
-            <h1 className="second-content-title">THE ROLE OF N.G.O</h1>
+            <h1>THE ROLE OF N.G.O</h1>
 
-            <p className="second-content-desc">
+            <p>
               Our N.G.O All India Welfare Society has always taken the
               initiative to become” the bridge.” and help in filling the gap
               between the common masses.
@@ -70,39 +69,48 @@ const ServiceTwo = () => {
           </div>
         </div>
 
-        <div className="serviceTwo-third-content">
+        <div className="serviceTwo-third-content content-card">
           <div className="third-content-left">
-            <h1 className="third-content-left-title">
-            AIWS Team
-
-            </h1>
-            <p className="third-content-left-desc">
-            We as a team soulfully work
+            <h1>AIWS Team</h1>
+            <p>
+              We as a team soulfully work
             </p>
 
-              <p className="third-content-sm-desc">
-              As per the requirement and needs of the people in the village or underprivileged areas registering them to the government schemes or yojana such as “Jan Aadhaar card”, ”Palanhar Yojana”, ”Berojgari Bhatta Yojana,” Mukhya Mantri Chiranjeevi Swasthya Bima Yojana” which the government has made explicitly for the people, for their needs, growth, and development for employment and health as well so that they may be more benefitted by it.
-              </p>
+            <p className="third-content-sm-desc">
+              As per the requirement and needs of the people in the village or
+              underprivileged areas registering them to the government schemes
+              or yojana such as “Jan Aadhaar card”, ”Palanhar Yojana”,
+              ”Berojgari Bhatta Yojana,” Mukhya Mantri Chiranjeevi Swasthya Bima
+              Yojana” which the government has made explicitly for the people,
+              for their needs, growth, and development for employment and health
+              as well so that they may be more benefitted by it.
+            </p>
           </div>
 
           <div className="third-content-right">
-            <img src={food} alt="" className="third-content-right-img" />
+            <img src={food} alt="" />
 
-            <h4 className="third-content-right-desc">
-            IT’S ALL ABOUT DEVELOPMENT: –
+            <h4>
+              IT’S ALL ABOUT DEVELOPMENT: –
             </h4>
             <p className="third-content-1-desc">
-            There are also many other schemes for education for children living in rural and The government has formed underprivileged areas, such as Kishori Shakti Yojana, through which we register the children for their education.
+              There are also many other schemes for education for children
+              living in rural and The government has formed underprivileged
+              areas, such as Kishori Shakti Yojana, through which we register
+              the children for their education.
             </p>
             <p className="third-content-2-desc">
-            These are how the N.G.O. has been contributing and helping the government reach out to people so that their livelihood, entitlement, and social and behavioral-based differences may be overcome. This way, we believe our vision of” looking for a better India is being fulfilled.”
+              These are how the N.G.O. has been contributing and helping the
+              government reach out to people so that their livelihood,
+              entitlement, and social and behavioral-based differences may be
+              overcome. This way, we believe our vision of” looking for a better
+              India is being fulfilled.”
             </p>
           </div>
         </div>
       </div>
 
-
-  <div className="serviceTwo-bottom-banner">
+      <div className="serviceTwo-bottom-banner">
         <img
           src={sirviceOne_banner_img}
           alt=""
@@ -110,29 +118,27 @@ const ServiceTwo = () => {
         />
 
         <div className="serviceTwo-bottom-info">
-          <h2 className="serviceTwo-bottom-title">
-          Help others so other can adore your help
+          <h2>
+            Help others so other can adore your help
           </h2>
-          <p className="serviceTwo-bottom-desc">
-          Here at All India Welfare Society, we see the value in everyone. We want to be a catalyst for positive change, and since our beginnings in 2008, we’ve been driven by the same ideas we initially founded our Non-Profit Organization upon support, empowerment, and progress..
-
+          <p>
+            Here at All India Welfare Society, we see the value in everyone. We
+            want to be a catalyst for positive change, and since our beginnings
+            in 2008, we’ve been driven by the same ideas we initially founded
+            our Non-Profit Organization upon support, empowerment, and
+            progress..
           </p>
           <button>Donate Now</button>
-<div className="serviceTwo-user">
-    <img
-          src={sirviceOne_banner_img}
-          alt=""
-        />
+          <div className="serviceTwo-user">
+            <img src={sirviceOne_banner_img} alt="" />
 
-        <div className="serviceTwo-user-name">
-            <p>Ritu Jain</p>
-            <p>Secretary</p>
-        </div>
-</div>
-
+            <div className="serviceTwo-user-name">
+              <p>Ritu Jain</p>
+              <p>Secretary</p>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
   );
 };

@@ -11,12 +11,11 @@ const ServiceThree = () => {
         <img
           src={sirviceOne_banner_img}
           alt=""
-          className="serviceThree-banner-img"
         />
 
         <div className="serviceThree-info">
-          <h2 className="serviceThree-title">YOUTH DEVELOPMENT</h2>
-          <p className="serviceThree-desc">
+          <h2>YOUTH DEVELOPMENT</h2>
+          <p>
             Know What it Really means for YOUTH DEVELOPMENT For AIWS
           </p>
         </div>
@@ -25,9 +24,9 @@ const ServiceThree = () => {
       <div className="serviceThree-main-section">
         <div className="serviceThree-content">
           <div className="serviceThree-content-info">
-            <h1 className="serviceThree-content-title">THE ROLE OF N.G.O</h1>
+            <h1>THE ROLE OF N.G.O</h1>
 
-            <p className="serviceThree-content-desc">
+            <p>
               As we all know ‘The integrated development of the nation depends
               upon a healthy youth’.
             </p>
@@ -44,7 +43,7 @@ const ServiceThree = () => {
             </p>
           </div>
 
-          <img className="serviceThree-content-img" src={food}></img>
+          <img src={food}></img>
         </div>
       </div>
 
@@ -52,14 +51,13 @@ const ServiceThree = () => {
         <img
           src={sirviceOne_banner_img}
           alt=""
-          className="serviceThree-center-banner-img"
         />
 
         <div className="serviceThree-center-info">
-          <h2 className="serviceThree-center-title">
+          <h2>
             Peace Building Projects​
           </h2>
-          <p className="serviceThree-center-desc">
+          <p>
             MAJOR 9 PROJECTS taken by each individual are:​
           </p>
         </div>
@@ -67,8 +65,8 @@ const ServiceThree = () => {
 
       <div className="project">
         <div className="project-container">
-          <h1 className="project-title">PEACE BUILDING PROJECT</h1>
-          <p className="project-desc">
+          <h1>PEACE BUILDING PROJECT</h1>
+          <p>
             This project was executed by Jatin Deewan. where he with his whole
             team organized a session that was known as “peacebuilding session”
             in underprivileged areas such as rural, slum areas and also with
@@ -89,8 +87,8 @@ const ServiceThree = () => {
         </div>
 
         <div className="project-container">
-          <h1 className="project-title">PEACE BUILDING PROJECT</h1>
-          <p className="project-desc">
+          <h1>PEACE BUILDING PROJECT</h1>
+          <p>
             This project was executed by Jatin Deewan. where he with his whole
             team organized a session that was known as “peacebuilding session”
             in underprivileged areas such as rural, slum areas and also with
@@ -109,10 +107,11 @@ const ServiceThree = () => {
             </div>
           </div>
         </div>
+
 
         <div className="project-container">
-          <h1 className="project-title">PEACE BUILDING PROJECT</h1>
-          <p className="project-desc">
+          <h1>PEACE BUILDING PROJECT</h1>
+          <p>
             This project was executed by Jatin Deewan. where he with his whole
             team organized a session that was known as “peacebuilding session”
             in underprivileged areas such as rural, slum areas and also with
@@ -131,10 +130,11 @@ const ServiceThree = () => {
             </div>
           </div>
         </div>
+
 
         <div className="project-container">
-          <h1 className="project-title">PEACE BUILDING PROJECT</h1>
-          <p className="project-desc">
+          <h1>PEACE BUILDING PROJECT</h1>
+          <p>
             This project was executed by Jatin Deewan. where he with his whole
             team organized a session that was known as “peacebuilding session”
             in underprivileged areas such as rural, slum areas and also with
@@ -153,17 +153,19 @@ const ServiceThree = () => {
             </div>
           </div>
         </div>
+
+       
       </div>
 
       <div className="sm-projects">
         <div className="sm-project">
-          <h1 className="sm-project-name">RATION-KIT PROJECT</h1>
+          <h1>RATION-KIT PROJECT</h1>
 
-          <div className="sm-project-desc">
+          <p>
             This project was carried by Chanchal Jain who applied for ration-kit
             for the people who were in distress when the second lock down came
             and she gave out ration-kit to 20 families with funding she raised
-          </div>
+          </p>
 
           <div className="sm-project-user">
             <img src={sirviceOne_banner_img} alt="" />
@@ -176,13 +178,13 @@ const ServiceThree = () => {
         </div>
 
         <div className="sm-project">
-          <h1 className="sm-project-name">RATION-KIT PROJECT</h1>
+          <h1>RATION-KIT PROJECT</h1>
 
-          <div className="sm-project-desc">
+          <p>
             This project was carried by Chanchal Jain who applied for ration-kit
             for the people who were in distress when the second lock down came
             and she gave out ration-kit to 20 families with funding she raised
-          </div>
+          </p>
 
           <div className="sm-project-user">
             <img src={sirviceOne_banner_img} alt="" />
@@ -193,12 +195,13 @@ const ServiceThree = () => {
             </div>
           </div>
         </div>
+       
       </div>
 
       <div className="serviceThree-bottom-banner">
         <div className="serviceThree-bottom-banner-info">
-          <h2 className="serviceThree-bottom-title">YOUTH DEVELOPMENT</h2>
-          <p className="serviceThree-bottom-desc">
+          <h2>YOUTH DEVELOPMENT</h2>
+          <p>
             Not only these social workers but throughout India during these
             tough times there are many other social workers who have done many
             projects for Youth Development Program and we ,as an NGO have been
