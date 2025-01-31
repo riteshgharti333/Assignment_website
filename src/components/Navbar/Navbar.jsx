@@ -1,128 +1,103 @@
 import "./Navbar.scss";
 import logo from "../../assets/images/logo.webp";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoIosArrowUp } from "react-icons/io";
+import { BiDownArrow } from "react-icons/bi"; // Import the down arrow icon
 
 const Navbar = () => {
   const location = useLocation();
-  const [scroll, setScroll] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
+  // Detect screen size
   useEffect(() => {
-    const handleScroll = () => {
-      setScroll(window.scrollY > 0);
-    };
+    const mediaQuery = window.matchMedia("(min-width: 769px)");
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    setIsDesktop(mediaQuery.matches);
 
-  useEffect(() => {
-    const handleOutsideClick = (e) => {
-      if (menuOpen && !e.target.closest(".navbar")) {
-        setMenuOpen(false);
+    const handleMediaChange = (e) => {
+      setIsDesktop(e.matches);
+      if (e.matches) {
+        setMenuOpen(false); // Close mobile menu on desktop view
+        setDropdownOpen(false); // Close dropdown on desktop view
       }
     };
 
-    document.addEventListener("click", handleOutsideClick);
-    return () => document.removeEventListener("click", handleOutsideClick);
-  }, [menuOpen]);
+    mediaQuery.addEventListener("change", handleMediaChange);
 
+    return () => mediaQuery.removeEventListener("change", handleMediaChange);
+  }, []);
+
+  // Toggle mobile menu
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
 
-  const MobileProgramLists = () => {
-    return (
-      <>
-        <ul>
-          <li>Socio-economic development</li>
-          <li>
-            Bridging the gap between the government and the common masses
-          </li>
-          <li> Youth Empowerment</li>
-        </ul>
-      </>
-    );
+  // Toggle dropdown (for mobile)
+  const toggleDropdown = () => {
+    if (!isDesktop) {
+      setDropdownOpen((prev) => !prev);
+    }
+  };
+
+  // Handle hover on desktop
+  const handleDropdownHover = (isHovered) => {
+    if (isDesktop) {
+      setDropdownOpen(isHovered);
+    }
   };
 
   return (
-    <div className={`navbar ${scroll ? "scrolled" : ""}`}>
-      <div className="nav-logo">
-        <div className="logo">
-          <img src={logo} alt="Logo" />
-        </div>
+    <div className="navbar">
+      <div className="left-logo">
+        <img src={logo} alt="Logo" />
       </div>
 
-      {/* Burger Menu */}
-      <div
-        className={`burger-menu ${menuOpen ? "open" : ""}`}
-        onClick={toggleMenu}
-      >
+      {/* Burger Menu (for mobile) */}
+      <div className={`burger-menu ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
 
-
-   
-    {/* Nav Options */}
-
-      <div className={`nav-lists ${menuOpen ? "active" : ""}`}>
-        <Link to="/" onClick={() => setMenuOpen(false)}>
-          <span
-            className={`nav-list ${location.pathname === "/" ? "active" : ""}`}
-          >
-            Home
-          </span>
+      {/* Navigation links */}
+      <div className={`right-content ${menuOpen ? "open" : ""}`}>
+        <Link to="/" className={`nav-item ${location.pathname === "/" ? "active" : ""}`}>
+          Home
         </Link>
 
-        <span className="nav-list nav-options">
-          <p className="pp">  Programs & Partners</p>
-        
-          <div className="services">
-            <Link to="/socio-economic-development" onClick={() => setMenuOpen(false)}>
-              <span
-              >
-
+        {/* Programs & Partners Dropdown */}
+        <div
+          className="dropdown"
+          onMouseEnter={() => handleDropdownHover(true)} // Hover on desktop
+          onMouseLeave={() => handleDropdownHover(false)} // Hover off on desktop
+        >
+          <p className="nav-item" onClick={toggleDropdown}>
+            Programs & Partners
+            <BiDownArrow className={`dropdown-arrow ${dropdownOpen ? "open" : ""}`} />
+          </p>
+          {dropdownOpen && (
+            <div className="dropdown-content">
+              <Link to="/socio-economic-development" className="dropdown-link" onClick={() => setMenuOpen(false)}>
                 Socio-economic development
-              </span>
-            </Link>
-            <Link to="/bridging-the-gap-between-the-government-and-the-common-masses" onClick={() => setMenuOpen(false)}>
-              <span
-              >
+              </Link>
+              <Link to="/bridging-the-gap" className="dropdown-link" onClick={() => setMenuOpen(false)}>
                 Bridging the gap between the government and the common masses
-              </span>
-            </Link>
-            <Link to="/youth-development" onClick={() => setMenuOpen(false)}>
-              <span
-              >
+              </Link>
+              <Link to="/youth-development" className="dropdown-link" onClick={() => setMenuOpen(false)}>
                 Youth Empowerment
-              </span>
-            </Link>
-          </div>
-        </span>
+              </Link>
+            </div>
+          )}
+        </div>
 
-        <Link to="/about" onClick={() => setMenuOpen(false)}>
-          <span
-            className={`nav-list ${
-              location.pathname === "/about" ? "active" : ""
-            }`}
-          >
-            About Us
-          </span>
+        <Link to="/about" className={`nav-item ${location.pathname === "/about" ? "active" : ""}`}>
+          About Us
         </Link>
 
-        <Link to="/contact-us" onClick={() => setMenuOpen(false)}>
-          <span
-            className={`nav-list ${
-              location.pathname === "/contact-us" ? "active" : ""
-            }`}
-          >
-            Contact Us
-          </span>
+        <Link to="/contact-us" className={`nav-item ${location.pathname === "/contact-us" ? "active" : ""}`}>
+          Contact Us
         </Link>
       </div>
     </div>
