@@ -1,33 +1,46 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import WorkSectionCard from "../WorkSectionCard/WorkSectionCard";
 import "./WorkSection.scss";
 import { work } from "../../assets/data";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const WorkSection = () => {
+  const workCardsRef = useRef([]);
+
   useEffect(() => {
-    AOS.init({
-      duration: 500,
-      easing: "ease-in-out",
-      once: true,
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-up");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the element is visible
+      }
+    );
+
+    workCardsRef.current.forEach((card) => {
+      if (card) observer.observe(card);
     });
 
     return () => {
-      // Cleanup AOS when component is unmounted
-      AOS.refresh();
+      workCardsRef.current.forEach((card) => {
+        if (card) observer.unobserve(card);
+      });
     };
   }, []);
 
-  // Use useMemo to optimize the map function for work items
   const workCards = useMemo(() => {
     return work.map((workCard, index) => (
-      <WorkSectionCard
+      <div
         key={workCard.title}
-        workCard={workCard}
-        data-aos="fade-up"
-        data-aos-delay={index * 100}
-      />
+        ref={(el) => (workCardsRef.current[index] = el)}
+        className="WorkSection-Card-Container"
+      >
+        <WorkSectionCard workCard={workCard} />
+      </div>
     ));
   }, [work]);
 

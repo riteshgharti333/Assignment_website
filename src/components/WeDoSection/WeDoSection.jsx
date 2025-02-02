@@ -4,7 +4,6 @@ import "./WeDoSection.scss";
 import { weDo } from "../../assets/data";
 
 const WeDoSection = () => {
-  // Memoize the mapping of WeDoCard components to avoid recalculating on each render
   const weDoCards = useMemo(() => {
     return weDo.map((wedoCard) => (
       <WeDoCard wedoCard={wedoCard} key={wedoCard.title} />

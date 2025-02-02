@@ -14,8 +14,7 @@ const HomePageBanner = () => {
     return () => clearInterval(interval);
   }, []);
 
-
-  const currentTitle = useMemo(() => slider[currentIndex].title, [currentIndex])
+  const currentTitle = useMemo(() => slider[currentIndex].title, [currentIndex]);
 
   return (
     <div className="banner">
@@ -33,9 +32,9 @@ const HomePageBanner = () => {
               options={{
                 strings: [currentTitle],
                 autoStart: true,
-                loop: false, 
+                loop: false,
                 delay: 40,
-                deleteSpeed: Infinity, 
+                deleteSpeed: Infinity,
                 cursor: "",
               }}
             />

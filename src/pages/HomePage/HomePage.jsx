@@ -1,23 +1,28 @@
-import Gallery from "../../components/Gallery/Gallery";
-import HomePageBanner from "../../components/HomePageBanner/HomePageBanner";
-import WeDoSection from "../../components/WeDoSection/WeDoSection";
-import WorkSection from "../../components/WorkSection/WorkSection";
+import React, { Suspense, lazy } from "react";
 import "./HomePage.scss";
+
+// Lazy load components
+const HomePageBanner = lazy(() => import("../../components/HomePageBanner/HomePageBanner"));
+const WeDoSection = lazy(() => import("../../components/WeDoSection/WeDoSection"));
+const WorkSection = lazy(() => import("../../components/WorkSection/WorkSection"));
+const Gallery = lazy(() => import("../../components/Gallery/Gallery"));
 
 const HomePage = () => {
   return (
     <div className="homePage">
-      <div id="homeSection">
-        <HomePageBanner />
-      </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div id="homeSection">
+          <HomePageBanner />
+        </div>
 
-      <div id="weDoSection">
-        <WeDoSection />
-      </div>
+        <div id="weDoSection">
+          <WeDoSection />
+        </div>
 
-      <WorkSection />
+        <WorkSection />
 
-      <Gallery />
+        <Gallery />
+      </Suspense>
     </div>
   );
 };
