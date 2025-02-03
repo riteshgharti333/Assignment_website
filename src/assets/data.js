@@ -22,6 +22,34 @@ import school from "../assets/images/school.webp";
 import water from "../assets/images/water.webp";
 
 
+
+
+
+////////////////////////////// GALLERY IMAGES
+import gallery_1 from "../assets/images/b/about2.jpeg"
+import gallery_2 from "../assets/images/b/about3.jpeg"
+import gallery_3 from "../assets/images/b/about4.jpeg"
+import gallery_4 from "../assets/images/b/about5.jpeg"
+import gallery_5 from "../assets/images/b/about6.jpeg"
+import gallery_6 from "../assets/images/b/about7.jpeg"
+
+import gallery_7 from "../assets/images/h/about1.jpeg"
+import gallery_8 from "../assets/images/h/helmet1.jpeg"
+import gallery_9 from "../assets/images/h/helmet2.jpeg"
+import gallery_10 from "../assets/images/h/helmet3.jpeg"
+import gallery_11 from "../assets/images/h/helmet4.jpeg"
+import gallery_12 from "../assets/images/h/helmet5.jpeg"
+import gallery_13 from "../assets/images/h/helmet6.jpeg"
+
+
+import gallery_14 from "../assets/images/helmet.jpeg"
+import gallery_15 from "../assets/images/service2.jpeg"
+import gallery_16 from "../assets/images/service3.jpeg"
+
+
+
+
+
 export const slider = [
   {
     image: banner_img_1,
@@ -133,14 +161,20 @@ export const work = [
 ];
 
 export const gallery = [
-  { id: 1, image: first },
-  { id: 2, image: second },
-  { id: 3, image: third },
-  { id: 4, image: fourth },
-  { id: 5, image: fifth },
-  { id: 6, image: empowring },
-  { id: 7, image: shelter },
-  { id: 8, image: food },
-  { id: 9, image: shelterImg },
-  { id: 10, image: school },
+  { id: 1, image: gallery_1 },
+  { id: 2, image: gallery_2 },
+  { id: 3, image: gallery_3 },
+  { id: 4, image: gallery_4 },
+  { id: 5, image: gallery_5 },
+  { id: 6, image: gallery_6 },
+  { id: 7, image: gallery_7 },
+  { id: 8, image: gallery_8 },
+  { id: 9, image: gallery_9 },
+  { id: 10, image: gallery_10 },
+  { id: 11, image: gallery_11 },
+  { id: 12, image: gallery_12 },
+  { id: 13, image: gallery_13 },
+  { id: 14, image: gallery_14 },
+  { id: 15, image: gallery_15 },
+  { id: 16, image: gallery_16 },
 ];

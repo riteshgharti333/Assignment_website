@@ -7,6 +7,13 @@ import { TiLeaf } from "react-icons/ti";
 import { FaRegSmile } from "react-icons/fa";
 import about_bottom_img from "../../assets/images/about-banner.webp";
 
+import about_1 from "../../assets/images/h/about1.jpeg"
+import about_2 from "../../assets/images/b/about2.jpeg"
+import about_3 from "../../assets/images/b/about3.jpeg"
+import Gallery from "../../components/Gallery/Gallery";
+
+
+
 const AboutUs = () => {
   return (
     <div className="aboutUs">
@@ -32,10 +39,14 @@ const AboutUs = () => {
             women's empowerment, and emergency aid for hospitalized individuals.
           </p>
         </div>
-        <img src={about_point_img} alt="" />
+        <img src={about_1} alt="" />
       </div>
       <div className="about-points card-2">
-        <img src={about_point_img} alt="" />
+        <div className="card-2-imgs">
+        <img src={about_2} alt="" />   
+        <img src={about_3} alt="" />
+        </div>
+
         <div className="about-points-info">
           <h2>Our Journey</h2>
           <h5>A Legacy of Growth & Impact</h5>
@@ -139,6 +150,10 @@ const AboutUs = () => {
       </div>
       <div className="banner-bottom-img">
         <img src={about_bottom_img} alt="" />
+      </div>
+
+      <div className="galleryCards">
+        <Gallery />
       </div>
     </div>
   );

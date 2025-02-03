@@ -75,9 +75,6 @@ const Navbar = () => {
               <Link to="/socio-economic-development" className="dropdown-link" onClick={() => setMenuOpen(false)}>
                 Socio-economic development
               </Link>
-              <Link to="/bridging-the-gap-between-the-government-and-the-common-masses" className="dropdown-link" onClick={() => setMenuOpen(false)}>
-                Bridging the gap between the government and the common masses
-              </Link>
               <Link to="/youth-development" className="dropdown-link" onClick={() => setMenuOpen(false)}>
                 Youth Empowerment
               </Link>

@@ -1,9 +1,11 @@
 import "./ServiceOne.scss";
+import Gallery from "../../../components/Gallery/Gallery";
 import serviceOne_banner_img from "../../../assets/images/1.webp";
-import empowring from "../../../assets/images/empowring.webp";
 
-import food from "../../../assets/images/food.webp";
 import { FaRegCircle } from "react-icons/fa";
+import serviveOne_1 from "../../../assets/images/helmet.jpeg";
+import serviveOne_2 from "../../../assets/images/service2.jpeg";
+import serviveOne_3 from "../../../assets/images/service3.jpeg";
 
 const ServiceOne = () => {
   return (
@@ -44,13 +46,13 @@ const ServiceOne = () => {
             </div> */}
           </div>
 
-          <img className="serviceOne-content-img" src={food}></img>
+          <img className="serviceOne-content-img" src={serviveOne_1}></img>
         </div>
 
         <div className="serviceOne-second-content content-card">
           <div className="second-content-img">
-            <img src={empowring} alt="" />
-            <img src={empowring} alt="" />
+            <img src={serviveOne_2} alt="" />
+            <img src={serviveOne_3} alt="" />
           </div>
 
           <div className="second-content-info">
@@ -110,7 +112,11 @@ const ServiceOne = () => {
           </div>
 
           <div className="third-content-right">
-            <img src={food} alt="" className="third-content-right-img" />
+            <img
+              src={serviveOne_1}
+              alt=""
+              className="third-content-right-img"
+            />
 
             <p className="third-content-right-desc">
               Today, our initiative continues to grow, ensuring that more women
@@ -204,7 +210,7 @@ const ServiceOne = () => {
             <span>Get Involved</span>
             <span className="pin-line">|</span>
             <span>Support Women’s Empowerment</span>
-            <span  className="pin-line">|</span>
+            <span className="pin-line">|</span>
             <span>Transform Sikar Together</span>
           </div>
         </div>
@@ -227,6 +233,10 @@ const ServiceOne = () => {
           </p>
           <button>Donate Now</button>
         </div>
+      </div>
+
+      <div className="galleryCards">
+        <Gallery />
       </div>
     </div>
   );

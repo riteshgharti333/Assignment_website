@@ -2,6 +2,7 @@ import "./ServiceTwo.scss";
 import serviceOne_banner_img from "../../../assets/images/1.webp";
 import food from "../../../assets/images/food.webp";
 import empowring from "../../../assets/images/empowring.webp";
+import GalleryCard from "../../../components/GalleryCard/GalleryCard";
 
 const ServiceTwo = () => {
   return (
@@ -139,6 +140,8 @@ const ServiceTwo = () => {
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 };

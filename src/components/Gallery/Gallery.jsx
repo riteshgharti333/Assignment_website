@@ -15,7 +15,7 @@ const Gallery = () => {
 
   const slidesToShow = useMemo(() => {
     if (isExtraSmall) return 1;
-    if (isSmall) return 2;
+    if (isSmall) return 1;
     if (isMedium) return 3;
     return 3;
   }, [isExtraSmall, isSmall, isMedium]);

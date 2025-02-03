@@ -1,8 +1,8 @@
 import "./ServiceThree.scss";
 import serviceOne_banner_img from "../../../assets/images/1.webp";
 import empowring from "../../../assets/images/empowring.webp";
-
-import food from "../../../assets/images/food.webp";
+import serviveOne_1 from "../../../assets/images/helmet.jpeg"
+import Gallery from "../../../components/Gallery/Gallery";
 
 const ServiceThree = () => {
   return (
@@ -42,7 +42,7 @@ const ServiceThree = () => {
             </p>
           </div>
 
-          <img src={food}></img>
+          <img src={serviveOne_1}></img>
         </div>
       </div>
 
@@ -213,6 +213,11 @@ const ServiceThree = () => {
           </div> */}
         </div>
       </div>
+  
+  <div className="galleryCards">
+  <Gallery />
+  </div>
+     
     </div>
   );
 };

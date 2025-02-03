@@ -133,7 +133,7 @@
 
       .serviceOne-content-img {
         width: 400px;
-        object-fit: cover;
+        object-fit: contain;
 
         @include lg{
           width: 300px;

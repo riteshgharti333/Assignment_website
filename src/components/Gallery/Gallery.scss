@@ -1,5 +1,6 @@
 .gallery {
   margin-top: 20px;
+  width: 100%;
 
   .gallery-title {
     text-align: center;
@@ -7,9 +8,6 @@
   }
 
   .gallery-info {
-    .gallery-img {
-      object-fit: cover;
-      border-radius: 8px;
-    }
+    padding: 10px;
   }
 }
