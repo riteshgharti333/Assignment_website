@@ -1,5 +1,5 @@
 import "./ServiceOne.scss";
-import sirviceOne_banner_img from "../../../assets/images/1.webp";
+import serviceOne_banner_img from "../../../assets/images/1.webp";
 import empowring from "../../../assets/images/empowring.webp";
 
 import food from "../../../assets/images/food.webp";
@@ -9,7 +9,7 @@ const ServiceOne = () => {
   return (
     <div className="serviceOne">
       <div className="serviceOne-banner">
-        <img src={sirviceOne_banner_img} alt="" />
+        <img src={serviceOne_banner_img} alt="" />
 
         <div className="serviceOne-info">
           <h2>EMPLOYMENT GENERATION/ GOVERNMENT SCHEME</h2>
@@ -212,7 +212,7 @@ const ServiceOne = () => {
 
       <div className="serviceOne-bottom-banner">
         <img
-          src={sirviceOne_banner_img}
+          src={serviceOne_banner_img}
           alt=""
           className="serviceOne-bottom-img"
         />

@@ -190,7 +190,8 @@
 
     img {
       height: auto;
-      max-width: 100%;
+      width: 100%;
+      // max-width: 100%;
       border: none;
       border-radius: 0;
       box-shadow: none;
@@ -338,13 +339,17 @@
           object-fit: contain;
           margin-left: 40px;
           z-index: 1;
+          width: 300px;
 
           @include lg {
             margin-left: 0;
+            width: 300px;
           }
 
           @include md {
             margin-left: 0;
+            width: 300px;
+            
           }
 
           @include sm {

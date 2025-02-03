@@ -1,5 +1,5 @@
 import "./ServiceTwo.scss";
-import sirviceOne_banner_img from "../../../assets/images/1.webp";
+import serviceOne_banner_img from "../../../assets/images/1.webp";
 import food from "../../../assets/images/food.webp";
 import empowring from "../../../assets/images/empowring.webp";
 
@@ -8,7 +8,7 @@ const ServiceTwo = () => {
     <div className="serviceTwo">
       <div className="serviceTwo-banner">
         <img
-          src={sirviceOne_banner_img}
+          src={serviceOne_banner_img}
           alt=""
         />
 
@@ -112,7 +112,7 @@ const ServiceTwo = () => {
 
       <div className="serviceTwo-bottom-banner">
         <img
-          src={sirviceOne_banner_img}
+          src={serviceOne_banner_img}
           alt=""
           className="serviceTwo-bottom-img"
         />
@@ -130,7 +130,7 @@ const ServiceTwo = () => {
           </p>
           <button>Donate Now</button>
           <div className="serviceTwo-user">
-            <img src={sirviceOne_banner_img} alt="" />
+            <img src={serviceOne_banner_img} alt="" />
 
             <div className="serviceTwo-user-name">
               <p>Ritu Jain</p>
