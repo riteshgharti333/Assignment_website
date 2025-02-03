@@ -7,12 +7,11 @@ import { TiLeaf } from "react-icons/ti";
 import { FaRegSmile } from "react-icons/fa";
 import about_bottom_img from "../../assets/images/about-banner.webp";
 
-import about_1 from "../../assets/images/h/about1.jpeg"
-import about_2 from "../../assets/images/b/about2.jpeg"
-import about_3 from "../../assets/images/b/about3.jpeg"
+import about_1 from "../../assets/images/h/about1.jpeg";
+import about_2 from "../../assets/images/b/about2.jpeg";
+import about_3 from "../../assets/images/b/about3.jpeg";
 import Gallery from "../../components/Gallery/Gallery";
-
-
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -22,7 +21,9 @@ const AboutUs = () => {
         <div className="about-banner-info">
           <h1>About Us</h1>
           <div className="about-sm-info">
-            <span className="home-link">Home</span>
+            <span className="home-link">
+              <Link to={"/"}>Home</Link>
+            </span>
             <span className="line">|</span>{" "}
             <span className="about-link">About Us</span>
           </div>
@@ -30,9 +31,7 @@ const AboutUs = () => {
       </div>
       <div className="about-points card-1">
         <div className="about-points-info ">
-          <h2>
-            Introduction to BK Welfare Society
-          </h2>
+          <h2>Introduction to BK Welfare Society</h2>
           <p>
             Established in 2012 by Abdul Rahim Khatari, BK Welfare Society is
             dedicated to social welfare, with a strong emphasis on education,
@@ -42,9 +41,7 @@ const AboutUs = () => {
         <img src={about_1} alt="" />
       </div>
       <div className="about-points card-2">
-    
-        <img className="card-2-img" src={about_2} alt="" />   
-       
+        <img className="card-2-img" src={about_2} alt="" />
 
         <div className="about-points-info">
           <h2>Our Journey</h2>
@@ -58,24 +55,27 @@ const AboutUs = () => {
         </div>
       </div>
 
-    
-
-
       <div className="team">
         <h2>Our Team</h2>
 
         <div className="team-info">
           <div className="team-container">
-          <h4 className="team-desc">Meet the Passionate Changemakers</h4>
-          <p className="team-sm-desc">Our team is driven by dedication and commitment to making a difference. Each member plays a crucial role in carrying out our mission and vision.</p>
-          </div>
-         
-          <div className="team-container">
-          <h4 className="team-desc">What Our Team Says</h4>
-          <p className="team-sm-desc">Being a part of BK Welfare Society has been a life-changing experience. Seeing lives transform through our efforts is truly rewarding.– ABDUL RAHMAN KHATRI 
-          </p>
+            <h4 className="team-desc">Meet the Passionate Changemakers</h4>
+            <p className="team-sm-desc">
+              Our team is driven by dedication and commitment to making a
+              difference. Each member plays a crucial role in carrying out our
+              mission and vision.
+            </p>
           </div>
 
+          <div className="team-container">
+            <h4 className="team-desc">What Our Team Says</h4>
+            <p className="team-sm-desc">
+              Being a part of BK Welfare Society has been a life-changing
+              experience. Seeing lives transform through our efforts is truly
+              rewarding.– ABDUL RAHMAN KHATRI
+            </p>
+          </div>
         </div>
       </div>
 
@@ -87,10 +87,15 @@ const AboutUs = () => {
             <img className="slider-img" src={slider_img} alt="" />
 
             <div className="slider-details">
-              <h3>BK Welfare Society – People Helping People Around the World
+              <h3>
+                BK Welfare Society – People Helping People Around the World
               </h3>
               <h3>
-              Under the leadership of Abdul Rahim Khatari, we are dedicated to helping those in need. Using personal resources, we strive to bring happiness and support to communities worldwide. Together, we create a positive impact, making the world a better place for everyone.
+                Under the leadership of Abdul Rahim Khatari, we are dedicated to
+                helping those in need. Using personal resources, we strive to
+                bring happiness and support to communities worldwide. Together,
+                we create a positive impact, making the world a better place for
+                everyone.
               </h3>
 
               <p className="slider-name"> Abdul Rahim khatari </p>
@@ -99,7 +104,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
 
       <div className="about-cause">
         <h1 className="aboout-cause-title">
@@ -116,7 +120,9 @@ const AboutUs = () => {
               <li>Providing education to underprivileged children</li>
               <li>Empowering women to lead independent lives</li>
               <li>Assisting hospitalized individuals during emergencies</li>
-              <li>Creating a society where everyone has the opportunity to thrive</li>
+              <li>
+                Creating a society where everyone has the opportunity to thrive
+              </li>
             </ul>
           </div>
 
@@ -127,9 +133,10 @@ const AboutUs = () => {
             <ul className="about-icons-desc">
               <li>A Future of Hope & Empowerment</li>
               <li>Every child has access to quality education</li>
-              <li>Women play a vital role in shaping society
+              <li>Women play a vital role in shaping society</li>
+              <li>
+                A compassionate community that supports its vulnerable members
               </li>
-              <li>A compassionate community that supports its vulnerable members</li>
             </ul>
           </div>
 
@@ -141,7 +148,8 @@ const AboutUs = () => {
               <li>Compassion – Helping those in need</li>
               <li>Integrity – Ensuring transparency in all actions</li>
               <li>Community Focus – Prioritizing the needs of society</li>
-              <li>Empowerment – Enabling individuals to reach their full potential
+              <li>
+                Empowerment – Enabling individuals to reach their full potential
               </li>
             </ul>
           </div>

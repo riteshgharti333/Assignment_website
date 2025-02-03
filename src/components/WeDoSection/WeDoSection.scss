@@ -8,34 +8,10 @@
   }
 
   .weDo-Section-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
-
-    @include lg {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2px;
-    }
-
-    @include md {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2px;
-    }
-
-    @include sm {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2px;
-    }
-
-    @include Esm {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2px;
-    }
-
-    @include EEsm {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2px;
-    }
+    gap: 10px;
+    flex-wrap: wrap;
   }
 }

@@ -82,7 +82,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <Link to="/about" className={`nav-item ${location.pathname === "/about" ? "active" : ""}`}>
+        <Link to="/about-us" className={`nav-item ${location.pathname === "/about" ? "active" : ""}`}>
           About Us
         </Link>
 

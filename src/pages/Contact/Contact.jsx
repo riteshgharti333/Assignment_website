@@ -28,17 +28,17 @@ const Contact = () => {
       <div className="contact-card">
         <div className="contact-card-info">
           <IoCall className='contact-card-info-icon' />
-          <p>+91 123456789</p>
+          <p>+91 90799 29684</p>
         </div>
 
         <div className="contact-card-info">
           <FaLocationDot className='contact-card-info-icon' />
-          <p>128, Vasundhara Colony, Tonk Phatak, Jaipur, Rajasthan 302018, India</p>
+          <p>dalsing colony, jagmal pura, road, sikar ( raj.) 332001</p>
         </div>
 
         <div className="contact-card-info">
           <IoMail className='contact-card-info-icon' />
-          <p>allindiawelfaresociety18@gmail.com</p>
+          <p>Prisident@bkwelfaresocity.com</p>
         </div>
       </div>
 

@@ -26,16 +26,16 @@ const Footer = () => {
         <h1>Contact</h1>
         <div className="contact-info">
           <IoCall className="contact-icons" />
-          <p>+91 123456789</p>
+          <p>+91 90799 29684</p>
         </div>
         <div className="contact-info">
           <IoMail className="contact-icons" />
-          <p>allindiawelfaresociety18@gmail.com</p>
+          <p>Prisident@bkwelfaresocity.com</p>
         </div>
         <div className="contact-info">
           <FaRegAddressCard className="contact-icons" />
           <p>
-            128, Vasundhara Colony, Tonk Phatak, Jaipur, Rajasthan 302018, India
+          dalsing colony, jagmal pura, road, sikar ( raj.) 332001
           </p>
         </div>
       </div>
