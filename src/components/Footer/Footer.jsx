@@ -11,33 +11,38 @@ import { FaRegAddressCard } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className="footer" id="contactSection">
-      <div className="footer-left">
-        <img src={logo} alt="" className="footer-logo" />
+      <div className="footer-top">
+        <div className="footer-left">
+          <img src={logo} alt="" className="footer-logo" />
 
-        <div className="footer-social">
-          <FaFacebook className="social-icons" />
-          <FaWhatsapp className="social-icons" />
-          <FaSquareXTwitter className="social-icons" />
-          <FaInstagram className="social-icons" />
+          <div className="footer-social">
+            <FaFacebook className="social-icons" />
+            <FaWhatsapp className="social-icons" />
+            <FaSquareXTwitter className="social-icons" />
+            <FaInstagram className="social-icons" />
+          </div>
+        </div>
+
+        <div className="footer-right">
+          <h1>Contact</h1>
+          <div className="contact-info">
+            <IoCall className="contact-icons" />
+            <p>+91 90799 29684</p>
+          </div>
+          <div className="contact-info">
+            <IoMail className="contact-icons" />
+            <p>Prisident@bkwelfaresocity.com</p>
+          </div>
+          <div className="contact-info">
+            <FaRegAddressCard className="contact-icons" />
+            <p>dalsing colony, jagmal pura, road, sikar ( raj.) 332001</p>
+          </div>
         </div>
       </div>
 
-      <div className="footer-right">
-        <h1>Contact</h1>
-        <div className="contact-info">
-          <IoCall className="contact-icons" />
-          <p>+91 90799 29684</p>
-        </div>
-        <div className="contact-info">
-          <IoMail className="contact-icons" />
-          <p>Prisident@bkwelfaresocity.com</p>
-        </div>
-        <div className="contact-info">
-          <FaRegAddressCard className="contact-icons" />
-          <p>
-          dalsing colony, jagmal pura, road, sikar ( raj.) 332001
-          </p>
-        </div>
+      <div className="footer-bottom">
+        <p>Copyright © 2025 bk welfare society. All rights reserved</p>
+        <p>Developed by Star Marketing</p>
       </div>
     </div>
   );

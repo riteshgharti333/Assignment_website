@@ -1,4 +1,5 @@
 import "./AboutHome.scss";
+
 import about_1 from "../../assets/images/h/about1.jpeg";
 import { Link } from "react-router-dom";
 import { RiArrowRightSLine } from "react-icons/ri";
@@ -22,7 +23,7 @@ const AboutHome = () => {
       </div>
 
       <div className="aboutHome-right">
-        <img src={about_1} alt="" />
+        <img src={about_1} alt={about_1} />
       </div>
     </div>
   );

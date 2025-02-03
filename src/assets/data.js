@@ -75,12 +75,14 @@ export const weDo = [
     image: gallery_2,
     title: "Socio-economic development",
     desc: "At BK Welfare Society, Sikar, we believe that women’s empowerment strengthens families and the entire community.",
+    wedo_link: "socio-economic-development"
   },
   {
     logo: wedo_2,
     image: gallery_7,
     title: "Youth Empowerment",
     desc: "Khalid Khatri and his team conducted ‘Peace-Building Sessions’ in underprivileged areas, including rural and slum communities. During these sessions, they educated the youth about conflict resolution, social harmony, and government welfare schemes.",
+    wedo_link: "youth-development"
   },
 
 ];

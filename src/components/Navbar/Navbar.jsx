@@ -46,9 +46,13 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
+      <Link to={"/"}>
       <div className="left-logo">
+        
         <img src={logo} alt="Logo" />
       </div>
+      </Link>
+      
 
       <div className={`burger-menu ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
         <div className="bar"></div>

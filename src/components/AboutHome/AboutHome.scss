@@ -9,7 +9,6 @@
   max-width: 1400px;
   padding: 40px 70px;
 
-
   @include xl {
     margin: 40px 50px;
     padding: 0;
@@ -31,7 +30,6 @@
   }
 
   .aboutHome-left {
-    // flex: 1;
     margin-right: 40px;
     display: flex;
     flex-direction: column;
@@ -80,12 +78,11 @@
       display: flex;
       align-items: center;
 
-    
       @include xxl {
         margin-top: 30px;
       }
 
-      @include xl{
+      @include xl {
         margin-top: 0;
       }
 
@@ -125,8 +122,6 @@
   }
 
   .aboutHome-right {
-    // flex: 1;
-
     img {
       width: 400px;
 

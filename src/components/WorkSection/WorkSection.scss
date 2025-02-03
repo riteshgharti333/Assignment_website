@@ -1,34 +1,80 @@
-@import "../../styles/responsive.scss";
-
-.Work-section {
-  margin: 10px  5px 0px 5px;
+.workSection {
+  padding: 60px 20px;
+  text-align: center;
 
   h1 {
-    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+  }
+
+  .workSection-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .workSection-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+      color: #6b195a; 
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .project-name {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+      justify-content: center;
+
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #6b195a; // Border color matching the theme
+      }
+
+      .project-name-info {
+        p {
+          margin: 0;
+          font-size: 14px;
+          color: #777;
+
+          &:first-child {
+            font-weight: 600;
+            color: #333;
+          }
+        }
+      }
+    }
   }
 }
-
-.Work-section-cards {
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  overflow: hidden;
-
-  @include lg{
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-
-  @include md{
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  @include sm{
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-  }
-}
-
