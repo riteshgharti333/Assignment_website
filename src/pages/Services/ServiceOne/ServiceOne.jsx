@@ -52,7 +52,6 @@ const ServiceOne = () => {
         <div className="serviceOne-second-content content-card">
           <div className="second-content-img">
             <img src={serviveOne_2} alt="" />
-            <img src={serviveOne_3} alt="" />
           </div>
 
           <div className="second-content-info">
@@ -109,16 +108,8 @@ const ServiceOne = () => {
                 independence, stability, and a better future.
               </p>
             </div>
-          </div>
-
-          <div className="third-content-right">
-            <img
-              src={serviveOne_1}
-              alt=""
-              className="third-content-right-img"
-            />
-
-            <p className="third-content-right-desc">
+            
+              <p className="third-content-right-desc">
               Today, our initiative continues to grow, ensuring that more women
               in Sikar have access to:
             </p>

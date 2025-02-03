@@ -1,0 +1,39 @@
+.aboutHome {
+  display: flex;
+  margin: 20px 40px 0px 40px;
+  align-items: center;
+  .aboutHome-left {
+    flex: 1;
+
+    h1{
+        font-size: 70px;
+    }
+
+    h3{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    p{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    button{
+        background: #6b195a;
+        border: none;
+        padding: 5px 10px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    
+  }
+
+  .aboutHome-right {
+    flex: 1;
+
+    img{
+        width: 100%;
+    }
+  }
+}

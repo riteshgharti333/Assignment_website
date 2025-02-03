@@ -4,8 +4,8 @@ import { useMediaQuery } from "@mui/material";
 import { gallery } from "../../assets/data";
 import FeatureSlide from "../FeatureSlide/FeatureSlide";
 import GalleryCard from "../GalleryCard/GalleryCard";
-import AOS from "aos"; // Import AOS library
-import "aos/dist/aos.css"; // Import the AOS CSS file
+import AOS from "aos"; 
+import "aos/dist/aos.css";
 
 const Gallery = () => {
   const isExtraSmall = useMediaQuery("(max-width:480px)");

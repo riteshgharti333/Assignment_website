@@ -27,8 +27,7 @@
       text-align: center;
       padding: 0px 5px;
 
-
-      @include md{
+      @include md {
         top: 50%;
         padding: 20px;
         align-items: normal;
@@ -67,11 +66,11 @@
     flex-direction: column;
     align-items: center;
 
-    @include lg{
+    @include lg {
       padding: 70px;
     }
 
-    @include md{
+    @include md {
       padding: 50px;
     }
     @include sm {
@@ -89,7 +88,7 @@
       padding: 0px;
       overflow: hidden;
 
-      @include lg{
+      @include lg {
         align-items: center;
       }
       @include md {
@@ -101,7 +100,7 @@
         justify-content: center;
         gap: 30px;
 
-        @include lg{
+        @include lg {
           margin-right: 30px;
         }
 
@@ -132,15 +131,16 @@
       }
 
       .serviceOne-content-img {
-        width: 400px;
+        width: 500px;
+        height: auto;
         object-fit: contain;
 
-        @include lg{
+        @include lg {
           width: 300px;
           height: 300px;
         }
 
-        @include md{
+        @include md {
           width: 100%;
           margin-top: 30px;
         }
@@ -158,27 +158,20 @@
         height: auto;
         width: 100%;
 
-
         @include md {
           display: block;
         }
 
         img {
-          width: 200px;
+          width: 450px;
           object-fit: contain;
 
-
-          @include lg{
-            width: 150px;
+          @include lg {
+            width: 300px;
           }
 
           @include md {
             width: 100%;
-          }
-
-          &:last-child {
-            margin-top: 30px;
-            margin-left: 5px;
           }
         }
       }
@@ -202,17 +195,16 @@
           font-size: 20px;
           font-weight: 500;
         }
-    
-        ul{
+
+        ul {
           margin-top: -14px;
-    margin-left: 40px;
-    color: #666;
-          li{
+          margin-left: 40px;
+          color: #666;
+          li {
             font-size: 18px;
             font-weight: 500;
           }
         }
-          
       }
     }
 
@@ -246,38 +238,16 @@
           align-items: center;
 
           .third-content-icon {
-            font-size: 40px;
+            font-size: 20px;
             margin-right: 20px;
             color: #6b195a;
 
-            @include md{
-             font-size: 40px;
+            @include md {
+              font-size: 40px;
             }
           }
           .third-content-icon-desc {
             color: #666;
-          }
-        }
-      }
-
-      .third-content-right {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-
-        @include md {
-          margin-top: 30px;
-        }
-        .third-content-right-img {
-          width: 400px;
-          object-fit: cover;
-
-          @include lg {
-            width: 100%;
-          }
-
-          @include md {
-            width: 100%;
           }
         }
 
@@ -286,16 +256,15 @@
           font-weight: bold;
         }
 
-           ul{
+        ul {
           margin-top: -14px;
-    margin-left: 40px;
-    color: #666;
-          li{
+          margin-left: 40px;
+          color: #666;
+          li {
             font-size: 18px;
             font-weight: 500;
           }
         }
-
       }
     }
 
@@ -306,8 +275,8 @@
       flex-direction: column;
       gap: 10px;
 
-      @include md{
-      gap: 15px;
+      @include md {
+        gap: 15px;
       }
 
       p {
@@ -339,7 +308,7 @@
           font-size: 20px;
           font-weight: 500;
 
-          @include lg{
+          @include lg {
             font-size: 18px;
           }
         }
@@ -350,15 +319,14 @@
         flex-direction: column;
         gap: 30px;
 
-        @include md{
+        @include md {
           margin-top: 30px;
         }
         img {
           width: 400px;
 
-
           @include md {
-            width: 100%
+            width: 100%;
           }
         }
 
@@ -383,15 +351,15 @@
         font-weight: 500;
       }
 
-      .pin{
+      .pin {
         margin-top: 20px;
 
-        span{
-         font-size: 16px;
-         color: #6b195a;;
+        span {
+          font-size: 16px;
+          color: #6b195a;
         }
 
-        .pin-line{
+        .pin-line {
           margin: 0px 10px;
           color: #000;
         }
@@ -408,11 +376,11 @@
       width: 100%;
       object-fit: cover;
 
-      @include lg{
+      @include lg {
         height: 500px;
       }
 
-      @include md{
+      @include md {
         height: 600px;
       }
     }
@@ -437,7 +405,6 @@
 
         @include sm {
           font-size: 35px;
-         
         }
       }
 
@@ -446,7 +413,6 @@
         font-weight: 500;
         margin: 0px 40px;
 
-        
         @include sm {
           font-size: 20px;
         }

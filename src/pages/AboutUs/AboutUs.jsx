@@ -42,10 +42,9 @@ const AboutUs = () => {
         <img src={about_1} alt="" />
       </div>
       <div className="about-points card-2">
-        <div className="card-2-imgs">
-        <img src={about_2} alt="" />   
-        <img src={about_3} alt="" />
-        </div>
+    
+        <img className="card-2-img" src={about_2} alt="" />   
+       
 
         <div className="about-points-info">
           <h2>Our Journey</h2>
@@ -88,14 +87,14 @@ const AboutUs = () => {
             <img className="slider-img" src={slider_img} alt="" />
 
             <div className="slider-details">
+              <h3>BK Welfare Society – People Helping People Around the World
+              </h3>
               <h3>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
-                molestiae. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Velit, fugiat.
+              Under the leadership of Abdul Rahim Khatari, we are dedicated to helping those in need. Using personal resources, we strive to bring happiness and support to communities worldwide. Together, we create a positive impact, making the world a better place for everyone.
               </h3>
 
-              <p className="slider-name">John Doe</p>
-              <p className="slider-add">SEO, DELHI</p>
+              <p className="slider-name"> Abdul Rahim khatari </p>
+              <p className="slider-add"> Chairman</p>
             </div>
           </div>
         </div>

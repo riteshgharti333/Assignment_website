@@ -1,3 +1,4 @@
+import AboutHome from "../../components/AboutHome/AboutHome";
 import Gallery from "../../components/Gallery/Gallery";
 import HomePageBanner from "../../components/HomePageBanner/HomePageBanner";
 import WeDoSection from "../../components/WeDoSection/WeDoSection";
@@ -9,6 +10,10 @@ const HomePage = () => {
     <div className="homePage">
       <div id="homeSection">
         <HomePageBanner />
+      </div>
+
+      <div className="about-Home">
+        {/* <AboutHome /> */}
       </div>
 
       <div id="weDoSection">

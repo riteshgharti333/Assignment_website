@@ -97,50 +97,10 @@
   ////////////////////////////////////////////
 
   .card-2 {
-    .card-2-imgs {
-      display: flex;
-      justify-content: space-between;
 
-      @include lg {
-        justify-content: space-around;
-      }
-
-      @include md {
-        justify-content: space-around;
-      }
-
-      //  @include lg{
-      //   flex-direction: column;
-      //   align-items: center;
-      //  }
-      @include sm {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      img {
-        width: 300px;
-
-        &:first-child{
-          margin-right: 10px;
-        }
-
-        @include md {
-          width: 230px;
-          margin-top: 0;
-
-          &:first-child {
-            margin-right: 10px;
-          }
-        }
-
-        &:first-child {
-          @include sm {
-            margin-bottom: 10px;
-            margin-right: 0px;
-          }
-        }
-      }
+    .card-2-img{
+      width: 350px;
+      
     }
 
     .about-points-info {
@@ -169,13 +129,16 @@
     }
 
     @include lg {
-      display: block;
+      // display: block;
+      flex-direction: column;
+      align-items: center;
       padding: 60px;
     }
 
     @include md {
       padding: 30px;
-      display: block;
+      flex-direction: column;
+      align-items: center;
     }
 
     .about-points-info {
@@ -216,7 +179,7 @@
         font-size: 20px;
 
         @include lg {
-          font-size: 25px;
+          font-size: 20px;
         }
       }
       p {
@@ -340,7 +303,6 @@
 
       .slider-sm-info {
         display: flex;
-        align-items: end;
         position: relative;
 
         @include xl {
