@@ -1,7 +1,6 @@
 import "./ServiceThree.scss";
 import serviceOne_banner_img from "../../../assets/images/1.webp";
-import empowring from "../../../assets/images/empowring.webp";
-import serviveOne_1 from "../../../assets/images/helmet.jpeg"
+import serviveOne_1 from "../../../assets/images/helmet.jpeg";
 import Gallery from "../../../components/Gallery/Gallery";
 
 const ServiceThree = () => {
@@ -51,9 +50,6 @@ const ServiceThree = () => {
 
         <div className="serviceThree-center-info">
           <h2>MAJOR PROJECTS UNDER YOUTH DEVELOPMENT</h2>
-          {/* <p>
-            MAJOR 9 PROJECTS taken by each individual are:​
-          </p> */}
         </div>
       </div>
 
@@ -138,86 +134,29 @@ const ServiceThree = () => {
             </div>
           </div>
         </div>
-
-        
       </div>
 
-      {/* <div className="sm-projects">
-        <div className="sm-project">
-          <h1>RATION-KIT PROJECT</h1>
-
-          <p>
-            This project was carried by Chanchal Jain who applied for ration-kit
-            for the people who were in distress when the second lock down came
-            and she gave out ration-kit to 20 families with funding she raised
-          </p>
-
-          <div className="sm-project-user">
-            <img src={sirviceOne_banner_img} alt="" />
-
-            <div className="sm-project-user-name">
-              <p>Ritu Jain</p>
-              <p>Secretary</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="sm-project">
-          <h1>RATION-KIT PROJECT</h1>
-
-          <p>
-            This project was carried by Chanchal Jain who applied for ration-kit
-            for the people who were in distress when the second lock down came
-            and she gave out ration-kit to 20 families with funding she raised
-          </p>
-
-          <div className="sm-project-user">
-            <img src={sirviceOne_banner_img} alt="" />
-
-            <div className="sm-project-user-name">
-              <p>Ritu Jain</p>
-              <p>Secretary</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* <div className="serviceThree-bottom-banner">
-        <div className="serviceThree-bottom-banner-info">
-          <h2>YOUTH DEVELOPMENT</h2>
-          <p>
-            Not only these social workers but throughout India during these
-            tough times there are many other social workers who have done many
-            projects for Youth Development Program and we ,as an NGO have been
-            helping them to provide with funds .
-          </p>
-          <div className="serviceThree-bottom-buttons">
-            <button>Donate Now</button>
-            <button>Contact Us | Join Us</button>
-          </div>
-        </div>
-      </div> */}
-
-
-<div className="serviceThree-bottom-banner">
+      <div className="serviceThree-bottom-banner">
         <div className="serviceThree-bottom-banner-info">
           <h2>CONTINUING OUR MISSION</h2>
           <p>
-          Not only these social workers, but many others across India have contributed to the Youth Development Program during tough times. As an NGO, BK Welfare Society continues to support these initiatives by providing funds, resources, and networking opportunities to help bring a positive change.
+            Not only these social workers, but many others across India have
+            contributed to the Youth Development Program during tough times. As
+            an NGO, BK Welfare Society continues to support these initiatives by
+            providing funds, resources, and networking opportunities to help
+            bring a positive change.
           </p>
-          <p>We believe that by empowering the youth today, we build a stronger and brighter future for tomorrow.</p>
+          <p>
+            We believe that by empowering the youth today, we build a stronger
+            and brighter future for tomorrow.
+          </p>
           <p>Join us in making a difference!</p>
-          {/* <div className="serviceThree-bottom-buttons">
-            <button>Donate Now</button>
-            <button>Contact Us | Join Us</button>
-          </div> */}
         </div>
       </div>
-  
-  <div className="galleryCards">
-  <Gallery />
-  </div>
-     
+
+      <div className="galleryCards">
+        <Gallery />
+      </div>
     </div>
   );
 };

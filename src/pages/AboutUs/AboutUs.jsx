@@ -1,6 +1,5 @@
 import "./AboutUs.scss";
 import about_banner from "../../assets/images/banner-3-1.webp";
-import about_point_img from "../../assets/images/elementor-2.webp";
 import slider_img from "../../assets/images/slider-img.webp";
 import { IoEarthOutline } from "react-icons/io5";
 import { TiLeaf } from "react-icons/ti";
@@ -9,7 +8,6 @@ import about_bottom_img from "../../assets/images/about-banner.webp";
 
 import about_1 from "../../assets/images/h/about1.jpeg";
 import about_2 from "../../assets/images/b/about2.jpeg";
-import about_3 from "../../assets/images/b/about3.jpeg";
 import Gallery from "../../components/Gallery/Gallery";
 import { Link } from "react-router-dom";
 

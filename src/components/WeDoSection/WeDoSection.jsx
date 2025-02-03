@@ -1,6 +1,6 @@
 import "./WeDoSection.scss";
 
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import WeDoCard from "../WeDoCard/WeDoCard";
 import { weDo } from "../../assets/data";
 

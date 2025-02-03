@@ -1,17 +1,15 @@
-import React, { useEffect, useMemo } from "react";
 import "./Gallery.scss";
+
+import { useMemo } from "react";
 import { useMediaQuery } from "@mui/material";
 import { gallery } from "../../assets/data";
 import FeatureSlide from "../FeatureSlide/FeatureSlide";
 import GalleryCard from "../GalleryCard/GalleryCard";
-import AOS from "aos"; 
-import "aos/dist/aos.css";
 
 const Gallery = () => {
   const isExtraSmall = useMediaQuery("(max-width:480px)");
   const isSmall = useMediaQuery("(max-width:768px)");
   const isMedium = useMediaQuery("(max-width:1024px)");
-  const isLarge = useMediaQuery("(max-width:1200px)");
 
   const slidesToShow = useMemo(() => {
     if (isExtraSmall) return 1;
@@ -20,37 +18,13 @@ const Gallery = () => {
     return 3;
   }, [isExtraSmall, isSmall, isMedium]);
 
-  useEffect(() => {
-    // Initialize AOS library with custom settings
-    AOS.init({
-      duration: 500,   // Duration of animation
-      easing: "ease-in-out", // Easing function
-      once: true, 
-    });
-
-    // Refresh AOS on scroll
-    const handleScroll = () => {
-      AOS.refresh();
-    };
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <div className="gallery">
       <h1 className="gallery-title">Gallery</h1>
       <div className="gallery-info">
         <FeatureSlide slidesToShow={slidesToShow} arrowsScroll={1}>
           {gallery.map((g, index) => (
-            <GalleryCard 
-              g={g} 
-              key={g.id} 
-              // data-aos="fade-up" 
-              // data-aos-delay={index * 100} 
-            />
+            <GalleryCard g={g} key={g.id} />
           ))}
         </FeatureSlide>
       </div>

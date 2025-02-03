@@ -35,15 +35,6 @@ const ServiceOne = () => {
               economic conditions of women and identify ways to support their
               financial independence.
             </p>
-
-            {/* <div className="serviceOne-content-list">
-              <p>The goals are as follows: –</p>
-              <ul>
-                <li>Women’s Empowerment through employment</li>
-                <li>Development of women in rural and slum areas</li>
-                <li>Government Schemes</li>
-              </ul>
-            </div> */}
           </div>
 
           <img className="serviceOne-content-img" src={serviveOne_1}></img>
@@ -75,14 +66,6 @@ const ServiceOne = () => {
               transportation arranged by us. Their economic stability and
               confidence improved, positively impacting their families.
             </p>
-
-            {/* 
-            <p className="second-content-sm-dsc">
-              which work for the welfare of society. They act as a mediator
-              between society and government. It plays a vital role to improve
-              communities and promoting citizens’ participation while mentoring
-              them socially and economically.
-            </p> */}
           </div>
         </div>
 
@@ -108,8 +91,8 @@ const ServiceOne = () => {
                 independence, stability, and a better future.
               </p>
             </div>
-            
-              <p className="third-content-right-desc">
+
+            <p className="third-content-right-desc">
               Today, our initiative continues to grow, ensuring that more women
               in Sikar have access to:
             </p>
@@ -120,74 +103,6 @@ const ServiceOne = () => {
             </ul>
           </div>
         </div>
-
-        {/* <div className="serviveOne-big-dsc">
-          <p>
-            They are Rajawas, Udaipuriya , Deepura , RampuraDabri . We took a
-            survey and tried to understand the economic status of the village
-            women and this survey was conducted in October’2019. After the
-            survey, we made a batch of 10-10 women from each village, giving us
-            a total of fifty (50) women.
-          </p>
-
-          <p>
-            Later we mentored them with less skilled work, such as taping,
-            stamping, and stitching clothes and paper bags. We introduced them
-            to small startups and small businesses nearby where working required
-            less skill and connected them to work, which may help them in
-            generating income and helped in building confidence. Few groups of
-            women were working from home (village), and some used to go to their
-            given offices through the provided transportation, due to which
-            regular employment carried on. Their house conditions improved due
-            to positive growth.
-          </p>
-
-          <p>
-            But due to the pandemic, many problems arose, such as transportation
-            problems and others, and the growth of development of women
-            economically in the village slowly declined for some time.
-          </p>
-
-          <p>
-            But gradually, things started coming back to their place in
-            September ‘2020. We took help from PEACE FIRST, and they provided
-            the N.G.O. with initial funding for the project’s development.
-            Afterward, we selected 20 women from each village, mentored them,
-            and connected them to small startups and businesses nearby
-          </p>
-
-          <p>
-            This project is still growing and is sustainable. Currently, we are
-            working with women in a slum area, i.e., Vidyut Nagar, Jaipur City,
-            Rajasthan.
-          </p>
-        </div> */}
-
-        {/* <div className="serviceOne-fourth-content content-card">
-          <div className="fourth-content-left">
-            <h1>GOVERNMENT SCHEMES</h1>
-            <p>
-              Well talking about the Government Schemes/ Yojna which has been
-              launched for the social and economic welfare of the citizens
-              especially for women. These policies or schemes gives many
-              advantages to the people . We took advantage of the schemes /
-              yojna which were and are specifically established for women and
-              through this schemes we registered many women who are economically
-              and socially deprived so that they are benefited by the yojana’s.
-            </p>
-          </div>
-
-          <div className="fourth-content-right">
-            <img src={food} alt="" />
-
-            <p>
-              Some of the major schemes which we used in our project for the
-              registration of women are “Berojgari Bhatta”,” Kishori Yojna “, ”
-              Palanhar Yojna” which provided them with enough income and
-              benefits for their all round growth .
-            </p>
-          </div>
-        </div> */}
 
         <div className="serviceOne-sm-desc">
           <h1>Join Us in Transforming Lives in Sikar</h1>

@@ -1,4 +1,5 @@
 import "./Footer.scss";
+
 import logo from "../../assets/images/logo.webp";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
@@ -42,7 +43,14 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p>Copyright © 2025 bk welfare society. All rights reserved</p>
-        <p>Developed by Star Marketing</p>
+        <a
+          href="https://www.Wingstarnarketing.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="star-link"
+        >
+          <p>Developed by Star Marketing</p>
+        </a>
       </div>
     </div>
   );

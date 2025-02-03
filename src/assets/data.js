@@ -2,21 +2,10 @@ import banner_img_1 from "../assets/images/1.webp";
 import banner_img_2 from "../assets/images/2.webp";
 import banner_img_3 from "../assets/images/3.webp";
 
-import first from "../assets/images/first.webp";
 import second from "../assets/images/second.webp";
 import third from "../assets/images/third.webp";
 import fourth from "../assets/images/fourth.webp";
 import fifth from "../assets/images/fifth.webp";
-
-import emp from "../assets/images/emp.webp";
-import health from "../assets/images/health.webp";
-import hunger from "../assets/images/hunter.webp";
-import home from "../assets/images/home.webp";
-
-import empowring from "../assets/images/empowring.webp";
-import shelter from "../assets/images/shelter.webp";
-import food from "../assets/images/food.webp";
-import shelterImg from "../assets/images/shelterImg.webp";
 
 import school from "../assets/images/school.webp";
 import water from "../assets/images/water.webp";
@@ -24,9 +13,6 @@ import water from "../assets/images/water.webp";
 
 import wedo_1 from "../assets/images/wedo_1.png"
 import wedo_2 from "../assets/images/wedo_2.png"
-
-
-
 
 
 ////////////////////////////// GALLERY IMAGES

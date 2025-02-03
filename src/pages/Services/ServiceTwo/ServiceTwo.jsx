@@ -1,25 +1,18 @@
 import "./ServiceTwo.scss";
+
 import serviceOne_banner_img from "../../../assets/images/1.webp";
 import food from "../../../assets/images/food.webp";
 import empowring from "../../../assets/images/empowring.webp";
-import GalleryCard from "../../../components/GalleryCard/GalleryCard";
 
 const ServiceTwo = () => {
   return (
     <div className="serviceTwo">
       <div className="serviceTwo-banner">
-        <img
-          src={serviceOne_banner_img}
-          alt=""
-        />
+        <img src={serviceOne_banner_img} alt="" />
 
         <div className="serviceTwo-info">
-          <h2>
-            BRIDGING THE GAP BETWEEN THE GOVERNMENT AND THE COMMON MASSES
-          </h2>
-          <p>
-            Know Everything about GOVERNMENT and COMMON MASSES
-          </p>
+          <h2>BRIDGING THE GAP BETWEEN THE GOVERNMENT AND THE COMMON MASSES</h2>
+          <p>Know Everything about GOVERNMENT and COMMON MASSES</p>
         </div>
       </div>
 
@@ -73,9 +66,7 @@ const ServiceTwo = () => {
         <div className="serviceTwo-third-content content-card">
           <div className="third-content-left">
             <h1>AIWS Team</h1>
-            <p>
-              We as a team soulfully work
-            </p>
+            <p>We as a team soulfully work</p>
 
             <p className="third-content-sm-desc">
               As per the requirement and needs of the people in the village or
@@ -91,9 +82,7 @@ const ServiceTwo = () => {
           <div className="third-content-right">
             <img src={food} alt="" />
 
-            <h4>
-              IT’S ALL ABOUT DEVELOPMENT: –
-            </h4>
+            <h4>IT’S ALL ABOUT DEVELOPMENT: –</h4>
             <p className="third-content-1-desc">
               There are also many other schemes for education for children
               living in rural and The government has formed underprivileged
@@ -119,9 +108,7 @@ const ServiceTwo = () => {
         />
 
         <div className="serviceTwo-bottom-info">
-          <h2>
-            Help others so other can adore your help
-          </h2>
+          <h2>Help others so other can adore your help</h2>
           <p>
             Here at All India Welfare Society, we see the value in everyone. We
             want to be a catalyst for positive change, and since our beginnings
@@ -140,8 +127,6 @@ const ServiceTwo = () => {
           </div>
         </div>
       </div>
-
-      
     </div>
   );
 };

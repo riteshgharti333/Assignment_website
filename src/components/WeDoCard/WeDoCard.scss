@@ -12,7 +12,6 @@
 
     &:hover {
       transform: scale(1.03);
-
       transition: 0.2s ease-in-out;
     }
 
@@ -22,10 +21,6 @@
       filter: brightness(0.3);
       object-fit: cover;
       border-radius: 10px;
-
-      
-
-      
     }
   }
 
@@ -38,27 +33,21 @@
     margin: 0px 20px;
     gap: 10px;
 
-   
-
     img {
       width: 100px;
       height: 100px;
       border-radius: 50%;
-
-     
     }
     h3 {
       text-align: center;
-      color: orange;
+      color: #f56a01;
       font-size: 30px;
-
-  
     }
     p {
       text-align: center;
-      color: white;
+      color: #fff;
       font-size: 20px;
-
+      font-weight: 600;
     }
   }
 }

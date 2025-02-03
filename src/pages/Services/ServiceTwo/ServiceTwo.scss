@@ -216,13 +216,12 @@
         p {
           font-size: 20px;
           font-weight: 500;
-
         }
 
         .third-content-sm-desc {
           color: #666;
 
-          @include lg{
+          @include lg {
             font-size: 18px;
           }
         }

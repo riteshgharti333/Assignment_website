@@ -24,7 +24,7 @@ const WorkSection = () => {
 
           <div className="project-name">
             <img src="" alt="" />
-            
+
             <div className="project-name-info">
               <p>Abdul Rahman Khatri</p>
               <p>Secretary</p>
@@ -35,15 +35,20 @@ const WorkSection = () => {
         <div className="workSection-card">
           <h2>BLANKET DISTRIBUTION FOR WINTER</h2>
           <p>
-          To support the homeless and underprivileged communities during the harsh winter, Khalid Khatri took the initiative to distribute blankets in various regions of Rajasthan. With the funds raised, his team provided warm blankets to over 50 families struggling to survive in extreme cold conditions.
+            To support the homeless and underprivileged communities during the
+            harsh winter, Khalid Khatri took the initiative to distribute
+            blankets in various regions of Rajasthan. With the funds raised, his
+            team provided warm blankets to over 50 families struggling to
+            survive in extreme cold conditions.
           </p>
           <p>
-          This initiative ensured that the elderly, children, and daily wage workers had protection against the winter chills.
+            This initiative ensured that the elderly, children, and daily wage
+            workers had protection against the winter chills.
           </p>
 
           <div className="project-name">
             <img src="" alt="" />
-            
+
             <div className="project-name-info">
               <p>Abdul Rahman Khatri</p>
               <p>Secretary</p>
@@ -51,23 +56,28 @@ const WorkSection = () => {
           </div>
         </div>
 
-        
         <div className="workSection-card">
-          <h2>HELMET DISTRIBUTION FOR ROAD SAFETY
-          </h2>
+          <h2>HELMET DISTRIBUTION FOR ROAD SAFETY</h2>
           <p>
-          Understanding the increasing road accidents and fatalities, Khalid Khatri launched a Helmet Distribution and Road Safety Awareness Campaign. His team conducted workshops in schools, colleges, and local markets to educate youth and daily commuters on the importance of wearing helmets and following traffic rules.
-
-
+            Understanding the increasing road accidents and fatalities, Khalid
+            Khatri launched a Helmet Distribution and Road Safety Awareness
+            Campaign. His team conducted workshops in schools, colleges, and
+            local markets to educate youth and daily commuters on the importance
+            of wearing helmets and following traffic rules.
           </p>
           <p>
-          As part of the campaign, over 100 helmets were distributed to students, delivery riders, and workers who frequently travel on two-wheelers but cannot afford safety gear.
+            As part of the campaign, over 100 helmets were distributed to
+            students, delivery riders, and workers who frequently travel on
+            two-wheelers but cannot afford safety gear.
           </p>
-          <p>This project aimed to create a culture of responsible riding and road safety awareness.</p>
+          <p>
+            This project aimed to create a culture of responsible riding and
+            road safety awareness.
+          </p>
 
           <div className="project-name">
             <img src="" alt="" />
-            
+
             <div className="project-name-info">
               <p>Abdul Rahman Khatri</p>
               <p>Secretary</p>

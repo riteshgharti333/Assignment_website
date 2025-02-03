@@ -1,43 +1,42 @@
-import './Contact.scss';
+import "./Contact.scss";
+
 import { IoIosArrowDown } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
-import serviceOne_banner_img from "../../assets/images/1.webp";
-
 
 const Contact = () => {
   return (
-    <div className='contact'>
-  
-
-
-      
+    <div className="contact">
       <div className="contact-title">
         <h1>Contact Us</h1>
       </div>
 
       <div className="contact-desc">
-        <h4>Established in 2012 by Abdul Rahim Khatari, BK Welfare Society is dedicated to social welfare, with a strong emphasis on education, women's empowerment, and emergency aid for hospitalized individuals.</h4>
+        <h4>
+          Established in 2012 by Abdul Rahim Khatari, BK Welfare Society is
+          dedicated to social welfare, with a strong emphasis on education,
+          women's empowerment, and emergency aid for hospitalized individuals.
+        </h4>
       </div>
 
       <div className="down-arrow">
-        <IoIosArrowDown className='down-arrow-icon' />
+        <IoIosArrowDown className="down-arrow-icon" />
       </div>
 
       <div className="contact-card">
         <div className="contact-card-info">
-          <IoCall className='contact-card-info-icon' />
+          <IoCall className="contact-card-info-icon" />
           <p>+91 90799 29684</p>
         </div>
 
         <div className="contact-card-info">
-          <FaLocationDot className='contact-card-info-icon' />
+          <FaLocationDot className="contact-card-info-icon" />
           <p>dalsing colony, jagmal pura, road, sikar ( raj.) 332001</p>
         </div>
 
         <div className="contact-card-info">
-          <IoMail className='contact-card-info-icon' />
+          <IoMail className="contact-card-info-icon" />
           <p>Prisident@bkwelfaresocity.com</p>
         </div>
       </div>
@@ -61,8 +60,8 @@ const Contact = () => {
           style={{ border: "0" }}
           allowFullScreen
           loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade">
-        </iframe>
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   );
