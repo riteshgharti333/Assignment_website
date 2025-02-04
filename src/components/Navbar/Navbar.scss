@@ -139,7 +139,6 @@ img {
   font-size: 18px;
 }
 
-/* Ensure dropdown is visible inside mobile menu */
 .right-content.open .dropdown-content {
   display: block;
   position: static;
@@ -161,8 +160,7 @@ img {
   background-color: #f56a01;
 }
 
-/* Mobile styles */
-@include md {
+@media (max-width: 768px) {
   .navbar {
     padding: 5px 10px;
   }
@@ -174,7 +172,8 @@ img {
   }
 
   .burger-menu {
-    display: flex;
+    display: flex !important;
+    z-index: 1100;
   }
 
   .nav-item {
@@ -191,25 +190,12 @@ img {
   }
 }
 
-/* Desktop styles */
-@include md {
-  .right-content {
-    display: flex !important;
-  }
-
+@media (min-width: 769px) {
   .burger-menu {
-    display: none;
+    display: none !important;
   }
 
-  .dropdown-arrow {
-    display: none;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .right-content.open {
+  .right-content {
     display: flex !important;
   }
 }
