@@ -11,6 +11,8 @@ import about_2 from "../../assets/images/b/about2.jpeg";
 import Gallery from "../../components/Gallery/Gallery";
 import { Link } from "react-router-dom";
 
+import AboutHome from "../../components/AboutHome/AboutHome";
+
 const AboutUs = () => {
   return (
     <div className="aboutUs">
@@ -27,54 +29,9 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="about-points card-1">
-        <div className="about-points-info ">
-          <h2>Introduction to BK Welfare Society</h2>
-          <p>
-            Established in 2012 by Abdul Rahim Khatari, BK Welfare Society is
-            dedicated to social welfare, with a strong emphasis on education,
-            women's empowerment, and emergency aid for hospitalized individuals.
-          </p>
-        </div>
-        <img src={about_1} alt="" />
-      </div>
-      <div className="about-points card-2">
-        <img className="card-2-img" src={about_2} alt="" />
 
-        <div className="about-points-info">
-          <h2>Our Journey</h2>
-          <h5>A Legacy of Growth & Impact</h5>
-          <p>
-            From humble beginnings, we have achieved significant milestones,
-            positively impacting thousands of lives. Our initiatives have
-            fostered a better quality of life for children, women, and
-            vulnerable individuals.
-          </p>
-        </div>
-      </div>
-
-      <div className="team">
-        <h2>Our Team</h2>
-
-        <div className="team-info">
-          <div className="team-container">
-            <h4 className="team-desc">Meet the Passionate Changemakers</h4>
-            <p className="team-sm-desc">
-              Our team is driven by dedication and commitment to making a
-              difference. Each member plays a crucial role in carrying out our
-              mission and vision.
-            </p>
-          </div>
-
-          <div className="team-container">
-            <h4 className="team-desc">What Our Team Says</h4>
-            <p className="team-sm-desc">
-              Being a part of BK Welfare Society has been a life-changing
-              experience. Seeing lives transform through our efforts is truly
-              rewarding.– ABDUL RAHMAN KHATRI
-            </p>
-          </div>
-        </div>
+      <div className="about-more-content">
+        <AboutHome />
       </div>
 
       <div className="about-slider">

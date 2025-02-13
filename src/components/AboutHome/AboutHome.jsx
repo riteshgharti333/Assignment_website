@@ -1,13 +1,17 @@
 import "./AboutHome.scss";
 
 import about_1 from "../../assets/images/h/about1.jpeg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { RiArrowRightSLine } from "react-icons/ri";
 
 import about_2 from "../../assets/images/service2.jpeg";
 import { awards } from "../../assets/data";
 
 const AboutHome = () => {
+  const location = useLocation();
+
+  const path = location.pathname;
+
   return (
     <div className="aboutHome">
       <div className="about-home-content">
@@ -20,14 +24,20 @@ const AboutHome = () => {
             women’s empowerment, and emergency aid for hospitalized individuals.
           </p>
 
-          <Link to={"/about-us"} className="read-more">
-            <button>READ MORE </button>
-            <RiArrowRightSLine className="button-icon" />
-          </Link>
+          {path !== "/about-us" && (
+            <Link to={"/about-us"} className="read-more">
+              <button>READ MORE </button>
+              <RiArrowRightSLine className="button-icon" />
+            </Link>
+          )}
         </div>
 
         <div className="aboutHome-right">
-          <img src={about_1} alt={about_1} />
+          <img
+            src={about_1}
+            alt={about_1}
+            className={path === "/about-us" ? "about-margin" : ""}
+          />
         </div>
       </div>
 
