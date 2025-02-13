@@ -39,7 +39,7 @@
       flex-direction: column;
     }
 
-    @include md{
+    @include md {
       margin-top: 0px;
     }
 
@@ -123,14 +123,14 @@
 
     .aboutHome-right {
       img {
-        width: 500px;
+        width: 550px;
 
         @include lg {
           width: 100%;
         }
       }
 
-      .about-margin{
+      .about-margin {
         margin-top: 20px;
       }
     }
@@ -138,61 +138,25 @@
 
   .about-home-content2 {
     .about-home-content2-img {
-      display: flex;
       width: 100%;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 40px;
-
-      @include lg {
-        flex-direction: column;
-        flex-direction: column-reverse;
-        gap: 20px;
-      }
 
       img {
         width: 400px;
         object-fit: cover;
+        margin-top: 20px;
 
         @include lg {
           width: 100%;
         }
       }
       h3 {
+        text-align: center;
         @include xl {
           text-align: center;
         }
-      }
-    }
-
-    .about-home-content2-bottom {
-      display: flex;
-      gap: 20px;
-
-      @include lg {
-        flex-direction: column;
-      }
-    }
-
-    .about-home-content2-bottom-left {
-      p {
-        text-align: justify;
-      }
-    }
-
-    .about-home-content2-bottom-right {
-      img {
-        width: 350px;
-        object-fit: cover;
-
-        @include lg {
-          width: 100%;
-        }
-      }
-      p {
-        font-size: 16px;
-        color: #666;
-        margin-top: 10px;
-        text-align: justify;
       }
     }
   }
@@ -252,47 +216,11 @@
   }
 
   .about-home-content4 {
-    display: flex;
-    gap: 100px;
-
-    @include xl {
-      gap: 20px;
+    h3 {
+      text-align: center;
     }
-
-    @include lg {
-      flex-direction: column;
-      flex-direction: column-reverse;
-      gap: 20px;
-    }
-
-    .about-home-content4-left {
-      img {
-        width: 400px;
-
-        @include lg {
-          width: 100%;
-        }
-      }
-      p {
-        margin-top: 10px;
-        font-size: 16px;
-        color: #666;
-
-        @include md {
-          text-align: center;
-        }
-      }
-    }
-
-    .about-home-content4-right {
-      h3 {
-        margin-top: 0;
-        @include lg {
-          text-align: center;
-        }
-      }
-      p {
-      }
+    p {
+      text-align: center;
     }
   }
 
@@ -388,39 +316,10 @@
   }
 
   .about-home-content7 {
-    display: flex;
-    gap: 50px;
-    align-items: center;
+    text-align: center;
 
-    @include lg {
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .about-home-content7-left {
-      h3 {
-        margin-top: 0;
-
-        @include lg {
-          text-align: center;
-        }
-      }
-
-      p {
-      }
-    }
-    .about-home-content7-right {
-      img {
-        width: 500px;
-        object-fit: cover;
-        @include xl {
-          width: 400px;
-        }
-
-        @include lg {
-          width: 100%;
-        }
-      }
+    p {
+      text-align: center;
     }
   }
 
@@ -431,31 +330,8 @@
       text-align: center;
     }
 
-    .about-home-content8-bottom {
-      display: flex;
-      gap: 40px;
-      align-items: center;
-
-      @include xl {
-        gap: 10px;
-      }
-
-      @include lg {
-        flex-direction: column;
-        gap: 20px;
-      }
-      p {
-        flex: 1;
-        margin-top: 0px;
-      }
-      img {
-        flex: 1;
-        width: 400px;
-
-        @include lg {
-          width: 100%;
-        }
-      }
+    p {
+      text-align: center;
     }
     .thought {
       text-align: center;
@@ -469,8 +345,8 @@
   .about-home-content9 {
     margin-bottom: 40px;
 
-    @include md{
-margin-bottom: 0px;
+    @include md {
+      margin-bottom: 0px;
     }
     h3 {
       text-align: center;
@@ -500,6 +376,8 @@ margin-bottom: 0px;
       .about-home-content9-img {
         img {
           width: 100%;
+          height: 400px;
+          object-fit: cover;
         }
 
         p {
@@ -516,6 +394,7 @@ margin-bottom: 0px;
 
     .about-home-content9-sm {
       font-weight: 500;
+      font-size: 16px;
     }
   }
 }

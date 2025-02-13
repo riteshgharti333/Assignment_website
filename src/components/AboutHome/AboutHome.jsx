@@ -7,6 +7,13 @@ import { RiArrowRightSLine } from "react-icons/ri";
 import about_2 from "../../assets/images/service2.jpeg";
 import { awards } from "../../assets/data";
 
+import aboutimg5 from "../../assets/images/aboutImg/aboutimg5.jpeg";
+import aboutimg7 from "../../assets/images/aboutImg/aboutimg7.jpeg";
+
+import aboutimg3 from "../../assets/images/aboutImg/aboutimg3.jpeg";
+
+import aboutimg2 from "../../assets/images/aboutImg/aboutimg2.jpeg";
+
 const AboutHome = () => {
   const location = useLocation();
 
@@ -34,7 +41,7 @@ const AboutHome = () => {
 
         <div className="aboutHome-right">
           <img
-            src={about_1}
+            src={aboutimg5}
             alt={about_1}
             className={path === "/about-us" ? "about-margin" : ""}
           />
@@ -43,11 +50,11 @@ const AboutHome = () => {
 
       <div className="about-home-content2">
         <div className="about-home-content2-img">
-          <img src={about_1} alt="" />
           <h3>
             Young Entrepreneur Rahim Khatri (Poona Wala) Sets New Milestones in
             Business & Social Service
           </h3>
+          <img src={aboutimg7} alt="" />
         </div>
         <div className="about-home-content2-bottom">
           <div className="about-home-content2-bottom-left">
@@ -66,10 +73,7 @@ const AboutHome = () => {
               Khatri, founder of BK Group, who is not only a successful
               businessman but also actively involved in welfare initiatives.
             </p>
-          </div>
 
-          <div className="about-home-content2-bottom-right">
-            <img src={about_1} alt="" />
             <p>
               Recently, BK Group introduced India's first ethanol fuel pump,
               which gained widespread recognition and appreciation across the
@@ -89,7 +93,7 @@ const AboutHome = () => {
             community to adopt practical faith, as demonstrated by the Prophet
             Muhammad (PBUH).
           </p>
-          <img src={about_1} alt="" />
+          <img src={aboutimg3} alt="" />
           <p>
             He particularly calls for an end to dowry practices and encourages
             people to embrace the simplicity of Sunnah-based marriages. He
@@ -111,29 +115,23 @@ const AboutHome = () => {
       </div>
 
       <div className="about-home-content4">
-        <div className="about-home-content4-left">
-          <img src={about_1} alt="" />
-          <p>
-            His vision: To uplift society, we must first uplift our children and
-            youth.
-          </p>
-        </div>
-
-        <div className="about-home-content4-right">
-          <h3>The Need to Focus on Education</h3>
-          <p>
-            Dr. Rahim Khatri highlights that children today possess immense
-            talent but lack the proper motivation and guidance. Many youth are
-            losing direction, engaging in negative activities, and need strong
-            mentorship.
-          </p>
-          <p>
-            To guide and inspire the youth, he is organizing a seminar in Sikar,
-            featuring Munawwar Jama, a renowned motivational speaker.
-            Additionally, his initiative aims to support bright students from
-            underprivileged backgrounds by covering their educational expenses.
-          </p>
-        </div>
+        <h3>The Need to Focus on Education</h3>
+        <p>
+          Dr. Rahim Khatri highlights that children today possess immense talent
+          but lack the proper motivation and guidance. Many youth are losing
+          direction, engaging in negative activities, and need strong
+          mentorship.
+        </p>
+        <p>
+          To guide and inspire the youth, he is organizing a seminar in Sikar,
+          featuring Munawwar Jama, a renowned motivational speaker.
+          Additionally, his initiative aims to support bright students from
+          underprivileged backgrounds by covering their educational expenses.
+        </p>
+        <p>
+          His vision: To uplift society, we must first uplift our children and
+          youth.
+        </p>
       </div>
 
       <div className="about-home-content5">
@@ -141,7 +139,6 @@ const AboutHome = () => {
 
         <div className="about-home-content5-bottom">
           <div className="about-home-content5-left">
-            <img src={about_1} alt="" />
             <p>
               In 2013, Dr. Khatri helped establish the Vision School &
               Rehabilitation Center in Pune, Maharashtra—the first institution
@@ -151,7 +148,6 @@ const AboutHome = () => {
           </div>
 
           <div className="about-home-content5-right">
-            <img src={about_1} alt="" />
             <p>
               The school currently supports 220 students from 15 states across
               India, providing them with education from primary to postgraduate
@@ -175,7 +171,7 @@ const AboutHome = () => {
           learn the intricacies of their chosen field and commit wholeheartedly
           to their goals.
         </p>
-        <img src={about_2} alt="" />
+        <img src={aboutimg2} alt="" />
         <p className="thought">
           "If you achieve a milestone, set your next target and dedicate
           yourself completely to it. Your hard work and pure intentions will
@@ -184,43 +180,35 @@ const AboutHome = () => {
       </div>
 
       <div className="about-home-content7">
-        <div className="about-home-content7-left">
-          <h3>His Journey from Struggle to Success</h3>
-          <p>
-            Born in Sikar, Rajasthan, Dr. Khatri’s financial hardships forced
-            him to drop out after the 10th grade in 2004. After two years of
-            struggle, he moved to Mumbai in 2006 with dreams of working abroad.
-            However, he was scammed by an agent, leaving him stranded.
-          </p>
-          <p>
-            Determined to succeed, he took a ₹5,000/month job at a petrol pump,
-            gradually learning the industry. His innovative approach to
-            modernizing fuel station operations impressed his employers, leading
-            to his selection as a vendor for Bharat Petroleum in 2012.
-          </p>
-        </div>
-        <div className="about-home-content7-right">
-          <img src={about_1} alt="" />
-        </div>
+        <h3>His Journey from Struggle to Success</h3>
+        <p>
+          Born in Sikar, Rajasthan, Dr. Khatri’s financial hardships forced him
+          to drop out after the 10th grade in 2004. After two years of struggle,
+          he moved to Mumbai in 2006 with dreams of working abroad. However, he
+          was scammed by an agent, leaving him stranded.
+        </p>
+        <p>
+          Determined to succeed, he took a ₹5,000/month job at a petrol pump,
+          gradually learning the industry. His innovative approach to
+          modernizing fuel station operations impressed his employers, leading
+          to his selection as a vendor for Bharat Petroleum in 2012.
+        </p>
       </div>
 
       <div className="about-home-content8">
         <h3>Foundation of BK Group</h3>
 
-        <div className="about-home-content8-bottom">
-          <p>
-            After gaining experience, he established BK Enterprises in Pune,
-            which is now one of the leading companies in developing petrol
-            stations across India.
-          </p>
-          <img src={about_1} alt="" />
-          <p>
-            Despite several financial setbacks, he remained committed to
-            integrity and hard work. He recalls an instance where, despite
-            needing money himself, he prioritized helping someone in need, and
-            soon after, his own business flourished.
-          </p>
-        </div>
+        <p>
+          After gaining experience, he established BK Enterprises in Pune, which
+          is now one of the leading companies in developing petrol stations
+          across India.
+        </p>
+        <p>
+          Despite several financial setbacks, he remained committed to integrity
+          and hard work. He recalls an instance where, despite needing money
+          himself, he prioritized helping someone in need, and soon after, his
+          own business flourished.
+        </p>
 
         <p className="thought">
           "My belief in God and my honest intentions have always guided me

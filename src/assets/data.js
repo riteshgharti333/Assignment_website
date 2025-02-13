@@ -39,6 +39,22 @@ import gallery_15 from "../assets/images/service2.jpeg"
 import gallery_16 from "../assets/images/service3.jpeg"
 
 
+//////////////////// About Img
+
+import aboutimg1 from "../assets/images/aboutImg/aboutimg1.jpeg";
+import aboutimg2 from "../assets/images/aboutImg/aboutimg2.jpeg";
+import aboutimg3 from "../assets/images/aboutImg/aboutimg3.jpeg";
+import aboutimg4 from "../assets/images/aboutImg/aboutimg4.jpeg";
+import aboutimg5 from "../assets/images/aboutImg/aboutimg5.jpeg";
+import aboutimg6 from "../assets/images/aboutImg/aboutimg6.jpeg";
+import aboutimg7 from "../assets/images/aboutImg/aboutimg7.jpeg";
+import aboutimg8 from "../assets/images/aboutImg/aboutimg8.jpeg";
+import aboutimg9 from "../assets/images/aboutImg/aboutimg9.jpeg";
+import aboutimg10 from "../assets/images/aboutImg/aboutimg10.jpeg";
+
+
+
+
 
 
 
@@ -163,17 +179,22 @@ export const gallery = [
 ];
 
 export const awards = [
-  {img: about_img , title : "Best Taxpayer (Bronze Category) from the Indian Ministry of Finance (2019-20)"},
+  {img: aboutimg1 , title : "Best Taxpayer (Bronze Category) from the Indian Ministry of Finance (2019-20)"},
 
-  {img: about_img , title : "Recognition from the All India Institute of Public & Physical Health Sciences for his contributions during COVID-19"},
+  {img: aboutimg5 , title : "Recognition from the All India Institute of Public & Physical Health Sciences for his contributions during COVID-19"},
 
-  {img: about_img , title : "National Campaign Award (Maharashtra)"},
 
-  {img: about_img , title : "MTTV Excellent Social Reformer Award"},
-
-  
-  {img: about_img , title : "National Pride Award"},
+  {img: aboutimg8 , title : "MTTV Excellent Social Reformer Award"},
 
   
-  {img: about_img , title : "National Glory Award"},
+  {img: aboutimg6 , title : "National Pride Award"},
+
+  {img:  aboutimg10, title : "National Campaign Award (Maharashtra)"},
+
+
+  
+  {img: aboutimg4 , title : "National Glory  Award"},
+
+  {img: aboutimg9 , title : "World Human Rights Protection Commission Approved by Government of United States of America State of New York, Department of State"},
+
 ]
