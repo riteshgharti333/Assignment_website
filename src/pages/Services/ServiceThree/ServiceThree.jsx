@@ -4,7 +4,8 @@ import serviceOne_banner_img from "../../../assets/images/1.webp";
 import serviveOne_1 from "../../../assets/images/helmet.jpeg";
 import Gallery from "../../../components/Gallery/Gallery";
 
-import aboutImg6 from "../../../assets/images/aboutImg/aboutImg9.jpeg"
+import aboutImg6 from "../../../assets/images/aboutImg/aboutimg9.jpeg"
+
 
 
 const ServiceThree = () => {
