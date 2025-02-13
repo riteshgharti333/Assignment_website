@@ -5,13 +5,13 @@ import serviceOne_banner_img from "../../../assets/images/1.webp";
 import { FaRegCircle } from "react-icons/fa";
 import serviveOne_1 from "../../../assets/images/helmet.jpeg";
 import serviveOne_2 from "../../../assets/images/service2.jpeg";
-import serviveOne_3 from "../../../assets/images/service3.jpeg";
+import aboutImg6 from "../../../assets/images/aboutImg/aboutImg9.jpeg"
 
 const ServiceOne = () => {
   return (
     <div className="serviceOne">
       <div className="serviceOne-banner">
-        <img src={serviceOne_banner_img} alt="" />
+        <img src={aboutImg6} alt="" />
 
         <div className="serviceOne-info">
           <h2>EMPLOYMENT GENERATION/ GOVERNMENT SCHEME</h2>

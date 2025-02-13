@@ -4,7 +4,6 @@ import about_1 from "../../assets/images/h/about1.jpeg";
 import { Link, useLocation } from "react-router-dom";
 import { RiArrowRightSLine } from "react-icons/ri";
 
-import about_2 from "../../assets/images/service2.jpeg";
 import { awards } from "../../assets/data";
 
 import aboutimg5 from "../../assets/images/aboutImg/aboutimg5.jpeg";

@@ -362,6 +362,7 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 50px;
       margin-top: 50px;
+      width: 100%;
 
       @include md {
         gap: 20px;

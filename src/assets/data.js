@@ -60,15 +60,15 @@ import aboutimg10 from "../assets/images/aboutImg/aboutimg10.jpeg";
 
 export const slider = [
   {
-    image: banner_img_1,
+    image: aboutimg6,
     title: "To Feed Children For a Week",
   },
   {
-    image: banner_img_2,
+    image: aboutimg8,
     title: "Hand to Make Better Life for",
   },
   {
-    image: banner_img_3,
+    image: aboutimg9,
     title: "Humanity First – Empowering Lives, One Step at a Time",
   },
 ];

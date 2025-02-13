@@ -3,11 +3,14 @@ import serviceOne_banner_img from "../../../assets/images/1.webp";
 import serviveOne_1 from "../../../assets/images/helmet.jpeg";
 import Gallery from "../../../components/Gallery/Gallery";
 
+import aboutImg6 from "../../../assets/images/aboutImg/aboutImg9.jpeg"
+
+
 const ServiceThree = () => {
   return (
     <div className="serviceThree">
       <div className="serviceThree-banner">
-        <img src={serviceOne_banner_img} alt="" />
+        <img src={aboutImg6} alt="" />
 
         <div className="serviceThree-info">
           <h2>YOUTH DEVELOPMENT</h2>
