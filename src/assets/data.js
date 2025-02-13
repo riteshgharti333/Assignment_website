@@ -14,6 +14,8 @@ import water from "../assets/images/water.webp";
 import wedo_1 from "../assets/images/wedo_1.png"
 import wedo_2 from "../assets/images/wedo_2.png"
 
+import about_img from "../assets/images/h/about1.jpeg"
+
 
 ////////////////////////////// GALLERY IMAGES
 import gallery_1 from "../assets/images/b/about2.jpeg"
@@ -159,3 +161,19 @@ export const gallery = [
   { id: 15, image: gallery_15 },
   { id: 16, image: gallery_16 },
 ];
+
+export const awards = [
+  {img: about_img , title : "Best Taxpayer (Bronze Category) from the Indian Ministry of Finance (2019-20)"},
+
+  {img: about_img , title : "Recognition from the All India Institute of Public & Physical Health Sciences for his contributions during COVID-19"},
+
+  {img: about_img , title : "National Campaign Award (Maharashtra)"},
+
+  {img: about_img , title : "MTTV Excellent Social Reformer Award"},
+
+  
+  {img: about_img , title : "National Pride Award"},
+
+  
+  {img: about_img , title : "National Glory Award"},
+]
