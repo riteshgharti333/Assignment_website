@@ -89,7 +89,7 @@ const AboutHome = () => {
         </div>
 
         <div className="about-home-content3-bottom">
-          <p>
+          <p className="about-home-content3-bottom-desc">
             He further stresses that religion is not limited to prayer and
             charity but extends to every aspect of life. He appeals to community
             leaders to lead by example rather than merely advising others.
