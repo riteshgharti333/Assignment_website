@@ -18,7 +18,7 @@ const Navbar = () => {
     const handleMediaChange = (e) => {
       setIsDesktop(e.matches);
       if (e.matches) {
-        setMenuOpen(false); 
+        setMenuOpen(false);
         setDropdownOpen(false);
       }
     };
@@ -46,13 +46,11 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <Link to={"/"}>
-      <div className="left-logo">
-        
-        <img src={logo} alt="Logo" className="logo-img" />
-      </div>
+      <Link to="/" onClick={() => setMenuOpen(false)}>
+        <div className="left-logo">
+          <img src={logo} alt="Logo" className="logo-img" />
+        </div>
       </Link>
-      
 
       <div className={`burger-menu ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
         <div className="bar"></div>
@@ -61,14 +59,14 @@ const Navbar = () => {
       </div>
 
       <div className={`right-content ${menuOpen ? "open" : ""}`}>
-        <Link to="/" className={`nav-item ${location.pathname === "/" ? "active" : ""}`}>
+        <Link to="/" className={`nav-item ${location.pathname === "/" ? "active" : ""}`} onClick={() => setMenuOpen(false)}>
           Home
         </Link>
 
         <div
           className="dropdown"
-          onMouseEnter={() => handleDropdownHover(true)} 
-          onMouseLeave={() => handleDropdownHover(false)} 
+          onMouseEnter={() => handleDropdownHover(true)}
+          onMouseLeave={() => handleDropdownHover(false)}
         >
           <p className="nav-item" onClick={toggleDropdown}>
             Programs & Partners
@@ -86,11 +84,11 @@ const Navbar = () => {
           )}
         </div>
 
-        <Link to="/about-us" className={`nav-item ${location.pathname === "/about" ? "active" : ""}`}>
+        <Link to="/about-us" className={`nav-item ${location.pathname === "/about-us" ? "active" : ""}`} onClick={() => setMenuOpen(false)}>
           About Us
         </Link>
 
-        <Link to="/contact-us" className={`nav-item ${location.pathname === "/contact-us" ? "active" : ""}`}>
+        <Link to="/contact-us" className={`nav-item ${location.pathname === "/contact-us" ? "active" : ""}`} onClick={() => setMenuOpen(false)}>
           Contact Us
         </Link>
       </div>
