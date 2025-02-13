@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 import AboutHome from "../../components/AboutHome/AboutHome";
 
-import aboutImg6 from "../../assets/images/aboutImg/aboutImg8.jpeg";
+import aboutImg6 from "../../assets/images/aboutImg/aboutimg8.jpeg";
 
 
 const AboutUs = () => {
