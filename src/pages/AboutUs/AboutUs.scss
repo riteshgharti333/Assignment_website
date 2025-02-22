@@ -268,6 +268,8 @@
   .about-slider {
     background: #6b195a;
     padding: 70px 120px;
+    max-width: 1400px;
+    margin: 0 auto;
 
     @include xl {
       padding: 60px;
@@ -368,6 +370,10 @@
             padding: 0px;
           }
 
+          @include sm {
+            text-align: center;
+          }
+
           h3 {
             color: #fff;
             font-size: 22px;
@@ -380,6 +386,10 @@
 
             @include md {
               margin-top: 22px;
+            }
+
+            @include sm {
+              text-align: center;
             }
           }
 
@@ -394,7 +404,7 @@
           .slider-add {
             color: #fff;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 18px;
           }
         }
       }

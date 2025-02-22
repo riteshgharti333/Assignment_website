@@ -1,6 +1,5 @@
 import "./AboutUs.scss";
 
-import slider_img from "../../assets/images/slider-img.webp";
 import { IoEarthOutline } from "react-icons/io5";
 import { TiLeaf } from "react-icons/ti";
 import { FaRegSmile } from "react-icons/fa";
@@ -12,6 +11,8 @@ import { Link } from "react-router-dom";
 import AboutHome from "../../components/AboutHome/AboutHome";
 
 import aboutImg6 from "../../assets/images/aboutImg/aboutimg8.jpeg";
+
+import chairmanImg from "../../assets/images/chairman.webp"
 
 
 const AboutUs = () => {
@@ -40,7 +41,7 @@ const AboutUs = () => {
           <div className="slider-sm-info">
             <div className="img-bg-div"></div>
 
-            <img className="slider-img" src={slider_img} alt="" />
+            <img className="slider-img" src={chairmanImg} alt="" />
 
             <div className="slider-details">
               <h3>
